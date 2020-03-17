@@ -1,0 +1,28 @@
+<map id="animaTensorBlockMatcher.hxx" name="animaTensorBlockMatcher.hxx">
+<area shape="rect" id="node2" href="$animaTensorBlockMatcher_8h.html" title="animaTensorBlockMatcher.h" alt="" coords="2132,87,2319,114"/>
+<area shape="rect" id="node28" href="$animaTensorCorrelationImageToImageMetric_8h.html" title="animaTensorCorrelationImage\lToImageMetric.h" alt="" coords="2628,80,2823,121"/>
+<area shape="rect" id="node29" href="$animaBaseOrientedModelImageToImageMetric_8h.html" title="animaBaseOrientedModelImage\lToImageMetric.h" alt="" coords="2162,169,2369,211"/>
+<area shape="rect" id="node44" href="$animaTensorGeneralizedCorrelationImageToImageMetric_8h.html" title="animaTensorGeneralizedCorrelation\lImageToImageMetric.h" alt="" coords="2960,80,3187,121"/>
+<area shape="rect" id="node46" href="$animaTensorMeanSquaresImageToImageMetric_8h.html" title="animaTensorMeanSquaresImage\lToImageMetric.h" alt="" coords="2393,80,2604,121"/>
+<area shape="rect" id="node48" href="$animaVectorModelLinearInterpolateImageFunction_8h.html" title="animaVectorModelLinearInterpolate\lImageFunction.h" alt="" coords="3411,169,3637,211"/>
+<area shape="rect" id="node3" href="$animaBaseAffineBlockMatcher_8h.html" title="animaBaseAffineBlockMatcher.h" alt="" coords="861,177,1067,203"/>
+<area shape="rect" id="node4" href="$animaBaseBlockMatcher_8h.html" title="animaBaseBlockMatcher.h" alt="" coords="1145,266,1321,293"/>
+<area shape="rect" id="node21" href="$animaBaseAffineBlockMatcher_8hxx.html" title="animaBaseAffineBlockMatcher.hxx" alt="" coords="585,266,804,293"/>
+<area shape="rect" id="node5" href="$animaBaseTransformAgregator_8h.html" title="animaBaseTransformAgregator.h" alt="" coords="985,348,1196,375"/>
+<area shape="rect" id="node13" href="$animaBaseBlockMatcher_8hxx.html" title="animaBaseBlockMatcher.hxx" alt="" coords="1271,348,1459,375"/>
+<area shape="rect" id="node9" href="$animaBaseTransformAgregator_8hxx.html" title="animaBaseTransformAgregator.hxx" alt="" coords="974,430,1197,457"/>
+<area shape="rect" id="node14" href="$animaBobyqaOptimizer_8h.html" title="animaBobyqaOptimizer.h" alt="" coords="1271,430,1436,457"/>
+<area shape="rect" id="node16" href="$animaVoxelExhaustiveOptimizer_8h.html" title="animaVoxelExhaustiveOptimizer.h" alt="" coords="1635,430,1850,457"/>
+<area shape="rect" id="node18" href="$animaBlockMatchInitializer_8h.html" title="animaBlockMatchInitializer.h" alt="" coords="1875,430,2061,457"/>
+<area shape="rect" id="node23" href="$animaLogRigid3DTransform_8h.html" title="animaLogRigid3DTransform.h" alt="" coords="11,348,202,375"/>
+<area shape="rect" id="node26" href="$animaSplitAffine3DTransform_8h.html" title="animaSplitAffine3DTransform.h" alt="" coords="491,348,690,375"/>
+<area shape="rect" id="node27" href="$animaDirectionScaleSkewTransform_8h.html" title="animaDirectionScaleSkewTransform.h" alt="" coords="226,348,467,375"/>
+<area shape="rect" id="node25" href="$animaLogRigid3DTransform_8hxx.html" title="animaLogRigid3DTransform.hxx" alt="" coords="5,430,208,457"/>
+<area shape="rect" id="node42" href="$animaTensorCorrelationImageToImageMetric_8hxx.html" title="animaTensorCorrelationImage\lToImageMetric.hxx" alt="" coords="2628,169,2823,211"/>
+<area shape="rect" id="node35" href="$animaBaseOrientedModelImageToImageMetric_8hxx.html" title="animaBaseOrientedModelImage\lToImageMetric.hxx" alt="" coords="2326,259,2533,300"/>
+<area shape="rect" id="node36" href="$animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="2594,348,2761,375"/>
+<area shape="rect" id="node39" href="$animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="2680,430,2859,457"/>
+<area shape="rect" id="node45" href="$animaTensorGeneralizedCorrelationImageToImageMetric_8hxx.html" title="animaTensorGeneralizedCorrelation\lImageToImageMetric.hxx" alt="" coords="3111,169,3337,211"/>
+<area shape="rect" id="node47" href="$animaTensorMeanSquaresImageToImageMetric_8hxx.html" title="animaTensorMeanSquaresImage\lToImageMetric.hxx" alt="" coords="2393,169,2604,211"/>
+<area shape="rect" id="node49" href="$animaVectorModelLinearInterpolateImageFunction_8hxx.html" title="animaVectorModelLinearInterpolate\lImageFunction.hxx" alt="" coords="3411,259,3637,300"/>
+</map>

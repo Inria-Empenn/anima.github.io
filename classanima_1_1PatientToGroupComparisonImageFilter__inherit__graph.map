@@ -1,0 +1,5 @@
+<map id="anima::PatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;" name="anima::PatientToGroupComparisonImageFilter&lt; PixelScalarType &gt;">
+<area shape="rect" id="node5" href="$classanima_1_1PatientToGroupODFComparisonImageFilter.html" title="anima::PatientToGroupODFComparison\lImageFilter\&lt; PixelScalarType \&gt;" alt="" coords="1109,20,1359,61"/>
+<area shape="rect" id="node2" href="$classanima_1_1MaskedImageToImageFilter.html" title="anima::MaskedImageToImage\lFilter\&lt; itk::VectorImage\l\&lt; PixelScalarType, 3 \&gt;, itk\l::Image\&lt; PixelScalarType, 3 \&gt; \&gt;" alt="" coords="587,5,791,76"/>
+<area shape="rect" id="node3" href="$classanima_1_1NumberedThreadImageToImageFilter.html" title="anima::NumberedThreadImage\lToImageFilter\&lt; itk::VectorImage\l\&lt; PixelScalarType, 3 \&gt;, itk\l::Image\&lt; PixelScalarType, 3 \&gt; \&gt;" alt="" coords="332,5,539,76"/>
+</map>

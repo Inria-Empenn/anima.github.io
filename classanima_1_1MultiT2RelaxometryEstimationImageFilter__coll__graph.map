@@ -1,0 +1,4 @@
+<map id="anima::MultiT2RelaxometryEstimationImageFilter&lt; TPixelScalarType &gt;" name="anima::MultiT2RelaxometryEstimationImageFilter&lt; TPixelScalarType &gt;">
+<area shape="rect" id="node2" href="$classanima_1_1MaskedImageToImageFilter.html" title="anima::MaskedImageToImage\lFilter\&lt; itk::Image\&lt; TPixelScalar\lType, 3 \&gt;, itk::Image\&lt; TPixelScalarType, 3 \&gt; \&gt;" alt="" coords="585,13,872,69"/>
+<area shape="rect" id="node3" href="$classanima_1_1NumberedThreadImageToImageFilter.html" title="anima::NumberedThreadImage\lToImageFilter\&lt; itk::Image\l\&lt; TPixelScalarType, 3 \&gt;,\l itk::Image\&lt; TPixelScalarType, 3 \&gt; \&gt;" alt="" coords="308,5,537,76"/>
+</map>
