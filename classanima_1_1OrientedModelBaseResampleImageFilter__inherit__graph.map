@@ -1,7 +1,0 @@
-<map id="anima::OrientedModelBaseResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;" name="anima::OrientedModelBaseResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;">
-<area shape="rect" id="node5" href="$classanima_1_1MCMResampleImageFilter.html" title="anima::MCMResampleImageFilter\l\&lt; TImageType, TInterpolatorPrecision\lType \&gt;" alt="" coords="1045,5,1284,61"/>
-<area shape="rect" id="node6" href="$classanima_1_1ODFResampleImageFilter.html" title="anima::ODFResampleImageFilter\l\&lt; TImageType, TInterpolatorPrecision\lType \&gt;" alt="" coords="1045,85,1284,141"/>
-<area shape="rect" id="node7" href="$classanima_1_1TensorResampleImageFilter.html" title="anima::TensorResampleImage\lFilter\&lt; TImageType, TInterpolator\lPrecisionType \&gt;" alt="" coords="1057,165,1272,221"/>
-<area shape="rect" id="node2" href="$classanima_1_1MaskedImageToImageFilter.html" title="anima::MaskedImageToImage\lFilter\&lt; TImageType, TImageType \&gt;" alt="" coords="495,93,719,134"/>
-<area shape="rect" id="node3" href="$classanima_1_1NumberedThreadImageToImageFilter.html" title="anima::NumberedThreadImage\lToImageFilter\&lt; TImageType,\l TImageType \&gt;" alt="" coords="248,85,447,141"/>
-</map>

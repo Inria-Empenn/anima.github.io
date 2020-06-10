@@ -1,4 +1,0 @@
-<map id="anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;" name="anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;">
-<area shape="rect" id="node2" href="$classanima_1_1MaskedImageToImageFilter.html" title="anima::MaskedImageToImage\lFilter\&lt; itk::Image\&lt; InputPixel\lType, 3 \&gt;, anima::MCMImage\l\&lt; OutputPixelType, 3 \&gt; \&gt;" alt="" coords="575,5,769,76"/>
-<area shape="rect" id="node3" href="$classanima_1_1NumberedThreadImageToImageFilter.html" title="anima::NumberedThreadImage\lToImageFilter\&lt; itk::Image\l\&lt; InputPixelType, 3 \&gt;, anima\l::MCMImage\&lt; OutputPixelType, 3 \&gt; \&gt;" alt="" coords="289,5,527,76"/>
-</map>

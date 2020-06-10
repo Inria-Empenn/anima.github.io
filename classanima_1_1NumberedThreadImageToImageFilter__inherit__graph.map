@@ -1,7 +1,0 @@
-<map id="anima::NumberedThreadImageToImageFilter&lt; TInputImage, TOutputImage &gt;" name="anima::NumberedThreadImageToImageFilter&lt; TInputImage, TOutputImage &gt;">
-<area shape="rect" id="node3" href="$classanima_1_1MaskedImageToImageFilter.html" title="anima::MaskedImageToImage\lFilter\&lt; TInputImage, TOutputImage \&gt;" alt="" coords="507,130,743,171"/>
-<area shape="rect" id="node4" href="$classanima_1_1T1RelaxometryEstimationImageFilter.html" title="anima::T1RelaxometryEstimation\lImageFilter\&lt; TInputImage,\l TOutputImage \&gt;" alt="" coords="822,5,1031,61"/>
-<area shape="rect" id="node5" href="$classanima_1_1T1SERelaxometryEstimationImageFilter.html" title="anima::T1SERelaxometryEstimation\lImageFilter\&lt; TInputImage,\l TOutputImage \&gt;" alt="" coords="813,85,1040,141"/>
-<area shape="rect" id="node6" href="$classanima_1_1T2EPGRelaxometryEstimationImageFilter.html" title="anima::T2EPGRelaxometryEstimation\lImageFilter\&lt; TInputImage, TOutputImage \&gt;" alt="" coords="791,166,1063,207"/>
-<area shape="rect" id="node7" href="$classanima_1_1T2RelaxometryEstimationImageFilter.html" title="anima::T2RelaxometryEstimation\lImageFilter\&lt; TInputImage,\l TOutputImage \&gt;" alt="" coords="822,232,1031,288"/>
-</map>

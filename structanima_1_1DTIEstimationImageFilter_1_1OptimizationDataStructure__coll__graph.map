@@ -1,5 +1,0 @@
-<map id="anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::OptimizationDataStructure" name="anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::OptimizationDataStructure">
-<area shape="rect" id="node2" href="$classanima_1_1DTIEstimationImageFilter.html" title="anima::DTIEstimationImage\lFilter\&lt; InputPixelScalarType,\l OutputPixelScalarType \&gt;" alt="" coords="815,20,1003,76"/>
-<area shape="rect" id="node3" href="$classanima_1_1MaskedImageToImageFilter.html" title="anima::MaskedImageToImage\lFilter\&lt; itk::Image\&lt; InputPixel\lScalarType, 3 \&gt;, itk::VectorImage\l\&lt; OutputPixelScalarType, 3 \&gt; \&gt;" alt="" coords="553,13,765,83"/>
-<area shape="rect" id="node4" href="$classanima_1_1NumberedThreadImageToImageFilter.html" title="anima::NumberedThreadImage\lToImageFilter\&lt; itk::Image\l\&lt; InputPixelScalarType, 3\l \&gt;, itk::VectorImage\&lt; OutputPixelScalar\lType, 3 \&gt; \&gt;" alt="" coords="256,5,504,91"/>
-</map>
