@@ -1,0 +1,11 @@
+# Site settings
+title: Anima
+#email: test@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  library and python scripts for medical image processing
+baseurl: "/anima.github.io" # the subpath of your site, e.g. /blog/
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+#github_username:shapemi
+
+# Build settings
+markdown: kramdown
