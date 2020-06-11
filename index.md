@@ -10,7 +10,7 @@ Anima core software tools are also the base for Anima scripts, a set of <a href=
 
 # Download 
 
-<p align="justify">Anima and Anims scripts are open-source and thus available on github. More information on how to get them and compile / configure them is available from the documentation.</p>
+<p align="justify">Anima and Anima scripts are open-source and thus available on github. More information on how to get them and compile / configure them is available from the documentation.</p>
 
 <ul>
 {% for repository in site.github.public_repositories %}
