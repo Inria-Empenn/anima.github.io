@@ -23,6 +23,7 @@ Anima core software tools are also the base for Anima scripts, a set of <a href=
 {% if repository.name == "Anima-Scripts-Data-Public" %}
 <li>Anima scripts data <a href="{{ repository.html_url }}">Github repository</a></li>
 {% endif %}
+{% endfor %}
 </ul>
 
 <p align="justify">
