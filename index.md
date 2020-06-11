@@ -10,13 +10,28 @@ Anima core software tools are also the base for Anima scripts, a set of <a href=
 
 # Download 
 
+<p align="justify">Anima and Anims scripts are open-source and thus available on github. More information on how to get them and compile / configure them is available from the documentation.</p>
+
+<ul>
+{% for repository in site.github.public_repositories %}
+{% if repository.name == "Anima-Public" %}
+<li>Anima <a href="{{ repository.html_url }}">Github repository</a></li>
+{% endif %}
+{% if repository.name == "Anima-Scripts-Public" %}
+<li>Anima scripts <a href="{{ repository.html_url }}">Github repository</a></li>
+{% endif %}
+{% if repository.name == "Anima-Scripts-Data-Public" %}
+<li>Anima scripts data <a href="{{ repository.html_url }}">Github repository</a></li>
+{% endif %}
+</ul>
+
 <p align="justify">
 Anima and Anima scripts also come in several binary packages released from time to time.
 </p>
 
 {% assign release = site.github.latest_release %}
 <p align="justify">
-Latest Anima binary release: {{ release.name }} - <a href="{{ release.html_url }}">Release notes</a>
+<strong>Latest Anima binary release</strong>: {{ release.name }} - <a href="{{ release.html_url }}">Release notes</a>
 </p>
 <ul>
 {% for asset in release.assets %}
@@ -27,7 +42,7 @@ Latest Anima binary release: {{ release.name }} - <a href="{{ release.html_url }
 </ul>
 
 <p align="justify">
-Latest Anima scripts release: Anima scripts v2.3 - <a href="https://github.com/Inria-Visages/Anima-Scripts-Public/releases/tag/v2.2">Release notes</a>
+<strong>Latest Anima scripts release</strong>: Anima scripts v2.2 - <a href="https://github.com/Inria-Visages/Anima-Scripts-Public/releases/tag/v2.2">Release notes</a>
 </p>
 <ul>
 <li>
@@ -36,7 +51,7 @@ Latest Anima scripts release: Anima scripts v2.3 - <a href="https://github.com/I
 </ul>
 
 <p align="justify">
-Latest Anima scripts data release: Anima scripts data v2.1 - <a href="https://github.com/Inria-Visages/Anima-Scripts-Data-Public/releases/tag/v2.1">Release notes</a>
+<strong>Latest Anima scripts data release</strong>: Anima scripts data v2.1 - <a href="https://github.com/Inria-Visages/Anima-Scripts-Data-Public/releases/tag/v2.1">Release notes</a>
 </p>
 <ul>
 <li>
