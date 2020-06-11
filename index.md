@@ -1,7 +1,7 @@
 <!-- ![Anima](images/LogoAnima.png "Anima: library and python scripts for medical image processing") -->
 
 <p align="justify"> 
-Anima provides a set of software tools contributed by and coming from the research works from the [Empenn research team](https://team.inria.fr/empenn). It is a set of [ITK](http://www.itk.org) / [VTK](http://www.vtk.org) based libraries and multi-platform command line tools for medical image analysis. Among other tools, it contains software for image registration (linear and non linear block matching registration, EPI distortion correction), statistical analysis (group comparison, patient to group comparison), diffusion imaging (model estimation, tractography, etc.), quantitative MRI processing (quantitative relaxation times estimation, MR simulation), image denoising and filtering, and segmentation tools (Graph cut segmentation and multiple sclerosis lesion segmentation).
+Anima provides a set of software tools contributed by and coming from the research works from the {[Empenn research team](https://team.inria.fr/empenn)}. It is a set of [ITK](http://www.itk.org) / [VTK](http://www.vtk.org) based libraries and multi-platform command line tools for medical image analysis. Among other tools, it contains software for image registration (linear and non linear block matching registration, EPI distortion correction), statistical analysis (group comparison, patient to group comparison), diffusion imaging (model estimation, tractography, etc.), quantitative MRI processing (quantitative relaxation times estimation, MR simulation), image denoising and filtering, and segmentation tools (Graph cut segmentation and multiple sclerosis lesion segmentation).
 </p>
 
 <p align="justify">
