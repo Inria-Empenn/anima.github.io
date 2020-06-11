@@ -10,6 +10,7 @@ Anima core software tools are also the base for Anima scripts, a set of [python]
 
 # Download 
 {% assign release = site.github.latest_release %}
+{{ release.assets[0] }}
 <a href="{{ release.assets[0].browser_download_url }}">Anima latest release</a>
 {% for repository in site.github.public_repositories %}
 {% if repository.name == "Anima-Scripts-Public" %}
