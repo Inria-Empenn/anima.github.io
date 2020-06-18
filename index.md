@@ -37,7 +37,7 @@ Anima and Anima scripts also come in several binary packages released from time 
 <ul>
 {% for asset in release.assets %}
 <li>
-<a href="{{ asset.browser_download_url }}">{{ asset.name }}</a> - Download count: {{ asset.download_count }}
+<a href="{{ asset.browser_download_url }}">{{ asset.name }}</a>
 </li>
 {% endfor %}
 </ul>
