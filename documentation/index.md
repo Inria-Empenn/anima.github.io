@@ -5,6 +5,8 @@ permalink: /documentation/
 order: 2
 ---
 
+# Documentation
+
 <p align="justify">
 We try to provide for Anima a set of different documentations, with the aim of helping either the end user for installation and use, as well as for the developer who would like to modify Anima. These different documentations are listed here:
 </p>
