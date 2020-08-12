@@ -12,8 +12,7 @@ We try to provide for Anima a set of different documentations, with the aim of h
 </p>
 
 <ul>
-	<li>End user installation and use guide: <a href="">Read the docs user guide</a></li>
-	<li>Developer compilation guide: <a href="">Read the docs developer guide</a></li>
+	<li>End user installation and use guide: <a href="http://anima.rtfd.io/">Read the docs user guide</a></li>
 	<li><a href="{{ site.baseurl }}/doxygen/classes.html">Doxygen documentation</a></li>
 </ul>
 
