@@ -7,3 +7,12 @@ Anima provides a set of software tools contributed by and coming from the resear
 <p align="justify">
 Anima core software tools are also the base for Anima scripts, a set of <a href="https://www.python.org/">python</a> scripts and additional data from the <a href="https://team.inria.fr/empenn">Empenn research team</a>, to perform complex preprocessing and core processing tasks on medical images such as diffusion imaging, atlasing, brain extraction, relaxometry.
 </p>
+
+# Referencing Anima and Anima scripts
+
+<p align="justify">So far, there is no paper on Anima or Anima scripts which you can cite directly. If you are using Anima for your research, please take the time to:</p>
+
+* cite the relevant papers referenced in the documentation
+* add a sentence in your acknowledgments section or footnote in the methods part of your paper referencing the [RRID](https://rrid.org) of Anima: RRID:SCR_017017 or Anima scripts: RRID:SCR_017072 (should be written like this to ensure it is recognized by search bots), as well as the main website address: https://inria-visages.github.io/Anima-Public
+
+<p align="justify">Do not hesitate to contact us on the [users list](anima-users@inria.fr) if you have any doubts. Thanks !</p>
