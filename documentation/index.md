@@ -24,3 +24,22 @@ For more details or questions, we have set up two mailing lists:
 * a licensing list at <a href="mailto:anima-licensing[AT]inria.fr">anima-licensing@inria.fr</a>: we know our choice of license can be complicated for companies. But if you are in the case the license is not appropriate to you, please send us an email, we are interested in feedback and discussing a specific license for some user categories.
 
 And we of course have the issues pages on our [Github repository](https://github.com/Inria-Visages/Anima-Public/issues) for any code-related issue (bug, crash, etc.) or feature request.
+
+# License
+
+Anima is currently distributed under the Affero GPL v3 license.
+
+Copyright (C) 2015 - 2020, Inria
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see [http://www.gnu.org/licenses/](http://www.gnu.org/licenses/).
