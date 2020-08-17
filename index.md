@@ -17,4 +17,4 @@ Anima core software tools are also the base for Anima scripts, a set of <a href=
 
 <p align="justify">Do not hesitate to contact us on the <a href="mailto:anima-users@inria.fr">anima-users@inria.fr</a> if you have any doubts. Thanks !</p>
 
-<!-- ![logos](images/logos.png) -->
+![logos](images/logos_equipe.png)
