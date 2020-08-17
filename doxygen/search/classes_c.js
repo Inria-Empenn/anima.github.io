@@ -24,6 +24,7 @@ var searchData=
   ['mcmmultiplevaluedcostfunction',['MCMMultipleValuedCostFunction',['../classanima_1_1MCMMultipleValuedCostFunction.html',1,'anima']]],
   ['mcmpairingmeansquaresimagetoimagemetric',['MCMPairingMeanSquaresImageToImageMetric',['../classanima_1_1MCMPairingMeanSquaresImageToImageMetric.html',1,'anima']]],
   ['mcmresampleimagefilter',['MCMResampleImageFilter',['../classanima_1_1MCMResampleImageFilter.html',1,'anima']]],
+  ['mcmscalarmapsimagefilter',['MCMScalarMapsImageFilter',['../classanima_1_1MCMScalarMapsImageFilter.html',1,'anima']]],
   ['mcmsinglevaluedcostfunction',['MCMSingleValuedCostFunction',['../classanima_1_1MCMSingleValuedCostFunction.html',1,'anima']]],
   ['mcmweightedaverager',['MCMWeightedAverager',['../classanima_1_1MCMWeightedAverager.html',1,'anima']]],
   ['meanandvarianceimagesfilter',['MeanAndVarianceImagesFilter',['../classanima_1_1MeanAndVarianceImagesFilter.html',1,'anima']]],

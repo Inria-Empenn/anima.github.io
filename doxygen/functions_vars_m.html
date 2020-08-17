@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -128,8 +128,17 @@ $(function() {
 <li>m_DistanceBoundary
 : <a class="el" href="classanima_1_1DenseSVFTransformAgregator.html#ad66c56c723187099265d3d009a26b6e5">anima::DenseSVFTransformAgregator&lt; NDimensions &gt;</a>
 </li>
+<li>m_EchoNumber
+: <a class="el" href="classanima_1_1B1GammaDistributionIntegrand.html#ad790c819f97e15b7b6e8ed3e6908fe8d">anima::B1GammaDistributionIntegrand</a>
+</li>
 <li>m_EM_Mode
 : <a class="el" href="classanima_1_1ClassificationStrategy.html#a939ebc92a0281ea9aefb8912a0a4a8e6">anima::ClassificationStrategy&lt; TInputImage, TMaskImage &gt;</a>
+</li>
+<li>m_EPGSimulator
+: <a class="el" href="classanima_1_1B1GammaDistributionIntegrand.html#ae7eceb78cb7ca7484832070d5d08e88b">anima::B1GammaDistributionIntegrand</a>
+</li>
+<li>m_EPGVectors
+: <a class="el" href="classanima_1_1B1GammaDistributionIntegrand.html#a5dbf20f620e3893bddd2bbf03f91a072">anima::B1GammaDistributionIntegrand</a>
 </li>
 <li>m_Estimator
 : <a class="el" href="classanima_1_1ClassificationStrategy.html#aa26e6f7df9ceff14ce61e17f0a952a35">anima::ClassificationStrategy&lt; TInputImage, TMaskImage &gt;</a>
@@ -149,6 +158,17 @@ $(function() {
 </li>
 <li>m_FixedImageMask
 : <a class="el" href="classanima_1_1BaseOrientedModelImageToImageMetric.html#abbce896142a8a1d383ea9928e608da6b">anima::BaseOrientedModelImageToImageMetric&lt; TFixedImage, TMovingImage &gt;</a>
+</li>
+<li>m_FlipAngle
+: <a class="el" href="classanima_1_1B1GammaDistributionIntegrand.html#a6f3ba0268c3e6f04df8b9fb16cfcac43">anima::B1GammaDistributionIntegrand</a>
+</li>
+<li>m_GammaMean
+: <a class="el" href="classanima_1_1B1GammaDistributionIntegrand.html#a202a829a09202c75ee39d94010819382">anima::B1GammaDistributionIntegrand</a>
+, <a class="el" href="structIntegrandType.html#ae4ab6059fc0e87aa813168956f0bf54f">IntegrandType</a>
+</li>
+<li>m_GammaVariance
+: <a class="el" href="classanima_1_1B1GammaDistributionIntegrand.html#aa1117d85810976bd2f3c91d375b35c7c">anima::B1GammaDistributionIntegrand</a>
+, <a class="el" href="structIntegrandType.html#a3e934c44724970cb5d0453e9cfffcc2d">IntegrandType</a>
 </li>
 <li>m_GaussianModel
 : <a class="el" href="classanima_1_1GaussianEMEstimator.html#a105467e4c81eba72da4b27c945f19cbc">anima::GaussianEMEstimator&lt; TInputImage, TMaskImage &gt;</a>
@@ -379,10 +399,10 @@ $(function() {
 : <a class="el" href="classanima_1_1Graph3DFilter.html#ab82c71c2f073bc399d030d7a64be1cc4">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>m_ResampleSinks
-: <a class="el" href="classanima_1_1Graph3DFilter.html#a32fa71e730633c760172d1037e68b2a4">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
+: <a class="el" href="classanima_1_1Graph3DFilter.html#a2efafb1c4df2b7e385a8ff91fc6809cb">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>m_ResampleSources
-: <a class="el" href="classanima_1_1Graph3DFilter.html#aa00771b5b0c8c2e607f94e33fd9d73a1">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
+: <a class="el" href="classanima_1_1Graph3DFilter.html#a7e89d0d2d9276a2d2a0037be3077bbe7">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>m_RhoBegin
 : <a class="el" href="classanima_1_1BobyqaOptimizer.html#ae8f550cb45505f5f430ef921310ad382">anima::BobyqaOptimizer</a>
@@ -419,6 +439,9 @@ $(function() {
 </li>
 <li>m_StremMode
 : <a class="el" href="classanima_1_1GaussianREMEstimator.html#a6a82a6fe6408c4fcf48f0fbf3aa0aaba">anima::GaussianREMEstimator&lt; TInputImage, TMaskImage &gt;</a>
+</li>
+<li>m_T1Value
+: <a class="el" href="classanima_1_1B1GammaDistributionIntegrand.html#a3463f9c70da571a209da4ba98cf57e34">anima::B1GammaDistributionIntegrand</a>
 </li>
 <li>m_Target
 : <a class="el" href="classanima_1_1SegPerfLabelSetMeasures.html#ac1aa877a0517e2d114eb066d6d5e3fe2">anima::SegPerfLabelSetMeasures</a>
@@ -460,6 +483,9 @@ $(function() {
 </li>
 <li>maskIndex
 : <a class="el" href="structanima_1_1BlockMatchingInitializer_1_1BlockGeneratorThreadStruct.html#a5697ce00c1564e24edbebbbe1228b6c4">anima::BlockMatchingInitializer&lt; PixelType, NDimensions &gt;::BlockGeneratorThreadStruct</a>
+</li>
+<li>maskName
+: <a class="el" href="structarguments.html#a022edd1f8d76c9e27e548aca7b574a30">arguments</a>
 </li>
 <li>maxflow_iteration
 : <a class="el" href="classanima_1_1Graph.html#adef1c572b093f918d6a6d9550ae75efb">anima::Graph&lt; captype, tcaptype, flowtype &gt;</a>

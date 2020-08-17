@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,10 @@ Public Types</h2></td></tr>
 <tr class="separator:afece697966322bbb31d18b5d3e874372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25bdcc8cc8a16c4b8951427e93529d65"><td class="memItemLeft" align="right" valign="top">typedef InputImageType::RegionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a25bdcc8cc8a16c4b8951427e93529d65">InputRegionType</a></td></tr>
 <tr class="separator:a25bdcc8cc8a16c4b8951427e93529d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b15cd9d1ecdf6b50d5048d61932af8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a71b15cd9d1ecdf6b50d5048d61932af8">MaskImagePointer</a> = typename MaskImageType::Pointer</td></tr>
+<tr class="separator:a71b15cd9d1ecdf6b50d5048d61932af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46403f245464a2da04700210f32efaa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#ab46403f245464a2da04700210f32efaa">MaskImageType</a> = itk::Image&lt; unsigned char, 3 &gt;</td></tr>
+<tr class="separator:ab46403f245464a2da04700210f32efaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f9bcfaee3d34f9f2c939dca9b99b81"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classanima_1_1MCMWeightedAverager.html#adaf328401ba86cb668ab9203f34846cb">MCMAveragerType::Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a69f9bcfaee3d34f9f2c939dca9b99b81">MCMAveragerPointer</a></td></tr>
 <tr class="separator:a69f9bcfaee3d34f9f2c939dca9b99b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fba30e09a6d82e8d53ada57310eef0c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classanima_1_1MCMWeightedAverager.html">anima::MCMWeightedAverager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a4fba30e09a6d82e8d53ada57310eef0c">MCMAveragerType</a></td></tr>
@@ -135,6 +139,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a832897fb36acf2701ea72cc63162b435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a832897fb36acf2701ea72cc63162b435">AddMaskImage</a> (<a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#ab46403f245464a2da04700210f32efaa">MaskImageType</a> *maskImage)</td></tr>
+<tr class="separator:a832897fb36acf2701ea72cc63162b435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c59b84c565c383bcb51799d468e2809"><td class="memItemLeft" align="right" valign="top">virtual ::itk::LightObject::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a7c59b84c565c383bcb51799d468e2809">CreateAnother</a> (void) const</td></tr>
 <tr class="separator:a7c59b84c565c383bcb51799d468e2809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a477aafcb094aaf1a5af8bff8309c8c47"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a477aafcb094aaf1a5af8bff8309c8c47">GetNameOfClass</a> () const</td></tr>
@@ -261,6 +267,42 @@ template&lt;class TPixelType&gt; </div>
 
 </div>
 </div>
+<a id="a71b15cd9d1ecdf6b50d5048d61932af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b15cd9d1ecdf6b50d5048d61932af8">&#9670;&nbsp;</a></span>MaskImagePointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TPixelType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html">anima::MCMAverageImagesImageFilter</a>&lt; TPixelType &gt;::<a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a71b15cd9d1ecdf6b50d5048d61932af8">MaskImagePointer</a> =  typename MaskImageType::Pointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00040">40</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ab46403f245464a2da04700210f32efaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46403f245464a2da04700210f32efaa">&#9670;&nbsp;</a></span>MaskImageType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TPixelType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html">anima::MCMAverageImagesImageFilter</a>&lt; TPixelType &gt;::<a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#ab46403f245464a2da04700210f32efaa">MaskImageType</a> =  itk::Image &lt;unsigned char, 3&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00039">39</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a69f9bcfaee3d34f9f2c939dca9b99b81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69f9bcfaee3d34f9f2c939dca9b99b81">&#9670;&nbsp;</a></span>MCMAveragerPointer</h2>
 
@@ -275,7 +317,7 @@ template&lt;class TPixelType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00044">44</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +335,7 @@ template&lt;class TPixelType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +353,7 @@ template&lt;class TPixelType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00041">41</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00044">44</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +371,7 @@ template&lt;class TPixelType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00040">40</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -468,7 +510,7 @@ template&lt;class TPixelType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -497,11 +539,43 @@ template&lt;class TPixelType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a832897fb36acf2701ea72cc63162b435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832897fb36acf2701ea72cc63162b435">&#9670;&nbsp;</a></span>AddMaskImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TPixelType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html">anima::MCMAverageImagesImageFilter</a>&lt; TPixelType &gt;::AddMaskImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#ab46403f245464a2da04700210f32efaa">MaskImageType</a> *&#160;</td>
+          <td class="paramname"><em>maskImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="animaMCMAverageImages_8cxx_source.html#l00010">main()</a>.</p>
+
+</div>
+</div>
 <a id="ad7e85dc389ce79b5c8ea6b5702789bb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7e85dc389ce79b5c8ea6b5702789bb6">&#9670;&nbsp;</a></span>BeforeThreadedGenerateData()</h2>
 
@@ -531,7 +605,7 @@ template&lt;class TPixelType &gt; </div>
 
 <p class="reference">References <a class="el" href="animaMCMImage_8hxx_source.html#l00032">anima::MCMImage&lt; TPixel, VImageDimension &gt;::GetDescriptionModel()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00056">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::isZero()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00058">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::isZero()</a>.</p>
 
 </div>
 </div>
@@ -584,7 +658,7 @@ template&lt;class TPixelType &gt; </div>
 
 <p class="reference">References <a class="el" href="classanima_1_1MCMWeightedAverager.html#ad3c180dc5bae2f9765f467e9132bcb93">anima::MCMWeightedAverager::New()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00056">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::isZero()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00058">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::isZero()</a>.</p>
 
 </div>
 </div>
@@ -616,7 +690,7 @@ template&lt;class TPixelType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8hxx_source.html#l00069">69</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8hxx_source.html">animaMCMAverageImagesImageFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00056">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::isZero()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00058">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::isZero()</a>.</p>
 
 </div>
 </div>
@@ -673,7 +747,7 @@ template&lt;class TPixelType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -703,7 +777,7 @@ template&lt;class TPixelType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="animaMCMAverageImagesImageFilter_8h_source.html">animaMCMAverageImagesImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="animaMCMAverageImagesImageFilter_8hxx_source.html#l00013">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::BeforeThreadedGenerateData()</a>, <a class="el" href="animaMCMAverageImagesImageFilter_8hxx_source.html#l00058">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::CreateAverager()</a>, and <a class="el" href="animaMCMAverageImagesImageFilter_8hxx_source.html#l00069">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;::DynamicThreadedGenerateData()</a>.</p>
 

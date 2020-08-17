@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -95,11 +95,9 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="animaKummerFunctions_8h__dep__incl.png" border="0" usemap="#animaKummerFunctions_8hdep" alt=""/></div>
 <map name="animaKummerFunctions_8hdep" id="animaKummerFunctions_8hdep">
-<area shape="rect" id="node2" href="animaNODDICompartment_8cxx.html" title="animaNODDICompartment.cxx" alt="" coords="5,87,204,114"/>
-<area shape="rect" id="node3" href="animaNoiseGeneratorImageFilter_8hxx.html" title="animaNoiseGeneratorImage\lFilter.hxx" alt="" coords="228,80,411,121"/>
-<area shape="rect" id="node6" href="animaKummerFunctions_8cxx.html" title="animaKummerFunctions.cxx" alt="" coords="435,87,619,114"/>
-<area shape="rect" id="node4" href="animaNoiseGeneratorImageFilter_8h.html" title="animaNoiseGeneratorImage\lFilter.h" alt="" coords="228,169,411,211"/>
-<area shape="rect" id="node5" href="animaNoiseGenerator_8cxx.html" title="animaNoiseGenerator.cxx" alt="" coords="235,259,403,285"/>
+<area shape="rect" id="node2" href="animaNODDICompartment_8cxx.html" title="animaNODDICompartment.cxx" alt="" coords="5,80,204,107"/>
+<area shape="rect" id="node3" href="animaNoiseGenerator_8cxx.html" title="animaNoiseGenerator.cxx" alt="" coords="229,80,397,107"/>
+<area shape="rect" id="node4" href="animaKummerFunctions_8cxx.html" title="animaKummerFunctions.cxx" alt="" coords="421,80,605,107"/>
 </map>
 </div>
 </div>
@@ -118,15 +116,21 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a39a81ca1ec9a4afbe0ac1f1c5acc4dd4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a39a81ca1ec9a4afbe0ac1f1c5acc4dd4">anima::KummerFunction</a> (const double &amp;x, const double &amp;a, const double &amp;b, const bool scaled=false, const bool normalized=false, const unsigned int maxIter=10000, const double tol=1.0e-15)</td></tr>
-<tr class="memdesc:a39a81ca1ec9a4afbe0ac1f1c5acc4dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the confluent hypergeometric function 1F1 also known as the Kummer function M because it is the solution of Kummer's equation. This code implements some of the methods from Muller, K. E. (2001) ‘Computing the confluent hypergeometric function, M (a, b, x)’, Numerische Mathematik, pp. 179–196. It switches between Method 1 and 2 according to recommendation at the end of page 5. Covers most situations (at least all common situations encountered in MR image processing).  <a href="namespaceanima.html#a39a81ca1ec9a4afbe0ac1f1c5acc4dd4">More...</a><br /></td></tr>
-<tr class="separator:a39a81ca1ec9a4afbe0ac1f1c5acc4dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2588b23099a8fe95df24c92c8f025d15"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a2588b23099a8fe95df24c92c8f025d15">anima::KummerMethod1</a> (const double &amp;x, const double &amp;a, const double &amp;b, const unsigned int maxIter=10000, const double tol=1.0e-15)</td></tr>
-<tr class="memdesc:a2588b23099a8fe95df24c92c8f025d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">According to Muller, K. E. (2001) ‘Computing the confluent hypergeometric function, M (a, b, x)’, Numerische Mathematik, pp. 179–196. Method 1, p.5.  <a href="namespaceanima.html#a2588b23099a8fe95df24c92c8f025d15">More...</a><br /></td></tr>
-<tr class="separator:a2588b23099a8fe95df24c92c8f025d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc1df525f631b097d4cbb807be8f35fc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#adc1df525f631b097d4cbb807be8f35fc">anima::KummerMethod2</a> (const double &amp;x, const double &amp;a, const double &amp;b, const unsigned int maxIter=10000, const double tol=1.0e-15)</td></tr>
-<tr class="memdesc:adc1df525f631b097d4cbb807be8f35fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">According to Muller, K. E. (2001) ‘Computing the confluent hypergeometric function, M (a, b, x)’, Numerische Mathematik, pp. 179–196. Method 2, p.6.  <a href="namespaceanima.html#adc1df525f631b097d4cbb807be8f35fc">More...</a><br /></td></tr>
-<tr class="separator:adc1df525f631b097d4cbb807be8f35fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927c075401bba8c5250762b626e29560"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a927c075401bba8c5250762b626e29560">anima::GetKummerFunctionValue</a> (const double &amp;x, const double &amp;a, const double &amp;b, const unsigned int maxIter=1000, const double tol=1.0e-8)</td></tr>
+<tr class="memdesc:a927c075401bba8c5250762b626e29560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the confluent hypergeometric function 1F1 also known as the Kummer function M. It calls Kummer function core to get the value.  <a href="namespaceanima.html#a927c075401bba8c5250762b626e29560">More...</a><br /></td></tr>
+<tr class="separator:a927c075401bba8c5250762b626e29560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5b4c383c2473d84ef020da2f7c0381"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#acf5b4c383c2473d84ef020da2f7c0381">anima::GetScaledKummerFunctionValue</a> (const double &amp;x, const double &amp;a, const double &amp;b, const unsigned int maxIter=1000, const double tol=1.0e-8)</td></tr>
+<tr class="memdesc:acf5b4c383c2473d84ef020da2f7c0381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the confluent hypergeometric function 1F1 also known as the Kummer function M. It returns a scaled value: exp(-x) * M(x,a,b).  <a href="namespaceanima.html#acf5b4c383c2473d84ef020da2f7c0381">More...</a><br /></td></tr>
+<tr class="separator:acf5b4c383c2473d84ef020da2f7c0381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bec16eacb98d719d51c9c7953a161ae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a9bec16eacb98d719d51c9c7953a161ae">anima::KummerIntegrandMethod</a> (const double &amp;x, const double &amp;a, const double &amp;b)</td></tr>
+<tr class="memdesc:a9bec16eacb98d719d51c9c7953a161ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">According to Muller, K. E. (2001) ‘Computing the confluent hypergeometric function, M (a, b, x)’, Numerische Mathematik, pp. 179–196. Method with integral if b &gt; a &gt; 0.  <a href="namespaceanima.html#a9bec16eacb98d719d51c9c7953a161ae">More...</a><br /></td></tr>
+<tr class="separator:a9bec16eacb98d719d51c9c7953a161ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2662167865d79ea9f85e7d62d81e256"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#ac2662167865d79ea9f85e7d62d81e256">anima::KummerMethod1</a> (const double &amp;x, const double &amp;a, const double &amp;b, const unsigned int maxIter=1000, const double tol=1.0e-8)</td></tr>
+<tr class="memdesc:ac2662167865d79ea9f85e7d62d81e256"><td class="mdescLeft">&#160;</td><td class="mdescRight">According to Muller, K. E. (2001) ‘Computing the confluent hypergeometric function, M (a, b, x)’, Numerische Mathematik, pp. 179–196. Method 1.C, p.5.  <a href="namespaceanima.html#ac2662167865d79ea9f85e7d62d81e256">More...</a><br /></td></tr>
+<tr class="separator:ac2662167865d79ea9f85e7d62d81e256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ab7c9964e4ae56e88dca49a49e7f26"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a91ab7c9964e4ae56e88dca49a49e7f26">anima::KummerMethod2</a> (const double &amp;x, const double &amp;a, const double &amp;b, const unsigned int maxIter=1000, const double tol=1.0e-8)</td></tr>
+<tr class="memdesc:a91ab7c9964e4ae56e88dca49a49e7f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">According to Muller, K. E. (2001) ‘Computing the confluent hypergeometric function, M (a, b, x)’, Numerische Mathematik, pp. 179–196. Method 2, p.6.  <a href="namespaceanima.html#a91ab7c9964e4ae56e88dca49a49e7f26">More...</a><br /></td></tr>
+<tr class="separator:a91ab7c9964e4ae56e88dca49a49e7f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13cb90054c43f11b115b2e2015b49dd1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a13cb90054c43f11b115b2e2015b49dd1">anima::PochHammer</a> (const double &amp;x, const unsigned int n)</td></tr>
 <tr class="separator:a13cb90054c43f11b115b2e2015b49dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

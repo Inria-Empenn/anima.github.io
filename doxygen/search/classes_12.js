@@ -17,7 +17,8 @@ var searchData=
   ['threadedmatchdata',['ThreadedMatchData',['../structanima_1_1BaseBlockMatcher_1_1ThreadedMatchData.html',1,'anima::BaseBlockMatcher']]],
   ['threaderarguments',['ThreaderArguments',['../structThreaderArguments.html',1,'']]],
   ['tlinksfilter',['TLinksFilter',['../classanima_1_1TLinksFilter.html',1,'anima']]],
-  ['trackerarguments',['trackerArguments',['../structanima_1_1BaseProbabilisticTractographyImageFilter_1_1trackerArguments.html',1,'anima::BaseProbabilisticTractographyImageFilter&lt; TInputModelImageType &gt;::trackerArguments'],['../structanima_1_1BaseTractographyImageFilter_1_1trackerArguments.html',1,'anima::BaseTractographyImageFilter::trackerArguments']]],
+  ['toms748rootfindingalgorithm',['TOMS748RootFindingAlgorithm',['../classanima_1_1TOMS748RootFindingAlgorithm.html',1,'anima']]],
+  ['trackerarguments',['trackerArguments',['../structanima_1_1BaseTractographyImageFilter_1_1trackerArguments.html',1,'anima::BaseTractographyImageFilter::trackerArguments'],['../structanima_1_1BaseProbabilisticTractographyImageFilter_1_1trackerArguments.html',1,'anima::BaseProbabilisticTractographyImageFilter&lt; TInputModelImageType &gt;::trackerArguments']]],
   ['transforminformation',['TransformInformation',['../structanima_1_1TransformSeriesReader_1_1TransformInformation.html',1,'anima::TransformSeriesReader']]],
   ['transformseriesreader',['TransformSeriesReader',['../classanima_1_1TransformSeriesReader.html',1,'anima']]]
 ];

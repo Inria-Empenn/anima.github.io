@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -131,6 +131,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a66b1b04fc1a3c18056ebf806c5771065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0afa07f5e5aa841400fddef3583b042"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#ab0afa07f5e5aa841400fddef3583b042">GetNameOfClass</a> () const</td></tr>
 <tr class="separator:ab0afa07f5e5aa841400fddef3583b042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834221e6bc468c9b1c6e16d9e0fff735"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#a834221e6bc468c9b1c6e16d9e0fff735">SetBValueShellSelected</a> (int _arg)</td></tr>
+<tr class="separator:a834221e6bc468c9b1c6e16d9e0fff735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ee170221fb720b9058716b9fe6b364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#a83ee170221fb720b9058716b9fe6b364">SetBValuesList</a> (std::vector&lt; double &gt; bValuesList)</td></tr>
+<tr class="separator:a83ee170221fb720b9058716b9fe6b364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a248a21e675211a6648a709bd012697c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#a248a21e675211a6648a709bd012697c6">SetDeltaAganjRegularization</a> (double _arg)</td></tr>
 <tr class="separator:a248a21e675211a6648a709bd012697c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab36b953ceb970ab6bcfa73b8484f2bb1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#ab36b953ceb970ab6bcfa73b8484f2bb1">SetFileNameSphereTesselation</a> (std::string _arg)</td></tr>
@@ -141,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c306305bfd73fe5a3f2666d14b64e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaadb4e5e16ce1ed428f0319b4dbe5144"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#aaadb4e5e16ce1ed428f0319b4dbe5144">SetNormalize</a> (bool _arg)</td></tr>
 <tr class="separator:aaadb4e5e16ce1ed428f0319b4dbe5144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad589e0c2e7a146099047f78a0d262981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#ad589e0c2e7a146099047f78a0d262981">SetReferenceB0Image</a> (<a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#aa166a25f138fac8f6199aae4ec5468ba">TInputImage</a> *refB0)</td></tr>
+<tr class="separator:ad589e0c2e7a146099047f78a0d262981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb99099a6eabb775372e301ed71f2d01"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#adb99099a6eabb775372e301ed71f2d01">SetSharpen</a> (bool _arg)</td></tr>
 <tr class="separator:adb99099a6eabb775372e301ed71f2d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35a36641e3dabda5d9e7f737aaedd13"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#af35a36641e3dabda5d9e7f737aaedd13">SetSharpnessRatio</a> (double _arg)</td></tr>
@@ -381,7 +387,7 @@ template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="animaODFEstimatorImageFilter_8h_source.html">animaODFEstimatorImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="animaODFEstimatorImageFilter_8h_source.html">animaODFEstimatorImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -410,9 +416,9 @@ template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="animaODFEstimatorImageFilter_8h_source.html">animaODFEstimatorImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="animaODFEstimatorImageFilter_8h_source.html">animaODFEstimatorImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00052">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::BeforeThreadedGenerateData()</a>, <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00201">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::DynamicThreadedGenerateData()</a>, and <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00037">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::GenerateOutputInformation()</a>.</p>
+<p class="reference">References <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00052">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::BeforeThreadedGenerateData()</a>, <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00225">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::DynamicThreadedGenerateData()</a>, and <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00037">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::GenerateOutputInformation()</a>.</p>
 
 </div>
 </div>
@@ -478,9 +484,9 @@ template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00052">52</a> of file <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html">animaODFEstimatorImageFilter.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00201">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaODFSphericalHarmonicBasis_8cxx_source.html#l00019">anima::ODFSphericalHarmonicBasis::getNthSHValueAtPosition()</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00474">anima::TransformCartesianToSphericalCoordinates()</a>.</p>
+<p class="reference">References <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00225">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaODFSphericalHarmonicBasis_8cxx_source.html#l00019">anima::ODFSphericalHarmonicBasis::getNthSHValueAtPosition()</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00474">anima::TransformCartesianToSphericalCoordinates()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00037">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::GenerateOutputInformation()</a>, and <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00072">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::~ODFEstimatorImageFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00037">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::GenerateOutputInformation()</a>, and <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00080">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::~ODFEstimatorImageFilter()</a>.</p>
 
 </div>
 </div>
@@ -530,9 +536,9 @@ template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00201">201</a> of file <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html">animaODFEstimatorImageFilter.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00225">225</a> of file <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html">animaODFEstimatorImageFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00052">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::BeforeThreadedGenerateData()</a>, and <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00072">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::~ODFEstimatorImageFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00052">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::BeforeThreadedGenerateData()</a>, and <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00080">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::~ODFEstimatorImageFilter()</a>.</p>
 
 </div>
 </div>
@@ -565,7 +571,7 @@ template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
 
 <p class="reference">References <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00052">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::BeforeThreadedGenerateData()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00019">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::AddGradientDirection()</a>, and <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00072">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::~ODFEstimatorImageFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00019">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::AddGradientDirection()</a>, and <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00080">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::~ODFEstimatorImageFilter()</a>.</p>
 
 </div>
 </div>
@@ -622,6 +628,66 @@ template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Method for creation through the object factory. </p>
+
+</div>
+</div>
+<a id="a834221e6bc468c9b1c6e16d9e0fff735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834221e6bc468c9b1c6e16d9e0fff735">&#9670;&nbsp;</a></span>SetBValueShellSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classanima_1_1ODFEstimatorImageFilter.html">anima::ODFEstimatorImageFilter</a>&lt; TInputPixelType, TOutputPixelType &gt;::SetBValueShellSelected </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83ee170221fb720b9058716b9fe6b364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83ee170221fb720b9058716b9fe6b364">&#9670;&nbsp;</a></span>SetBValuesList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classanima_1_1ODFEstimatorImageFilter.html">anima::ODFEstimatorImageFilter</a>&lt; TInputPixelType, TOutputPixelType &gt;::SetBValuesList </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>bValuesList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00039">39</a> of file <a class="el" href="animaODFEstimatorImageFilter_8h_source.html">animaODFEstimatorImageFilter.h</a>.</p>
+
+<p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00326">anima::Normalize()</a>.</p>
 
 </div>
 </div>
@@ -762,6 +828,36 @@ template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad589e0c2e7a146099047f78a0d262981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad589e0c2e7a146099047f78a0d262981">&#9670;&nbsp;</a></span>SetReferenceB0Image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TInputPixelType , typename TOutputPixelType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classanima_1_1ODFEstimatorImageFilter.html">anima::ODFEstimatorImageFilter</a>&lt; TInputPixelType, TOutputPixelType &gt;::SetReferenceB0Image </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classanima_1_1ODFEstimatorImageFilter.html#aa166a25f138fac8f6199aae4ec5468ba">TInputImage</a> *&#160;</td>
+          <td class="paramname"><em>refB0</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="animaODFEstimatorImageFilter_8h_source.html">animaODFEstimatorImageFilter.h</a>.</p>
 
 </div>
 </div>

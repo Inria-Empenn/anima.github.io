@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -186,6 +186,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aef3adde817c76a922d22542e8a3e0b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c6284f1f28c60b197966fb4bcaa780d"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html#a7c6284f1f28c60b197966fb4bcaa780d">GetNameOfClass</a> () const</td></tr>
 <tr class="separator:a7c6284f1f28c60b197966fb4bcaa780d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ba85db3aa965ff8cdd17ca13c7013e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html#a67ba85db3aa965ff8cdd17ca13c7013e">SetFloatingBackgroundValue</a> (double _arg)</td></tr>
+<tr class="separator:a67ba85db3aa965ff8cdd17ca13c7013e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641cb400e474487b70ba9a4c1f4dc310"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html#a641cb400e474487b70ba9a4c1f4dc310">SetReferenceBackgroundValue</a> (double _arg)</td></tr>
+<tr class="separator:a641cb400e474487b70ba9a4c1f4dc310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classanima_1_1BaseBMRegistrationMethod"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classanima_1_1BaseBMRegistrationMethod')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classanima_1_1BaseBMRegistrationMethod.html">anima::BaseBMRegistrationMethod&lt; TInputImageType &gt;</a></td></tr>
 <tr class="memitem:a37db74d2a490f3493f9ab315faca5e63 inherit pub_methods_classanima_1_1BaseBMRegistrationMethod"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseBMRegistrationMethod.html#a37db74d2a490f3493f9ab315faca5e63">Abort</a> ()</td></tr>
 <tr class="separator:a37db74d2a490f3493f9ab315faca5e63 inherit pub_methods_classanima_1_1BaseBMRegistrationMethod"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +257,12 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa74c3a275695df364d93a1e21872ff70"><td class="memTemplParams" colspan="2">template&lt;class ScalarPixelType &gt; </td></tr>
+<tr class="memitem:aa74c3a275695df364d93a1e21872ff70"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html#aa74c3a275695df364d93a1e21872ff70">ChangeDefaultBackgroundValue</a> (itk::Image&lt; ScalarPixelType, InputImageType::ImageDimension &gt; *, double backgroundValue)</td></tr>
+<tr class="separator:aa74c3a275695df364d93a1e21872ff70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e37e42d929e911d1edf666a567c154"><td class="memTemplParams" colspan="2">template&lt;class ScalarPixelType &gt; </td></tr>
+<tr class="memitem:a70e37e42d929e911d1edf666a567c154"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html#a70e37e42d929e911d1edf666a567c154">ChangeDefaultBackgroundValue</a> (itk::VectorImage&lt; ScalarPixelType, InputImageType::ImageDimension &gt; *, double)</td></tr>
+<tr class="separator:a70e37e42d929e911d1edf666a567c154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3db17bfe533f6268a5367354a2309b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html#ac3db17bfe533f6268a5367354a2309b0">KissingSymmetricBMRegistrationMethod</a> ()</td></tr>
 <tr class="separator:ac3db17bfe533f6268a5367354a2309b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8960e58f48f98921ea70594d70d75919"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html#a8960e58f48f98921ea70594d70d75919">PerformOneIteration</a> (<a class="el" href="classanima_1_1BaseBMRegistrationMethod.html#a7f1e16202c615c1497b05833efa3133c">InputImageType</a> *refImage, <a class="el" href="classanima_1_1BaseBMRegistrationMethod.html#a7f1e16202c615c1497b05833efa3133c">InputImageType</a> *movingImage, <a class="el" href="classanima_1_1BaseBMRegistrationMethod.html#a004eba18588d96c389291b237c5591fe">TransformPointer</a> &amp;addOn) ITK_OVERRIDE</td></tr>
@@ -282,7 +292,7 @@ Protected Member Functions</h2></td></tr>
 class anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;</h3>
 
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00008">8</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00010">10</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="abf1b6f56988bca6a6e8cd713a287920e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf1b6f56988bca6a6e8cd713a287920e">&#9670;&nbsp;</a></span>AffineTransformType</h2>
@@ -298,7 +308,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00021">21</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00023">23</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -316,7 +326,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00020">20</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00022">22</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +344,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00019">19</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00021">21</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +362,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00015">15</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00017">17</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +380,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00017">17</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00019">19</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +398,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00014">14</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00016">16</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +417,7 @@ template&lt;typename TInputImageType &gt; </div>
 </div><div class="memdoc">
 <p>Standard class typedefs. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00012">12</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00014">14</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +435,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00013">13</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00015">15</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +453,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00022">22</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00024">24</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +471,7 @@ template&lt;typename TInputImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00018">18</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00020">20</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -491,9 +501,7 @@ template&lt;typename TInputImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00030">30</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00031">anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;::~KissingSymmetricBMRegistrationMethod()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00035">35</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -522,13 +530,99 @@ template&lt;typename TInputImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00031">31</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00041">41</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
 
-<p class="reference">References <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00030">anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;::KissingSymmetricBMRegistrationMethod()</a>, and <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8hxx_source.html#l00016">anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;::PerformOneIteration()</a>.</p>
+<p class="reference">References <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8hxx_source.html#l00016">anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;::PerformOneIteration()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa74c3a275695df364d93a1e21872ff70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74c3a275695df364d93a1e21872ff70">&#9670;&nbsp;</a></span>ChangeDefaultBackgroundValue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TInputImageType &gt; </div>
+<div class="memtemplate">
+template&lt;class ScalarPixelType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html">anima::KissingSymmetricBMRegistrationMethod</a>&lt; TInputImageType &gt;::ChangeDefaultBackgroundValue </td>
+          <td>(</td>
+          <td class="paramtype">itk::Image&lt; ScalarPixelType, InputImageType::ImageDimension &gt; *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>backgroundValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00045">45</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+
+<p class="reference">References <a class="el" href="animaBaseBMRegistrationMethod_8h_source.html#l00112">anima::BaseBMRegistrationMethod&lt; TInputImageType &gt;::GetBlockMatcher()</a>, and <a class="el" href="animaAnatomicalBlockMatcher_8h_source.html#l00031">anima::AnatomicalBlockMatcher&lt; TInputImageType &gt;::SetDefaultBackgroundValue()</a>.</p>
+
+</div>
+</div>
+<a id="a70e37e42d929e911d1edf666a567c154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e37e42d929e911d1edf666a567c154">&#9670;&nbsp;</a></span>ChangeDefaultBackgroundValue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TInputImageType &gt; </div>
+<div class="memtemplate">
+template&lt;class ScalarPixelType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html">anima::KissingSymmetricBMRegistrationMethod</a>&lt; TInputImageType &gt;::ChangeDefaultBackgroundValue </td>
+          <td>(</td>
+          <td class="paramtype">itk::VectorImage&lt; ScalarPixelType, InputImageType::ImageDimension &gt; *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00052">52</a> of file <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html">animaKissingSymmetricBMRegistrationMethod.h</a>.</p>
+
+</div>
+</div>
 <a id="aef3adde817c76a922d22542e8a3e0b3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef3adde817c76a922d22542e8a3e0b3c">&#9670;&nbsp;</a></span>CreateAnother()</h2>
 
@@ -654,7 +748,63 @@ template&lt;typename TInputImageType &gt; </div>
 
 <p class="reference">References <a class="el" href="animaMatrixLogExp_8hxx_source.html#l00198">anima::GetExponential()</a>, and <a class="el" href="animaMatrixLogExp_8hxx_source.html#l00145">anima::GetLogarithm()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00031">anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;::~KissingSymmetricBMRegistrationMethod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8h_source.html#l00041">anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;::~KissingSymmetricBMRegistrationMethod()</a>.</p>
+
+</div>
+</div>
+<a id="a67ba85db3aa965ff8cdd17ca13c7013e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ba85db3aa965ff8cdd17ca13c7013e">&#9670;&nbsp;</a></span>SetFloatingBackgroundValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TInputImageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html">anima::KissingSymmetricBMRegistrationMethod</a>&lt; TInputImageType &gt;::SetFloatingBackgroundValue </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a641cb400e474487b70ba9a4c1f4dc310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641cb400e474487b70ba9a4c1f4dc310">&#9670;&nbsp;</a></span>SetReferenceBackgroundValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TInputImageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classanima_1_1KissingSymmetricBMRegistrationMethod.html">anima::KissingSymmetricBMRegistrationMethod</a>&lt; TInputImageType &gt;::SetReferenceBackgroundValue </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

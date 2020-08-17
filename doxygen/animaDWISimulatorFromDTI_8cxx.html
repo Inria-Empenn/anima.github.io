@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -76,10 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="animaDWISimulatorFromDTIImageFilter_8h_source.html">animaDWISimulatorFromDTIImageFilter.h</a>&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;itkImageFileReader.h&gt;</code><br />
-<code>#include &lt;itkImageFileWriter.h&gt;</code><br />
 <code>#include &lt;itkTimeProbe.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="animaGradientFileReader_8h_source.html">animaGradientFileReader.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animaReadWriteFunctions_8h_source.html">animaReadWriteFunctions.h</a>&gt;</code><br />
 <code>#include &lt;tclap/CmdLine.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for animaDWISimulatorFromDTI.cxx:</div>
@@ -88,8 +87,16 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="animaDWISimulatorFromDTI_8cxx__incl.png" border="0" usemap="#animaDWISimulatorFromDTI_8cxx" alt=""/></div>
 <map name="animaDWISimulatorFromDTI_8cxx" id="animaDWISimulatorFromDTI_8cxx">
-<area shape="rect" id="node2" href="animaDWISimulatorFromDTIImageFilter_8h.html" title="animaDWISimulatorFromDTIImage\lFilter.h" alt="" coords="264,80,488,121"/>
-<area shape="rect" id="node6" href="animaDWISimulatorFromDTIImageFilter_8hxx.html" title="animaDWISimulatorFromDTIImage\lFilter.hxx" alt="" coords="441,169,665,211"/>
+<area shape="rect" id="node2" href="animaDWISimulatorFromDTIImageFilter_8h.html" title="animaDWISimulatorFromDTIImage\lFilter.h" alt="" coords="254,80,478,121"/>
+<area shape="rect" id="node11" href="animaGradientFileReader_8h.html" title="animaGradientFileReader.h" alt="" coords="989,87,1167,114"/>
+<area shape="rect" id="node31" href="animaReadWriteFunctions_8h.html" title="animaReadWriteFunctions.h" alt="" coords="1353,87,1536,114"/>
+<area shape="rect" id="node6" href="animaDWISimulatorFromDTIImageFilter_8hxx.html" title="animaDWISimulatorFromDTIImage\lFilter.hxx" alt="" coords="254,169,478,211"/>
+<area shape="rect" id="node17" href="animaGradientFileReader_8hxx.html" title="animaGradientFileReader.hxx" alt="" coords="1161,177,1352,203"/>
+<area shape="rect" id="node22" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="841,266,1008,293"/>
+<area shape="rect" id="node30" href="animaMCMConstants_8h.html" title="animaMCMConstants.h" alt="" coords="1378,497,1533,524"/>
+<area shape="rect" id="node25" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="962,348,1141,375"/>
+<area shape="rect" id="node27" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="829,423,1009,449"/>
+<area shape="rect" id="node28" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="903,497,1095,524"/>
 </map>
 </div>
 </div>
@@ -97,84 +104,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:add3af30a416026c0d07f1f72a8b36dac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="animaDWISimulatorFromDTI_8cxx.html#add3af30a416026c0d07f1f72a8b36dac">loadBValues</a> (std::vector&lt; std::vector&lt; float &gt; &gt; &amp;directions, std::string &amp;bvalsArg, std::vector&lt; float &gt; &amp;mb)</td></tr>
-<tr class="separator:add3af30a416026c0d07f1f72a8b36dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a518b3cb1acd0dec33aef5135b0dbf35a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="animaDWISimulatorFromDTI_8cxx.html#a518b3cb1acd0dec33aef5135b0dbf35a">loadGradients</a> (std::string &amp;gradsArg, std::vector&lt; std::vector&lt; float &gt; &gt; &amp;directions)</td></tr>
-<tr class="separator:a518b3cb1acd0dec33aef5135b0dbf35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="animaDWISimulatorFromDTI_8cxx.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="add3af30a416026c0d07f1f72a8b36dac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add3af30a416026c0d07f1f72a8b36dac">&#9670;&nbsp;</a></span>loadBValues()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void loadBValues </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; std::vector&lt; float &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>directions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>bvalsArg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; float &gt; &amp;&#160;</td>
-          <td class="paramname"><em>mb</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html#l00047">47</a> of file <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html">animaDWISimulatorFromDTI.cxx</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html#l00078">main()</a>.</p>
-
-</div>
-</div>
-<a id="a518b3cb1acd0dec33aef5135b0dbf35a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a518b3cb1acd0dec33aef5135b0dbf35a">&#9670;&nbsp;</a></span>loadGradients()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void loadGradients </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>gradsArg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; std::vector&lt; float &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>directions</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html#l00010">10</a> of file <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html">animaDWISimulatorFromDTI.cxx</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html#l00078">main()</a>.</p>
-
-</div>
-</div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -201,9 +134,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html#l00078">78</a> of file <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html">animaDWISimulatorFromDTI.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html#l00010">10</a> of file <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html">animaDWISimulatorFromDTI.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html#l00047">loadBValues()</a>, and <a class="el" href="animaDWISimulatorFromDTI_8cxx_source.html#l00010">loadGradients()</a>.</p>
+<p class="reference">References <a class="el" href="animaGradientFileReader_8h_source.html#l00023">anima::GradientFileReader&lt; GradientType, BValueScalarType &gt;::SetGradientFileName()</a>.</p>
 
 </div>
 </div>

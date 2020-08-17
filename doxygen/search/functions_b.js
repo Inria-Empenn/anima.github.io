@@ -4,8 +4,6 @@ var searchData=
   ['legendre_5fsecond_5fderivative',['legendre_second_derivative',['../namespaceanima.html#af9165e44b575f4c6300b3b696813cf87',1,'anima']]],
   ['likelihood',['likelihood',['../classanima_1_1GaussianEMEstimator.html#a97f4c49044b89164eeb516941ba6d697',1,'anima::GaussianEMEstimator']]],
   ['linearthreadedgeneratedata',['LinearThreadedGenerateData',['../classanima_1_1OrientedModelBaseResampleImageFilter.html#a61af42e608b801faf53b1b64db0c5715',1,'anima::OrientedModelBaseResampleImageFilter']]],
-  ['loadbvalues',['loadBValues',['../animaDWISimulatorFromDTI_8cxx.html#add3af30a416026c0d07f1f72a8b36dac',1,'animaDWISimulatorFromDTI.cxx']]],
-  ['loadgradients',['loadGradients',['../animaDWISimulatorFromDTI_8cxx.html#a518b3cb1acd0dec33aef5135b0dbf35a',1,'animaDWISimulatorFromDTI.cxx']]],
   ['localpatchcovariancedistanceimagefilter',['LocalPatchCovarianceDistanceImageFilter',['../classanima_1_1LocalPatchCovarianceDistanceImageFilter.html#a86f8d6beee5fdbae5cdb5512c3608e29',1,'anima::LocalPatchCovarianceDistanceImageFilter']]],
   ['localpatchmeandistanceimagefilter',['LocalPatchMeanDistanceImageFilter',['../classanima_1_1LocalPatchMeanDistanceImageFilter.html#a642594fe9a7004d50d9ec4d91181a37c',1,'anima::LocalPatchMeanDistanceImageFilter']]],
   ['log_5fbessel_5fi',['log_bessel_i',['../namespaceanima.html#a5bdf1903cd368782af5f7a8bfc401d11',1,'anima']]],

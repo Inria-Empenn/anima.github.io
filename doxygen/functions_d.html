@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -81,9 +81,7 @@ $(function() {
 , <a class="el" href="classanima_1_1NonLocalT2DistributionPatchSearcher.html#a62be916cca608668447127b0a849e511">anima::NonLocalT2DistributionPatchSearcher&lt; ImageType, DataImageType &gt;</a>
 </li>
 <li>DataMatrixType
-: <a class="el" href="classanima_1_1GammaMixtureT2RelaxometryEstimationImageFilter.html#abd9d715e173242c6a03efcbd9b23d0cf">anima::GammaMixtureT2RelaxometryEstimationImageFilter&lt; TPixelScalarType &gt;</a>
-, <a class="el" href="classanima_1_1GMMT2RelaxometryEstimationImageFilter.html#a94616ac24628a982b2c048109d89e6f6">anima::GMMT2RelaxometryEstimationImageFilter&lt; TPixelScalarType &gt;</a>
-, <a class="el" href="classanima_1_1MultiT2RelaxometryEstimationImageFilter.html#a2c3c68fd38812aeda8191e7f1cff76b0">anima::MultiT2RelaxometryEstimationImageFilter&lt; TPixelScalarType &gt;</a>
+: <a class="el" href="classanima_1_1MultiT2RelaxometryEstimationImageFilter.html#a2c3c68fd38812aeda8191e7f1cff76b0">anima::MultiT2RelaxometryEstimationImageFilter&lt; TPixelScalarType &gt;</a>
 </li>
 <li>DataObjectPointerArraySizeType
 : <a class="el" href="classanima_1_1BaseBMRegistrationMethod.html#a86d84caa958e7695ea49a80cba7c3f45">anima::BaseBMRegistrationMethod&lt; TInputImageType &gt;</a>
@@ -105,6 +103,7 @@ $(function() {
 </li>
 <li>DerivativeType
 : <a class="el" href="classanima_1_1ApproximateMCMSmoothingCostFunction.html#a0de92cff162366edf4ab2b77c7d73057">anima::ApproximateMCMSmoothingCostFunction</a>
+, <a class="el" href="classanima_1_1B1GammaMixtureT2RelaxometryCostFunction.html#acd717db4aba2ce3a0fffc886f92735b2">anima::B1GammaMixtureT2RelaxometryCostFunction</a>
 , <a class="el" href="classanima_1_1B1GMMRelaxometryCostFunction.html#a5cbb070a7760f3accb83497190a59a65">anima::B1GMMRelaxometryCostFunction</a>
 , <a class="el" href="classanima_1_1B1T2RelaxometryDistributionCostFunction.html#a3d9c63fb93042e44e356f4bb38e8cdf1">anima::B1T2RelaxometryDistributionCostFunction</a>
 , <a class="el" href="classanima_1_1BaseMCMCost.html#aa73a958153462837622dd75393acc950">anima::BaseMCMCost</a>
@@ -112,7 +111,6 @@ $(function() {
 , <a class="el" href="classanima_1_1BLMLambdaCostFunction.html#a8515a904da391a5e5307627dc302ff60">anima::BLMLambdaCostFunction</a>
 , <a class="el" href="classanima_1_1FastCorrelationImageToImageMetric.html#af7728bdd1123e219ace44b5659dae82f">anima::FastCorrelationImageToImageMetric&lt; TFixedImage, TMovingImage &gt;</a>
 , <a class="el" href="classanima_1_1FastMeanSquaresImageToImageMetric.html#a2068b51311a2061dea9bd5e2d7e36eff">anima::FastMeanSquaresImageToImageMetric&lt; TFixedImage, TMovingImage &gt;</a>
-, <a class="el" href="classanima_1_1GammaMixtureT2RelaxometryCostFunction.html#ad7ecd7814d6add215cd5ffbc1b0f0709">anima::GammaMixtureT2RelaxometryCostFunction</a>
 , <a class="el" href="classanima_1_1GaussianMCMVariableProjectionMultipleValuedCostFunction.html#ab9277050844161c2cc5512c9efd37e7e">anima::GaussianMCMVariableProjectionMultipleValuedCostFunction</a>
 , <a class="el" href="classanima_1_1GaussianMCMVariableProjectionSingleValuedCostFunction.html#ada610c6e47921bd27c3cc77992ab05eb">anima::GaussianMCMVariableProjectionSingleValuedCostFunction</a>
 , <a class="el" href="classanima_1_1MCMMultipleValuedCostFunction.html#ad0d9881de635ffd608aca66b79e70526">anima::MCMMultipleValuedCostFunction</a>
@@ -204,8 +202,19 @@ $(function() {
 </li>
 <li>DoubleVariableSizeMatrixType
 : <a class="el" href="classanima_1_1AtlasInitializer.html#a051dd059766c9fe45e1f110a72b5c002">anima::AtlasInitializer&lt; TInputImage, TMaskImage, TAtlasImage &gt;</a>
-, <a class="el" href="classanima_1_1ImageClassifierFilter.html#a8eddd83365827af42cc804173ddc7886">anima::ImageClassifierFilter&lt; TInput, TMask, TOutput &gt;</a>
-, <a class="el" href="classanima_1_1TLinksFilter.html#ab2b0727507e016bc9da5959316fbcc5c">anima::TLinksFilter&lt; TInput, TOutput &gt;</a>
+</li>
+<li>doubleVariableSizeMatrixType
+: <a class="el" href="classanima_1_1Graph3DFilter.html#a505dcd0df09ef58f479f1f1c36c9244b">anima::Graph3DFilter&lt; TInput, TOutput &gt;</a>
+, <a class="el" href="classanima_1_1GraphCutFilter.html#a7bba721a7be3a97285bc41d72355d0ac">anima::GraphCutFilter&lt; TInput, TOutput &gt;</a>
+</li>
+<li>DoubleVariableSizeMatrixType
+: <a class="el" href="classanima_1_1ImageClassifierFilter.html#a8eddd83365827af42cc804173ddc7886">anima::ImageClassifierFilter&lt; TInput, TMask, TOutput &gt;</a>
+</li>
+<li>doubleVariableSizeMatrixType
+: <a class="el" href="classanima_1_1NLinksFilter.html#a0a9a9d82cf78dc870875daef04beb340">anima::NLinksFilter&lt; TInput, TOutput &gt;</a>
+</li>
+<li>DoubleVariableSizeMatrixType
+: <a class="el" href="classanima_1_1TLinksFilter.html#ab2b0727507e016bc9da5959316fbcc5c">anima::TLinksFilter&lt; TInput, TOutput &gt;</a>
 </li>
 <li>DoubleVariableSizeMatrixVnlType
 : <a class="el" href="classanima_1_1GaussianREMEstimator.html#a3b22c515b6cde5d24469f0bf852dc265">anima::GaussianREMEstimator&lt; TInputImage, TMaskImage &gt;</a>
@@ -258,6 +267,7 @@ $(function() {
 , <a class="el" href="classanima_1_1MajorityLabelVotingImageFilter.html#a45d16b20d136c38329859c2d65643b12">anima::MajorityLabelVotingImageFilter&lt; TPixelType &gt;</a>
 , <a class="el" href="classanima_1_1MCMAverageImagesImageFilter.html#a05b8298eb7b878878ad2cfc8e8fd486a">anima::MCMAverageImagesImageFilter&lt; TPixelType &gt;</a>
 , <a class="el" href="classanima_1_1MCMEstimatorImageFilter.html#ae52fcc30d7a36277fe016dab6d0a0511">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;</a>
+, <a class="el" href="classanima_1_1MCMScalarMapsImageFilter.html#a0809fb0fd81c84c65a7ae9599fa2a7db">anima::MCMScalarMapsImageFilter&lt; TPixelType &gt;</a>
 , <a class="el" href="classanima_1_1MeanAndVarianceImagesFilter.html#abb3af977214647ed61d7fd8048b30380">anima::MeanAndVarianceImagesFilter&lt; TInputImage, TOutputImage &gt;</a>
 , <a class="el" href="classanima_1_1MEstimateSVFImageFilter.html#a719d0c0bad117ba98ac7ec63b1c43c24">anima::MEstimateSVFImageFilter&lt; TScalarType, NDegreesOfFreedom, NDimensions &gt;</a>
 , <a class="el" href="classanima_1_1MultiT2RelaxometryEstimationImageFilter.html#a4e6581b95993e86fe21ee2dddcd8bba2">anima::MultiT2RelaxometryEstimationImageFilter&lt; TPixelScalarType &gt;</a>

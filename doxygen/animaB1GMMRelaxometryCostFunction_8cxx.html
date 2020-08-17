@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -76,7 +76,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="animaB1GMMRelaxometryCostFunction_8h_source.html">animaB1GMMRelaxometryCostFunction.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animaB1GMMDistributionIntegrand_8h_source.html">animaB1GMMDistributionIntegrand.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="animaBaseTensorTools_8h_source.html">animaBaseTensorTools.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animaGaussLaguerreQuadrature_8h_source.html">animaGaussLaguerreQuadrature.h</a>&gt;</code><br />
+<code>#include &lt;boost/math/special_functions/erf.hpp&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for animaB1GMMRelaxometryCostFunction.cxx:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -84,22 +87,24 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="animaB1GMMRelaxometryCostFunction_8cxx__incl.png" border="0" usemap="#animaB1GMMRelaxometryCostFunction_8cxx" alt=""/></div>
 <map name="animaB1GMMRelaxometryCostFunction_8cxx" id="animaB1GMMRelaxometryCostFunction_8cxx">
-<area shape="rect" id="node2" href="animaB1GMMRelaxometryCostFunction_8h.html" title="animaB1GMMRelaxometryCost\lFunction.h" alt="" coords="349,319,552,360"/>
-<area shape="rect" id="node16" href="animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="993,95,1159,121"/>
-<area shape="rect" id="node6" href="animaEPGSignalSimulator_8h.html" title="animaEPGSignalSimulator.h" alt="" coords="178,587,363,613"/>
-<area shape="rect" id="node10" href="animaCholeskyDecomposition_8h.html" title="animaCholeskyDecomposition.h" alt="" coords="598,505,802,531"/>
-<area shape="rect" id="node14" href="animaNNLSOptimizer_8h.html" title="animaNNLSOptimizer.h" alt="" coords="373,415,529,442"/>
-<area shape="rect" id="node20" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="987,169,1165,196"/>
-<area shape="rect" id="node22" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="1203,415,1370,442"/>
-<area shape="rect" id="node31" href="animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="994,244,1158,271"/>
-<area shape="rect" id="node26" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="1197,505,1376,531"/>
-<area shape="rect" id="node28" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="1358,587,1538,613"/>
-<area shape="rect" id="node29" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="1355,669,1547,695"/>
-<area shape="rect" id="node32" href="animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="988,326,1164,353"/>
-<area shape="rect" id="node33" href="animaLinearTransformEstimationTools_8h.html" title="animaLinearTransformEstimation\lTools.h" alt="" coords="1759,408,1969,449"/>
-<area shape="rect" id="node36" href="animaLinearTransformEstimationTools_8hxx.html" title="animaLinearTransformEstimation\lTools.hxx" alt="" coords="2061,497,2272,539"/>
-<area shape="rect" id="node37" href="animaMatrixLogExp_8h.html" title="animaMatrixLogExp.h" alt="" coords="1885,587,2029,613"/>
-<area shape="rect" id="node41" href="animaMatrixLogExp_8hxx.html" title="animaMatrixLogExp.hxx" alt="" coords="1879,669,2035,695"/>
+<area shape="rect" id="node2" href="animaB1GMMRelaxometryCostFunction_8h.html" title="animaB1GMMRelaxometryCost\lFunction.h" alt="" coords="445,348,648,389"/>
+<area shape="rect" id="node16" href="animaB1GMMDistributionIntegrand_8h.html" title="animaB1GMMDistributionIntegrand.h" alt="" coords="678,355,911,382"/>
+<area shape="rect" id="node17" href="animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="1541,102,1707,129"/>
+<area shape="rect" id="node47" href="animaGaussLaguerreQuadrature_8h.html" title="animaGaussLaguerreQuadrature.h" alt="" coords="2314,102,2531,129"/>
+<area shape="rect" id="node5" href="animaEPGSignalSimulator_8h.html" title="animaEPGSignalSimulator.h" alt="" coords="659,445,845,471"/>
+<area shape="rect" id="node9" href="animaCholeskyDecomposition_8h.html" title="animaCholeskyDecomposition.h" alt="" coords="383,534,587,561"/>
+<area shape="rect" id="node13" href="animaNNLSOptimizer_8h.html" title="animaNNLSOptimizer.h" alt="" coords="227,445,383,471"/>
+<area shape="rect" id="node21" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="1661,191,1840,218"/>
+<area shape="rect" id="node23" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="1475,445,1642,471"/>
+<area shape="rect" id="node32" href="animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="1695,273,1859,300"/>
+<area shape="rect" id="node27" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="1284,534,1463,561"/>
+<area shape="rect" id="node29" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="1283,616,1463,643"/>
+<area shape="rect" id="node30" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="1280,698,1472,725"/>
+<area shape="rect" id="node33" href="animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="1703,355,1879,382"/>
+<area shape="rect" id="node34" href="animaLinearTransformEstimationTools_8h.html" title="animaLinearTransformEstimation\lTools.h" alt="" coords="1765,437,1976,479"/>
+<area shape="rect" id="node37" href="animaLinearTransformEstimationTools_8hxx.html" title="animaLinearTransformEstimation\lTools.hxx" alt="" coords="2175,527,2385,568"/>
+<area shape="rect" id="node38" href="animaMatrixLogExp_8h.html" title="animaMatrixLogExp.h" alt="" coords="2585,616,2729,643"/>
+<area shape="rect" id="node42" href="animaMatrixLogExp_8hxx.html" title="animaMatrixLogExp.hxx" alt="" coords="2579,698,2735,725"/>
 </map>
 </div>
 </div>

@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b39253151c9f535747500ed10dde22d"><td class="memItemLeft" align="right" valign="top">virtual ::itk::LightObject::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NODDICompartment.html#a7b39253151c9f535747500ed10dde22d">CreateAnother</a> (void) const</td></tr>
 <tr class="separator:a7b39253151c9f535747500ed10dde22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc657d039801da0414429dab28b5308f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NODDICompartment.html#afc657d039801da0414429dab28b5308f">GetApparentFractionalAnisotropy</a> () ITK_OVERRIDE</td></tr>
+<tr class="separator:afc657d039801da0414429dab28b5308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77cca5f053d2fcb071a6820e5b2d22b6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NODDICompartment.html#a77cca5f053d2fcb071a6820e5b2d22b6">GetCompartmentSize</a> () ITK_OVERRIDE</td></tr>
 <tr class="memdesc:a77cca5f053d2fcb071a6820e5b2d22b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of parameters to describe the model, these parameters will be self-contained, i.e. include fixed parameters for example.  <a href="#a77cca5f053d2fcb071a6820e5b2d22b6">More...</a><br /></td></tr>
 <tr class="separator:a77cca5f053d2fcb071a6820e5b2d22b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,8 +158,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4b681637be829dcb4ff5f1494973a53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e2031aeede440a72b385692628880e"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NODDICompartment.html#ae4e2031aeede440a72b385692628880e">GetFourierTransformedDiffusionProfile</a> (double smallDelta, double bigDelta, double gradientStrength, const <a class="el" href="classanima_1_1NODDICompartment.html#afa1668f11c254602c94106b317d47920">Vector3DType</a> &amp;gradient) ITK_OVERRIDE</td></tr>
 <tr class="separator:ae4e2031aeede440a72b385692628880e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83540d9830fb26129f06c964822c87aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NODDICompartment.html#a83540d9830fb26129f06c964822c87aa">GetFractionalAnisotropy</a> () ITK_OVERRIDE</td></tr>
-<tr class="separator:a83540d9830fb26129f06c964822c87aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a174ae26f9af2377cf50a570e709067f3"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NODDICompartment.html#a174ae26f9af2377cf50a570e709067f3">GetLogDiffusionProfile</a> (const <a class="el" href="classanima_1_1NODDICompartment.html#afa1668f11c254602c94106b317d47920">Vector3DType</a> &amp;sample) ITK_OVERRIDE</td></tr>
 <tr class="separator:a174ae26f9af2377cf50a570e709067f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadd88622c38e09c83497591a47061bb6"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1NODDICompartment.html#aadd88622c38e09c83497591a47061bb6">GetNameOfClass</a> () const</td></tr>
@@ -201,6 +201,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d628076d5df471b871e58d9d2276976 inherit pub_methods_classanima_1_1BaseCompartment"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a7d628076d5df471b871e58d9d2276976">CopyFromOther</a> (<a class="el" href="classanima_1_1BaseCompartment.html#a5aa93f77c1b18dcaea4756567c5f5973">Self</a> *rhs)</td></tr>
 <tr class="memdesc:a7d628076d5df471b871e58d9d2276976 inherit pub_methods_classanima_1_1BaseCompartment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy internal parameters from another compartment, faster than a set/get compartment vector.  <a href="classanima_1_1BaseCompartment.html#a7d628076d5df471b871e58d9d2276976">More...</a><br /></td></tr>
 <tr class="separator:a7d628076d5df471b871e58d9d2276976 inherit pub_methods_classanima_1_1BaseCompartment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501770869c76e8394b75c0318b37f15e inherit pub_methods_classanima_1_1BaseCompartment"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a501770869c76e8394b75c0318b37f15e">GetApparentMeanDiffusivity</a> ()</td></tr>
+<tr class="separator:a501770869c76e8394b75c0318b37f15e inherit pub_methods_classanima_1_1BaseCompartment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68965b6c42297203d4198274a0d1ac3b inherit pub_methods_classanima_1_1BaseCompartment"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a68965b6c42297203d4198274a0d1ac3b">GetApparentParallelDiffusivity</a> ()</td></tr>
+<tr class="memdesc:a68965b6c42297203d4198274a0d1ac3b inherit pub_methods_classanima_1_1BaseCompartment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get approximation to parallel diffusivity of the compartment (may be different from axial diffusivity which is an internal parameter of the model)  <a href="classanima_1_1BaseCompartment.html#a68965b6c42297203d4198274a0d1ac3b">More...</a><br /></td></tr>
+<tr class="separator:a68965b6c42297203d4198274a0d1ac3b inherit pub_methods_classanima_1_1BaseCompartment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b137dbfbf7ef8f908dd2fcea163ad9 inherit pub_methods_classanima_1_1BaseCompartment"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a32b137dbfbf7ef8f908dd2fcea163ad9">GetApparentPerpendicularDiffusivity</a> ()</td></tr>
+<tr class="memdesc:a32b137dbfbf7ef8f908dd2fcea163ad9 inherit pub_methods_classanima_1_1BaseCompartment"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get approximation to perpendicular diffusivity of the compartment (may be different from radial diffusivities which are internal parameters of the model)  <a href="classanima_1_1BaseCompartment.html#a32b137dbfbf7ef8f908dd2fcea163ad9">More...</a><br /></td></tr>
+<tr class="separator:a32b137dbfbf7ef8f908dd2fcea163ad9 inherit pub_methods_classanima_1_1BaseCompartment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaf993809d013e4dd230273a1dcab982 inherit pub_methods_classanima_1_1BaseCompartment"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#afaf993809d013e4dd230273a1dcab982">GetAxialDiffusivity</a> ()</td></tr>
 <tr class="separator:afaf993809d013e4dd230273a1dcab982 inherit pub_methods_classanima_1_1BaseCompartment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6d2278efd08fbd31e34e3046a8d62f inherit pub_methods_classanima_1_1BaseCompartment"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a1d6d2278efd08fbd31e34e3046a8d62f">GetExtraAxonalFraction</a> ()</td></tr>
@@ -490,6 +498,37 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="afc657d039801da0414429dab28b5308f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc657d039801da0414429dab28b5308f">&#9670;&nbsp;</a></span>GetApparentFractionalAnisotropy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::NODDICompartment::GetApparentFractionalAnisotropy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a8de5ed0eaacd1a0384a649bf4674336f">anima::BaseCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00502">502</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>.</p>
+
+</div>
+</div>
 <a id="a77cca5f053d2fcb071a6820e5b2d22b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77cca5f053d2fcb071a6820e5b2d22b6">&#9670;&nbsp;</a></span>GetCompartmentSize()</h2>
 
@@ -517,9 +556,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#ad2b0b9f15f345978739b4e2b965a1088">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00404">404</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00406">406</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">GetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00371">SetCompartmentVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">GetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">SetCompartmentVector()</a>.</p>
 
 </div>
 </div>
@@ -583,9 +622,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#a3a435f32c43df7732a0eec4c5f14a855">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">429</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">431</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00404">GetCompartmentSize()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00088">anima::BaseCompartment::GetOrientationConcentration()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00146">anima::BaseCompartment::m_CompartmentVector</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00128">anima::BaseCompartment::m_SpaceDimension</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00406">GetCompartmentSize()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00088">anima::BaseCompartment::GetOrientationConcentration()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00155">anima::BaseCompartment::m_CompartmentVector</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00137">anima::BaseCompartment::m_SpaceDimension</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>.</p>
 
 </div>
 </div>
@@ -616,9 +655,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#acfc51b0da5a926171a2c4a365646d097">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00457">457</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00459">459</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00131">anima::BaseCompartment::m_DiffusionTensor</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00128">anima::BaseCompartment::m_SpaceDimension</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00486">UpdateKappaValues()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00140">anima::BaseCompartment::m_DiffusionTensor</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00137">anima::BaseCompartment::m_SpaceDimension</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00488">UpdateKappaValues()</a>.</p>
 
 </div>
 </div>
@@ -676,37 +715,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a83540d9830fb26129f06c964822c87aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83540d9830fb26129f06c964822c87aa">&#9670;&nbsp;</a></span>GetFractionalAnisotropy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double anima::NODDICompartment::GetFractionalAnisotropy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a45264001ee6887f4419cd56a90461871">anima::BaseCompartment</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00500">500</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
-
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>.</p>
-
-</div>
-</div>
 <a id="a174ae26f9af2377cf50a570e709067f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a174ae26f9af2377cf50a570e709067f3">&#9670;&nbsp;</a></span>GetLogDiffusionProfile()</h2>
 
@@ -733,9 +741,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#ad7d30c835a73d7d199ea59dddc976b79">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00184">184</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00186">186</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00196">anima::ComputeScalarProduct()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00486">UpdateKappaValues()</a>.</p>
+<p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00196">anima::ComputeScalarProduct()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00488">UpdateKappaValues()</a>.</p>
 
 </div>
 </div>
@@ -794,9 +802,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#af960e24afdb7e3be7d8490b92b8120f4">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00409">409</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00411">411</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00305">GetParameterLowerBounds()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00279">GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00317">GetParameterUpperBounds()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">GetSignalAttenuationJacobian()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00254">SetParametersFromVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00307">GetParameterLowerBounds()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00281">GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">GetParameterUpperBounds()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">GetSignalAttenuationJacobian()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00256">SetParametersFromVector()</a>.</p>
 
 </div>
 </div>
@@ -825,9 +833,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#aa2c0b3556daef17ddc77e150973b43a8">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00305">305</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00307">307</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaNODDICompartment_8cxx_source.html#l00409">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00140">anima::BaseCompartment::m_ParametersLowerBoundsVector</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00045">anima::MCMDiffusivityLowerBound</a>, and <a class="el" href="animaMCMConstants_8h_source.html#l00033">anima::MCMZeroLowerBound</a>.</p>
+<p class="reference">References <a class="el" href="animaNODDICompartment_8cxx_source.html#l00411">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00149">anima::BaseCompartment::m_ParametersLowerBoundsVector</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00045">anima::MCMDiffusivityLowerBound</a>, and <a class="el" href="animaMCMConstants_8h_source.html#l00033">anima::MCMZeroLowerBound</a>.</p>
 
 </div>
 </div>
@@ -856,9 +864,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#adbb82fa69aba1b77c480accdb3b38bc7">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00279">279</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00281">281</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00409">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00088">anima::BaseCompartment::GetOrientationConcentration()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00137">anima::BaseCompartment::m_ParametersVector</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00411">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00088">anima::BaseCompartment::GetOrientationConcentration()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00146">anima::BaseCompartment::m_ParametersVector</a>.</p>
 
 </div>
 </div>
@@ -887,9 +895,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#a47f94449aa0d37963cd04dbaf01a775a">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00317">317</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">319</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaNODDICompartment_8cxx_source.html#l00409">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00143">anima::BaseCompartment::m_ParametersUpperBoundsVector</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00069">anima::MCMAzimuthAngleUpperBound</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00072">anima::MCMConcentrationUpperBound</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00048">anima::MCMDiffusivityUpperBound</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00075">anima::MCMFractionUpperBound</a>, and <a class="el" href="animaMCMConstants_8h_source.html#l00066">anima::MCMPolarAngleUpperBound</a>.</p>
+<p class="reference">References <a class="el" href="animaNODDICompartment_8cxx_source.html#l00411">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00152">anima::BaseCompartment::m_ParametersUpperBoundsVector</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00069">anima::MCMAzimuthAngleUpperBound</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00072">anima::MCMConcentrationUpperBound</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00048">anima::MCMDiffusivityUpperBound</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00075">anima::MCMFractionUpperBound</a>, and <a class="el" href="animaMCMConstants_8h_source.html#l00066">anima::MCMPolarAngleUpperBound</a>.</p>
 
 </div>
 </div>
@@ -943,7 +951,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">102</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00196">anima::ComputeScalarProduct()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00013">anima::GetBValueFromAcquisitionParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00409">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00134">anima::BaseCompartment::m_JacobianVector</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">UpdateSignals()</a>.</p>
+<p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00196">anima::ComputeScalarProduct()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00013">anima::GetBValueFromAcquisitionParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00411">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00143">anima::BaseCompartment::m_JacobianVector</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">UpdateSignals()</a>.</p>
 
 </div>
 </div>
@@ -999,7 +1007,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="animaMCMFileReader_8hxx_source.html#l00164">anima::MCMFileReader&lt; PixelType, ImageDimension &gt;::CreateCompartmentForType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaMCMFileReader_8hxx_source.html#l00174">anima::MCMFileReader&lt; PixelType, ImageDimension &gt;::CreateCompartmentForType()</a>.</p>
 
 </div>
 </div>
@@ -1029,11 +1037,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#aa5663152611dcda2034779e6697a2b38">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00245">245</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00247">247</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 <p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00096">anima::BaseCompartment::SetAxialDiffusivity()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00371">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00254">SetParametersFromVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00256">SetParametersFromVector()</a>.</p>
 
 </div>
 </div>
@@ -1065,9 +1073,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#acee935f852ae33de59ebfa49239e2371">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00371">371</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">373</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaNODDICompartment_8cxx_source.html#l00404">GetCompartmentSize()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00128">anima::BaseCompartment::m_SpaceDimension</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00245">SetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00236">SetExtraAxonalFraction()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00226">SetOrientationConcentration()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00217">SetOrientationPhi()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00208">SetOrientationTheta()</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00474">anima::TransformCartesianToSphericalCoordinates()</a>.</p>
+<p class="reference">References <a class="el" href="animaNODDICompartment_8cxx_source.html#l00406">GetCompartmentSize()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00137">anima::BaseCompartment::m_SpaceDimension</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00247">SetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00238">SetExtraAxonalFraction()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00228">SetOrientationConcentration()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00219">SetOrientationPhi()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00210">SetOrientationTheta()</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00474">anima::TransformCartesianToSphericalCoordinates()</a>.</p>
 
 </div>
 </div>
@@ -1087,7 +1095,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00353">353</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00355">355</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1115,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00362">362</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00364">364</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 </div>
 </div>
@@ -1127,7 +1135,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00344">344</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00346">346</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 </div>
 </div>
@@ -1157,11 +1165,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#ade8c2ab2db4c31b1103c9f0454650ad1">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00236">236</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00238">238</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 <p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00100">anima::BaseCompartment::SetExtraAxonalFraction()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00371">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00254">SetParametersFromVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00256">SetParametersFromVector()</a>.</p>
 
 </div>
 </div>
@@ -1191,11 +1199,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a2d8e14ea0bf354f6569483b663e4238e">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00226">226</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00228">228</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 <p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00088">anima::BaseCompartment::GetOrientationConcentration()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00099">anima::BaseCompartment::SetOrientationConcentration()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00371">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00254">SetParametersFromVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00256">SetParametersFromVector()</a>.</p>
 
 </div>
 </div>
@@ -1225,11 +1233,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a71edf0c14aa3bf7c1a7a92c0fa187f76">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00217">217</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00219">219</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 <p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00094">anima::BaseCompartment::SetOrientationPhi()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00371">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00254">SetParametersFromVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00256">SetParametersFromVector()</a>.</p>
 
 </div>
 </div>
@@ -1259,11 +1267,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a431cd11156ccb505081e138ae6fbb423">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00208">208</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00210">210</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 <p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00093">anima::BaseCompartment::SetOrientationTheta()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00371">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00254">SetParametersFromVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">SetCompartmentVector()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00256">SetParametersFromVector()</a>.</p>
 
 </div>
 </div>
@@ -1295,9 +1303,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classanima_1_1BaseCompartment.html#a07fa8ca1ffd7292a6dcfbbf1caaa590c">anima::BaseCompartment</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00254">254</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00256">256</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaNODDICompartment_8cxx_source.html#l00409">GetNumberOfParameters()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00245">SetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00236">SetExtraAxonalFraction()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00226">SetOrientationConcentration()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00217">SetOrientationPhi()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00208">SetOrientationTheta()</a>.</p>
+<p class="reference">References <a class="el" href="animaNODDICompartment_8cxx_source.html#l00411">GetNumberOfParameters()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00247">SetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00238">SetExtraAxonalFraction()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00228">SetOrientationConcentration()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00219">SetOrientationPhi()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00210">SetOrientationTheta()</a>.</p>
 
 </div>
 </div>
@@ -1326,11 +1334,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Update quantities that depend on kappa. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00486">486</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00488">488</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
 <p class="reference">References <a class="el" href="animaErrorFunctions_8cxx_source.html#l00011">anima::EvaluateDawsonIntegral()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00088">anima::BaseCompartment::GetOrientationConcentration()</a>, and <a class="el" href="animaWatsonDistribution_8hxx_source.html#l00083">anima::GetStandardWatsonSHCoefficients()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00457">GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00184">GetLogDiffusionProfile()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">UpdateSignals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00459">GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00186">GetLogDiffusionProfile()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">UpdateSignals()</a>.</p>
 
 </div>
 </div>
@@ -1372,7 +1380,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">12</a> of file <a class="el" href="animaNODDICompartment_8cxx_source.html">animaNODDICompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00314">anima::ComputeNorm()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00196">anima::ComputeScalarProduct()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaKummerFunctions_8cxx_source.html#l00092">anima::KummerFunction()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00486">UpdateKappaValues()</a>.</p>
+<p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00314">anima::ComputeNorm()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00196">anima::ComputeScalarProduct()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00089">anima::BaseCompartment::GetExtraAxonalFraction()</a>, <a class="el" href="animaKummerFunctions_8cxx_source.html#l00112">anima::GetKummerFunctionValue()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00488">UpdateKappaValues()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00093">GetFourierTransformedDiffusionProfile()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">GetSignalAttenuationJacobian()</a>.</p>
 

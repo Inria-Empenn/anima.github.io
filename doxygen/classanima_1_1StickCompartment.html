@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -142,6 +142,16 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adea01c6cfd9612f646b5df16e379b874"><td class="memItemLeft" align="right" valign="top">virtual ::itk::LightObject::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#adea01c6cfd9612f646b5df16e379b874">CreateAnother</a> (void) const</td></tr>
 <tr class="separator:adea01c6cfd9612f646b5df16e379b874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa7077d2a4afbeb76b6241c4b8d80c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#a1aa7077d2a4afbeb76b6241c4b8d80c1">GetApparentFractionalAnisotropy</a> () ITK_OVERRIDE</td></tr>
+<tr class="separator:a1aa7077d2a4afbeb76b6241c4b8d80c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80896c89323943df55d1833eff146323"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#a80896c89323943df55d1833eff146323">GetApparentMeanDiffusivity</a> () ITK_OVERRIDE</td></tr>
+<tr class="separator:a80896c89323943df55d1833eff146323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05979abc3c322207d1d397939b26629a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#a05979abc3c322207d1d397939b26629a">GetApparentParallelDiffusivity</a> () ITK_OVERRIDE</td></tr>
+<tr class="memdesc:a05979abc3c322207d1d397939b26629a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get approximation to parallel diffusivity of the compartment (may be different from axial diffusivity which is an internal parameter of the model)  <a href="#a05979abc3c322207d1d397939b26629a">More...</a><br /></td></tr>
+<tr class="separator:a05979abc3c322207d1d397939b26629a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab0b1a0411512dfd9993f29a2611011"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#acab0b1a0411512dfd9993f29a2611011">GetApparentPerpendicularDiffusivity</a> () ITK_OVERRIDE</td></tr>
+<tr class="memdesc:acab0b1a0411512dfd9993f29a2611011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get approximation to perpendicular diffusivity of the compartment (may be different from radial diffusivities which are internal parameters of the model)  <a href="#acab0b1a0411512dfd9993f29a2611011">More...</a><br /></td></tr>
+<tr class="separator:acab0b1a0411512dfd9993f29a2611011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a7b6aaf5330cd1aa40eb9dbf85d7b5a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#a5a7b6aaf5330cd1aa40eb9dbf85d7b5a">GetCompartmentSize</a> () ITK_OVERRIDE</td></tr>
 <tr class="memdesc:a5a7b6aaf5330cd1aa40eb9dbf85d7b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of parameters to describe the model, these parameters will be self-contained, i.e. include fixed parameters for example.  <a href="#a5a7b6aaf5330cd1aa40eb9dbf85d7b5a">More...</a><br /></td></tr>
 <tr class="separator:a5a7b6aaf5330cd1aa40eb9dbf85d7b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,8 +166,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:affc61ed3760a9d505a6069f56c98a2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25f84a4c302d12e41e117deefeada59"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#ae25f84a4c302d12e41e117deefeada59">GetFourierTransformedDiffusionProfile</a> (double smallDelta, double bigDelta, double gradientStrength, const <a class="el" href="classanima_1_1StickCompartment.html#a7c5e7e814976eea94206ca406ede45ba">Vector3DType</a> &amp;gradient) ITK_OVERRIDE</td></tr>
 <tr class="separator:ae25f84a4c302d12e41e117deefeada59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28c91ae2cf64e400653d919193258414"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#a28c91ae2cf64e400653d919193258414">GetFractionalAnisotropy</a> () ITK_OVERRIDE</td></tr>
-<tr class="separator:a28c91ae2cf64e400653d919193258414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9825d79df60bc5fdc4f8a4ddb99701a"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#ac9825d79df60bc5fdc4f8a4ddb99701a">GetLogDiffusionProfile</a> (const <a class="el" href="classanima_1_1StickCompartment.html#a7c5e7e814976eea94206ca406ede45ba">Vector3DType</a> &amp;sample) ITK_OVERRIDE</td></tr>
 <tr class="separator:ac9825d79df60bc5fdc4f8a4ddb99701a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9720c63e2c2a344938d512bf626c1a1d"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1StickCompartment.html#a9720c63e2c2a344938d512bf626c1a1d">GetNameOfClass</a> () const</td></tr>
@@ -430,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8h_source.html#l00052">52</a> of file <a class="el" href="animaStickCompartment_8h_source.html">animaStickCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8h_source.html#l00055">55</a> of file <a class="el" href="animaStickCompartment_8h_source.html">animaStickCompartment.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8h_source.html#l00059">59</a> of file <a class="el" href="animaStickCompartment_8h_source.html">animaStickCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8h_source.html#l00062">62</a> of file <a class="el" href="animaStickCompartment_8h_source.html">animaStickCompartment.h</a>.</p>
 
 </div>
 </div>
@@ -477,6 +485,134 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1aa7077d2a4afbeb76b6241c4b8d80c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aa7077d2a4afbeb76b6241c4b8d80c1">&#9670;&nbsp;</a></span>GetApparentFractionalAnisotropy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::StickCompartment::GetApparentFractionalAnisotropy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a8de5ed0eaacd1a0384a649bf4674336f">anima::BaseCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00224">224</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
+
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>.</p>
+
+</div>
+</div>
+<a id="a80896c89323943df55d1833eff146323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80896c89323943df55d1833eff146323">&#9670;&nbsp;</a></span>GetApparentMeanDiffusivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::StickCompartment::GetApparentMeanDiffusivity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a501770869c76e8394b75c0318b37f15e">anima::BaseCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00238">238</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
+
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>.</p>
+
+</div>
+</div>
+<a id="a05979abc3c322207d1d397939b26629a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05979abc3c322207d1d397939b26629a">&#9670;&nbsp;</a></span>GetApparentParallelDiffusivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::StickCompartment::GetApparentParallelDiffusivity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get approximation to parallel diffusivity of the compartment (may be different from axial diffusivity which is an internal parameter of the model) </p>
+
+<p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a68965b6c42297203d4198274a0d1ac3b">anima::BaseCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00246">246</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
+
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>.</p>
+
+</div>
+</div>
+<a id="acab0b1a0411512dfd9993f29a2611011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab0b1a0411512dfd9993f29a2611011">&#9670;&nbsp;</a></span>GetApparentPerpendicularDiffusivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::StickCompartment::GetApparentPerpendicularDiffusivity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get approximation to perpendicular diffusivity of the compartment (may be different from radial diffusivities which are internal parameters of the model) </p>
+
+<p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a32b137dbfbf7ef8f908dd2fcea163ad9">anima::BaseCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00251">251</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
+
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>.</p>
 
 </div>
 </div>
@@ -575,7 +711,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">178</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00158">GetCompartmentSize()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00146">anima::BaseCompartment::m_CompartmentVector</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00128">anima::BaseCompartment::m_SpaceDimension</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00158">GetCompartmentSize()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00155">anima::BaseCompartment::m_CompartmentVector</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00137">anima::BaseCompartment::m_SpaceDimension</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>.</p>
 
 </div>
 </div>
@@ -608,7 +744,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">203</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00131">anima::BaseCompartment::m_DiffusionTensor</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00128">anima::BaseCompartment::m_SpaceDimension</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00140">anima::BaseCompartment::m_DiffusionTensor</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00137">anima::BaseCompartment::m_SpaceDimension</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00504">anima::TransformSphericalToCartesianCoordinates()</a>.</p>
 
 </div>
 </div>
@@ -665,37 +801,6 @@ Additional Inherited Members</h2></td></tr>
 <p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00013">anima::GetBValueFromAcquisitionParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">GetSignalAttenuationJacobian()</a>.</p>
-
-</div>
-</div>
-<a id="a28c91ae2cf64e400653d919193258414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28c91ae2cf64e400653d919193258414">&#9670;&nbsp;</a></span>GetFractionalAnisotropy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double anima::StickCompartment::GetFractionalAnisotropy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classanima_1_1BaseCompartment.html#a45264001ee6887f4419cd56a90461871">anima::BaseCompartment</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00224">224</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
-
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>.</p>
 
 </div>
 </div>
@@ -819,7 +924,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00087">87</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaStickCompartment_8cxx_source.html#l00163">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00140">anima::BaseCompartment::m_ParametersLowerBoundsVector</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00042">anima::MCMAxialDiffusivityAddonLowerBound</a>, and <a class="el" href="animaMCMConstants_8h_source.html#l00033">anima::MCMZeroLowerBound</a>.</p>
+<p class="reference">References <a class="el" href="animaStickCompartment_8cxx_source.html#l00163">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00149">anima::BaseCompartment::m_ParametersLowerBoundsVector</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00042">anima::MCMAxialDiffusivityAddonLowerBound</a>, and <a class="el" href="animaMCMConstants_8h_source.html#l00033">anima::MCMZeroLowerBound</a>.</p>
 
 </div>
 </div>
@@ -850,7 +955,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">74</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00163">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00137">anima::BaseCompartment::m_ParametersVector</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00163">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00146">anima::BaseCompartment::m_ParametersVector</a>.</p>
 
 </div>
 </div>
@@ -881,7 +986,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">98</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaStickCompartment_8cxx_source.html#l00163">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00143">anima::BaseCompartment::m_ParametersUpperBoundsVector</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00069">anima::MCMAzimuthAngleUpperBound</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00048">anima::MCMDiffusivityUpperBound</a>, and <a class="el" href="animaMCMConstants_8h_source.html#l00066">anima::MCMPolarAngleUpperBound</a>.</p>
+<p class="reference">References <a class="el" href="animaStickCompartment_8cxx_source.html#l00163">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00152">anima::BaseCompartment::m_ParametersUpperBoundsVector</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00069">anima::MCMAzimuthAngleUpperBound</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00048">anima::MCMDiffusivityUpperBound</a>, and <a class="el" href="animaMCMConstants_8h_source.html#l00066">anima::MCMPolarAngleUpperBound</a>.</p>
 
 </div>
 </div>
@@ -935,7 +1040,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">21</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00013">anima::GetBValueFromAcquisitionParameters()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00163">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00134">anima::BaseCompartment::m_JacobianVector</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseCompartment_8h_source.html#l00085">anima::BaseCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaMCMConstants_8h_source.html#l00013">anima::GetBValueFromAcquisitionParameters()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00163">GetNumberOfParameters()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00083">anima::BaseCompartment::GetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00082">anima::BaseCompartment::GetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00086">anima::BaseCompartment::GetRadialDiffusivity1()</a>, and <a class="el" href="animaBaseCompartment_8h_source.html#l00143">anima::BaseCompartment::m_JacobianVector</a>.</p>
 
 </div>
 </div>
@@ -962,7 +1067,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="animaMCMFileReader_8hxx_source.html#l00164">anima::MCMFileReader&lt; PixelType, ImageDimension &gt;::CreateCompartmentForType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaMCMFileReader_8hxx_source.html#l00174">anima::MCMFileReader&lt; PixelType, ImageDimension &gt;::CreateCompartmentForType()</a>.</p>
 
 </div>
 </div>
@@ -996,7 +1101,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">120</a> of file <a class="el" href="animaStickCompartment_8cxx_source.html">animaStickCompartment.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaStickCompartment_8cxx_source.html#l00158">GetCompartmentSize()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00128">anima::BaseCompartment::m_SpaceDimension</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00096">anima::BaseCompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00094">anima::BaseCompartment::SetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00093">anima::BaseCompartment::SetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00097">anima::BaseCompartment::SetRadialDiffusivity1()</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00474">anima::TransformCartesianToSphericalCoordinates()</a>.</p>
+<p class="reference">References <a class="el" href="animaStickCompartment_8cxx_source.html#l00158">GetCompartmentSize()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00137">anima::BaseCompartment::m_SpaceDimension</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00096">anima::BaseCompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00094">anima::BaseCompartment::SetOrientationPhi()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00093">anima::BaseCompartment::SetOrientationTheta()</a>, <a class="el" href="animaBaseCompartment_8h_source.html#l00097">anima::BaseCompartment::SetRadialDiffusivity1()</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00474">anima::TransformCartesianToSphericalCoordinates()</a>.</p>
 
 </div>
 </div>

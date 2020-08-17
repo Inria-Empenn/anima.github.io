@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -76,13 +76,11 @@ $(function() {
 <div class="title">animaNoiseGenerator.cxx File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;iomanip&gt;</code><br />
-<code>#include &lt;tclap/CmdLine.h&gt;</code><br />
-<code>#include &lt;itksys/SystemTools.hxx&gt;</code><br />
+<div class="textblock"><code>#include &lt;tclap/CmdLine.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="animaNoiseGeneratorImageFilter_8h_source.html">animaNoiseGeneratorImageFilter.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="animaReadWriteFunctions_8h_source.html">animaReadWriteFunctions.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="animaRetrieveImageTypeMacros_8h_source.html">animaRetrieveImageTypeMacros.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animaKummerFunctions_8h_source.html">animaKummerFunctions.h</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for animaNoiseGenerator.cxx:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -90,23 +88,25 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="animaNoiseGenerator_8cxx__incl.png" border="0" usemap="#animaNoiseGenerator_8cxx" alt=""/></div>
 <map name="animaNoiseGenerator_8cxx" id="animaNoiseGenerator_8cxx">
-<area shape="rect" id="node6" href="animaNoiseGeneratorImageFilter_8h.html" title="animaNoiseGeneratorImage\lFilter.h" alt="" coords="820,80,1003,121"/>
-<area shape="rect" id="node44" href="animaReadWriteFunctions_8h.html" title="animaReadWriteFunctions.h" alt="" coords="1860,87,2043,114"/>
-<area shape="rect" id="node48" href="animaRetrieveImageTypeMacros_8h.html" title="animaRetrieveImageTypeMacros.h" alt="" coords="1357,87,1577,114"/>
-<area shape="rect" id="node9" href="animaNumberedThreadImageToImageFilter_8h.html" title="animaNumberedThreadImage\lToImageFilter.h" alt="" coords="1081,169,1273,211"/>
-<area shape="rect" id="node16" href="animaNoiseGeneratorImageFilter_8hxx.html" title="animaNoiseGeneratorImage\lFilter.hxx" alt="" coords="820,169,1003,211"/>
-<area shape="rect" id="node13" href="animaNumberedThreadImageToImageFilter_8hxx.html" title="animaNumberedThreadImage\lToImageFilter.hxx" alt="" coords="1211,259,1403,300"/>
-<area shape="rect" id="node17" href="animaDistributionSampling_8h.html" title="animaDistributionSampling.h" alt="" coords="567,266,752,293"/>
-<area shape="rect" id="node40" href="animaKummerFunctions_8h.html" title="animaKummerFunctions.h" alt="" coords="1015,266,1187,293"/>
-<area shape="rect" id="node22" href="animaDistributionSampling_8hxx.html" title="animaDistributionSampling.hxx" alt="" coords="397,348,594,375"/>
-<area shape="rect" id="node25" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="387,751,553,777"/>
-<area shape="rect" id="node29" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="231,900,411,927"/>
-<area shape="rect" id="node33" href="animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="567,430,733,457"/>
-<area shape="rect" id="node38" href="animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="407,601,571,628"/>
-<area shape="rect" id="node28" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="365,825,543,852"/>
-<area shape="rect" id="node30" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="225,975,417,1001"/>
-<area shape="rect" id="node36" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="399,519,578,546"/>
-<area shape="rect" id="node39" href="animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="405,676,581,703"/>
+<area shape="rect" id="node3" href="animaNoiseGeneratorImageFilter_8h.html" title="animaNoiseGeneratorImage\lFilter.h" alt="" coords="919,80,1101,121"/>
+<area shape="rect" id="node42" href="animaReadWriteFunctions_8h.html" title="animaReadWriteFunctions.h" alt="" coords="1997,87,2180,114"/>
+<area shape="rect" id="node46" href="animaRetrieveImageTypeMacros_8h.html" title="animaRetrieveImageTypeMacros.h" alt="" coords="1823,743,2043,770"/>
+<area shape="rect" id="node49" href="animaKummerFunctions_8h.html" title="animaKummerFunctions.h" alt="" coords="2356,87,2528,114"/>
+<area shape="rect" id="node6" href="animaNumberedThreadImageToImageFilter_8h.html" title="animaNumberedThreadImage\lToImageFilter.h" alt="" coords="335,169,527,211"/>
+<area shape="rect" id="node13" href="animaNoiseGeneratorImageFilter_8hxx.html" title="animaNoiseGeneratorImage\lFilter.hxx" alt="" coords="919,169,1101,211"/>
+<area shape="rect" id="node10" href="animaNumberedThreadImageToImageFilter_8hxx.html" title="animaNumberedThreadImage\lToImageFilter.hxx" alt="" coords="235,259,427,300"/>
+<area shape="rect" id="node14" href="animaDistributionSampling_8h.html" title="animaDistributionSampling.h" alt="" coords="917,266,1103,293"/>
+<area shape="rect" id="node19" href="animaDistributionSampling_8hxx.html" title="animaDistributionSampling.hxx" alt="" coords="911,348,1109,375"/>
+<area shape="rect" id="node22" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="817,743,984,770"/>
+<area shape="rect" id="node26" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="988,922,1168,949"/>
+<area shape="rect" id="node30" href="animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="475,430,641,457"/>
+<area shape="rect" id="node35" href="animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="787,587,951,613"/>
+<area shape="rect" id="node25" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="811,833,990,859"/>
+<area shape="rect" id="node27" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="1493,1004,1685,1031"/>
+<area shape="rect" id="node33" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="533,512,711,539"/>
+<area shape="rect" id="node36" href="animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="814,661,990,688"/>
+<area shape="rect" id="node37" href="animaLinearTransformEstimationTools_8h.html" title="animaLinearTransformEstimation\lTools.h" alt="" coords="1315,736,1526,777"/>
+<area shape="rect" id="node39" href="animaLinearTransformEstimationTools_8hxx.html" title="animaLinearTransformEstimation\lTools.hxx" alt="" coords="1215,825,1426,867"/>
 </map>
 </div>
 </div>
@@ -157,11 +157,11 @@ template&lt;class ComponentType , unsigned int InputDim&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00022">22</a> of file <a class="el" href="animaNoiseGenerator_8cxx_source.html">animaNoiseGenerator.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00017">17</a> of file <a class="el" href="animaNoiseGenerator_8cxx_source.html">animaNoiseGenerator.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00017">arguments::gaussianNoise</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00016">arguments::input</a>, <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00016">arguments::nreplicates</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00017">arguments::nthreads</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00016">arguments::output</a>, and <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00015">arguments::stddev</a>.</p>
+<p class="reference">References <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00012">arguments::gaussianNoise</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00016">arguments::input</a>, <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00011">arguments::nreplicates</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00017">arguments::nthreads</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00016">arguments::output</a>, and <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00010">arguments::sigma</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00054">retrieveNbDimensions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00058">retrieveNbDimensions()</a>.</p>
 
 </div>
 </div>
@@ -191,9 +191,9 @@ template&lt;class ComponentType , unsigned int InputDim&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00059">59</a> of file <a class="el" href="animaNoiseGenerator_8cxx_source.html">animaNoiseGenerator.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00063">63</a> of file <a class="el" href="animaNoiseGenerator_8cxx_source.html">animaNoiseGenerator.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00016">ANIMA_RETRIEVE_COMPONENT_TYPE</a>, <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00017">arguments::gaussianNoise</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00016">arguments::input</a>, <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00016">arguments::nreplicates</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00017">arguments::nthreads</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00016">arguments::output</a>, <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00054">retrieveNbDimensions()</a>, and <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00015">arguments::stddev</a>.</p>
+<p class="reference">References <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00016">ANIMA_RETRIEVE_COMPONENT_TYPE</a>, <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00012">arguments::gaussianNoise</a>, <a class="el" href="animaKummerFunctions_8cxx_source.html#l00112">anima::GetKummerFunctionValue()</a>, <a class="el" href="animaMaskImage_8cxx_source.html#l00015">arguments::imageIO</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00016">arguments::input</a>, <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00011">arguments::nreplicates</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00017">arguments::nthreads</a>, <a class="el" href="animaFlipTensors_8cxx_source.html#l00016">arguments::output</a>, <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00058">retrieveNbDimensions()</a>, and <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00010">arguments::sigma</a>.</p>
 
 </div>
 </div>
@@ -225,11 +225,11 @@ template&lt;class ComponentType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00054">54</a> of file <a class="el" href="animaNoiseGenerator_8cxx_source.html">animaNoiseGenerator.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00058">58</a> of file <a class="el" href="animaNoiseGenerator_8cxx_source.html">animaNoiseGenerator.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00022">addNoise()</a>, and <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00057">ANIMA_RETRIEVE_NUMBER_OF_DIMENSIONS</a>.</p>
+<p class="reference">References <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00017">addNoise()</a>, and <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00060">ANIMA_RETRIEVE_NUMBER_OF_DIMENSIONS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00059">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNoiseGenerator_8cxx_source.html#l00063">main()</a>.</p>
 
 </div>
 </div>

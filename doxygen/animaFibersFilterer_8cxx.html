@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -110,16 +110,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a482d82fb9a1b086ca81f84a33d71addd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="animaFibersFilterer_8cxx.html#a482d82fb9a1b086ca81f84a33d71addd">FilterTracks</a> (vtkPolyData *tracks, unsigned int startIndex, unsigned int endIndex, itk::NearestNeighborInterpolateImageFunction&lt; itk::Image&lt; unsigned short, 3 &gt; &gt; *interpolator, const std::vector&lt; unsigned int &gt; &amp;touchLabels, const std::vector&lt; unsigned int &gt; &amp;forbiddenLabels)</td></tr>
-<tr class="separator:a482d82fb9a1b086ca81f84a33d71addd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab7efb94b98996223e0c9cd83628102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="animaFibersFilterer_8cxx.html#acab7efb94b98996223e0c9cd83628102">FilterTracks</a> (vtkPolyData *tracks, unsigned int startIndex, unsigned int endIndex, itk::NearestNeighborInterpolateImageFunction&lt; itk::Image&lt; unsigned short, 3 &gt; &gt; *interpolator, const std::vector&lt; unsigned int &gt; &amp;touchLabels, const std::vector&lt; unsigned int &gt; &amp;endingsLabels, const std::vector&lt; unsigned int &gt; &amp;forbiddenLabels)</td></tr>
+<tr class="separator:acab7efb94b98996223e0c9cd83628102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="animaFibersFilterer_8cxx.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41978aaff51240858b923c4cf6664f74"><td class="memItemLeft" align="right" valign="top">ITK_THREAD_RETURN_FUNCTION_CALL_CONVENTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="animaFibersFilterer_8cxx.html#a41978aaff51240858b923c4cf6664f74">ThreadFilterer</a> (void *arg)</td></tr>
 <tr class="separator:a41978aaff51240858b923c4cf6664f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a482d82fb9a1b086ca81f84a33d71addd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a482d82fb9a1b086ca81f84a33d71addd">&#9670;&nbsp;</a></span>FilterTracks()</h2>
+<a id="acab7efb94b98996223e0c9cd83628102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab7efb94b98996223e0c9cd83628102">&#9670;&nbsp;</a></span>FilterTracks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,6 +158,12 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>endingsLabels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; unsigned int &gt; &amp;&#160;</td>
           <td class="paramname"><em>forbiddenLabels</em>&#160;</td>
         </tr>
         <tr>
@@ -170,7 +176,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaFibersFilterer_8cxx_source.html#l00017">17</a> of file <a class="el" href="animaFibersFilterer_8cxx_source.html">animaFibersFilterer.cxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaFibersFilterer_8cxx_source.html#l00097">ThreadFilterer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaFibersFilterer_8cxx_source.html#l00141">ThreadFilterer()</a>.</p>
 
 </div>
 </div>
@@ -200,9 +206,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaFibersFilterer_8cxx_source.html#l00118">118</a> of file <a class="el" href="animaFibersFilterer_8cxx_source.html">animaFibersFilterer.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaFibersFilterer_8cxx_source.html#l00162">162</a> of file <a class="el" href="animaFibersFilterer_8cxx_source.html">animaFibersFilterer.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaFibersFilterer_8cxx_source.html#l00094">ThreaderArguments::forbiddenLabels</a>, <a class="el" href="animaShapesReader_8h_source.html#l00025">anima::ShapesReader::GetOutput()</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00092">ThreaderArguments::interpolator</a>, <a class="el" href="animaShapesReader_8h_source.html#l00022">anima::ShapesReader::SetFileName()</a>, <a class="el" href="animaShapesWriter_8h_source.html#l00023">anima::ShapesWriter::SetFileName()</a>, <a class="el" href="animaShapesWriter_8h_source.html#l00022">anima::ShapesWriter::SetInputData()</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00097">ThreadFilterer()</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00093">ThreaderArguments::touchLabels</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00091">ThreaderArguments::tracks</a>, <a class="el" href="animaShapesReader_8cxx_source.html#l00018">anima::ShapesReader::Update()</a>, and <a class="el" href="animaShapesWriter_8cxx_source.html#l00015">anima::ShapesWriter::Update()</a>.</p>
+<p class="reference">References <a class="el" href="animaFibersFilterer_8cxx_source.html#l00137">ThreaderArguments::endingsLabels</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00138">ThreaderArguments::forbiddenLabels</a>, <a class="el" href="animaShapesReader_8h_source.html#l00025">anima::ShapesReader::GetOutput()</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00135">ThreaderArguments::interpolator</a>, <a class="el" href="animaShapesReader_8h_source.html#l00022">anima::ShapesReader::SetFileName()</a>, <a class="el" href="animaShapesWriter_8h_source.html#l00023">anima::ShapesWriter::SetFileName()</a>, <a class="el" href="animaShapesWriter_8h_source.html#l00022">anima::ShapesWriter::SetInputData()</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00141">ThreadFilterer()</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00136">ThreaderArguments::touchLabels</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00134">ThreaderArguments::tracks</a>, <a class="el" href="animaShapesReader_8cxx_source.html#l00018">anima::ShapesReader::Update()</a>, and <a class="el" href="animaShapesWriter_8cxx_source.html#l00015">anima::ShapesWriter::Update()</a>.</p>
 
 </div>
 </div>
@@ -222,11 +228,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaFibersFilterer_8cxx_source.html#l00097">97</a> of file <a class="el" href="animaFibersFilterer_8cxx_source.html">animaFibersFilterer.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaFibersFilterer_8cxx_source.html#l00141">141</a> of file <a class="el" href="animaFibersFilterer_8cxx_source.html">animaFibersFilterer.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaFibersFilterer_8cxx_source.html#l00017">FilterTracks()</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00094">ThreaderArguments::forbiddenLabels</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00092">ThreaderArguments::interpolator</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00093">ThreaderArguments::touchLabels</a>, and <a class="el" href="animaFibersFilterer_8cxx_source.html#l00091">ThreaderArguments::tracks</a>.</p>
+<p class="reference">References <a class="el" href="animaFibersFilterer_8cxx_source.html#l00137">ThreaderArguments::endingsLabels</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00017">FilterTracks()</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00138">ThreaderArguments::forbiddenLabels</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00135">ThreaderArguments::interpolator</a>, <a class="el" href="animaFibersFilterer_8cxx_source.html#l00136">ThreaderArguments::touchLabels</a>, and <a class="el" href="animaFibersFilterer_8cxx_source.html#l00134">ThreaderArguments::tracks</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaFibersFilterer_8cxx_source.html#l00118">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaFibersFilterer_8cxx_source.html#l00162">main()</a>.</p>
 
 </div>
 </div>

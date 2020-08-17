@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -134,6 +134,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d628076d5df471b871e58d9d2276976"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a7d628076d5df471b871e58d9d2276976">CopyFromOther</a> (<a class="el" href="classanima_1_1BaseCompartment.html#a5aa93f77c1b18dcaea4756567c5f5973">Self</a> *rhs)</td></tr>
 <tr class="memdesc:a7d628076d5df471b871e58d9d2276976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy internal parameters from another compartment, faster than a set/get compartment vector.  <a href="#a7d628076d5df471b871e58d9d2276976">More...</a><br /></td></tr>
 <tr class="separator:a7d628076d5df471b871e58d9d2276976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de5ed0eaacd1a0384a649bf4674336f"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a8de5ed0eaacd1a0384a649bf4674336f">GetApparentFractionalAnisotropy</a> ()</td></tr>
+<tr class="separator:a8de5ed0eaacd1a0384a649bf4674336f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501770869c76e8394b75c0318b37f15e"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a501770869c76e8394b75c0318b37f15e">GetApparentMeanDiffusivity</a> ()</td></tr>
+<tr class="separator:a501770869c76e8394b75c0318b37f15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68965b6c42297203d4198274a0d1ac3b"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a68965b6c42297203d4198274a0d1ac3b">GetApparentParallelDiffusivity</a> ()</td></tr>
+<tr class="memdesc:a68965b6c42297203d4198274a0d1ac3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get approximation to parallel diffusivity of the compartment (may be different from axial diffusivity which is an internal parameter of the model)  <a href="#a68965b6c42297203d4198274a0d1ac3b">More...</a><br /></td></tr>
+<tr class="separator:a68965b6c42297203d4198274a0d1ac3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b137dbfbf7ef8f908dd2fcea163ad9"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a32b137dbfbf7ef8f908dd2fcea163ad9">GetApparentPerpendicularDiffusivity</a> ()</td></tr>
+<tr class="memdesc:a32b137dbfbf7ef8f908dd2fcea163ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get approximation to perpendicular diffusivity of the compartment (may be different from radial diffusivities which are internal parameters of the model)  <a href="#a32b137dbfbf7ef8f908dd2fcea163ad9">More...</a><br /></td></tr>
+<tr class="separator:a32b137dbfbf7ef8f908dd2fcea163ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaf993809d013e4dd230273a1dcab982"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#afaf993809d013e4dd230273a1dcab982">GetAxialDiffusivity</a> ()</td></tr>
 <tr class="separator:afaf993809d013e4dd230273a1dcab982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b0b9f15f345978739b4e2b965a1088"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#ad2b0b9f15f345978739b4e2b965a1088">GetCompartmentSize</a> ()=0</td></tr>
@@ -152,8 +162,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1d6d2278efd08fbd31e34e3046a8d62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a506cc9a612691e8589891648586ba9"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a0a506cc9a612691e8589891648586ba9">GetFourierTransformedDiffusionProfile</a> (double smallDelta, double bigDelta, double gradientStrength, const <a class="el" href="classanima_1_1BaseCompartment.html#a12013d73a13f061369fa47817f616fb5">Vector3DType</a> &amp;gradient)=0</td></tr>
 <tr class="separator:a0a506cc9a612691e8589891648586ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45264001ee6887f4419cd56a90461871"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a45264001ee6887f4419cd56a90461871">GetFractionalAnisotropy</a> ()</td></tr>
-<tr class="separator:a45264001ee6887f4419cd56a90461871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d30c835a73d7d199ea59dddc976b79"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#ad7d30c835a73d7d199ea59dddc976b79">GetLogDiffusionProfile</a> (const <a class="el" href="classanima_1_1BaseCompartment.html#a12013d73a13f061369fa47817f616fb5">Vector3DType</a> &amp;sample)=0</td></tr>
 <tr class="separator:ad7d30c835a73d7d199ea59dddc976b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57721548e9a40ad839a772f2765d7f83"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BaseCompartment.html#a57721548e9a40ad839a772f2765d7f83">GetNameOfClass</a> () const</td></tr>
@@ -407,7 +415,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00111">111</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00120">120</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
 <p class="reference">References <a class="el" href="animaMCMConstants_8h_source.html#l00069">anima::MCMAzimuthAngleUpperBound</a>.</p>
 
@@ -436,7 +444,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00126">126</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00135">135</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
 </div>
 </div>
@@ -473,6 +481,134 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8de5ed0eaacd1a0384a649bf4674336f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de5ed0eaacd1a0384a649bf4674336f">&#9670;&nbsp;</a></span>GetApparentFractionalAnisotropy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::BaseCompartment::GetApparentFractionalAnisotropy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classanima_1_1TensorCompartment.html#a816d7868917a049e59b4e5737fe1c68c">anima::TensorCompartment</a>, <a class="el" href="classanima_1_1NODDICompartment.html#afc657d039801da0414429dab28b5308f">anima::NODDICompartment</a>, <a class="el" href="classanima_1_1StaniszCompartment.html#ac5823ec0c78a62d3dde6090243e84d9f">anima::StaniszCompartment</a>, <a class="el" href="classanima_1_1ZeppelinCompartment.html#a4687847895b2479895e4fc1627c058d5">anima::ZeppelinCompartment</a>, <a class="el" href="classanima_1_1StickCompartment.html#a1aa7077d2a4afbeb76b6241c4b8d80c1">anima::StickCompartment</a>, and <a class="el" href="classanima_1_1BaseIsotropicCompartment.html#aa22016fc52a9055086e09f476683fdaf">anima::BaseIsotropicCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8cxx_source.html#l00125">125</a> of file <a class="el" href="animaBaseCompartment_8cxx_source.html">animaBaseCompartment.cxx</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="animaMCMScalarMapsImageFilter_8hxx_source.html#l00013">anima::MCMScalarMapsImageFilter&lt; TPixelType &gt;::DynamicThreadedGenerateData()</a>.</p>
+
+</div>
+</div>
+<a id="a501770869c76e8394b75c0318b37f15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501770869c76e8394b75c0318b37f15e">&#9670;&nbsp;</a></span>GetApparentMeanDiffusivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::BaseCompartment::GetApparentMeanDiffusivity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classanima_1_1TensorCompartment.html#abf46f2b7e7d193cc3d31096269464f78">anima::TensorCompartment</a>, <a class="el" href="classanima_1_1ZeppelinCompartment.html#a2129e1aae8a2d9094b034c9fd84303cc">anima::ZeppelinCompartment</a>, <a class="el" href="classanima_1_1StickCompartment.html#a80896c89323943df55d1833eff146323">anima::StickCompartment</a>, and <a class="el" href="classanima_1_1BaseIsotropicCompartment.html#a6174f250b3db69959e02909567422d4f">anima::BaseIsotropicCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8cxx_source.html#l00130">130</a> of file <a class="el" href="animaBaseCompartment_8cxx_source.html">animaBaseCompartment.cxx</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="animaMCMScalarMapsImageFilter_8hxx_source.html#l00013">anima::MCMScalarMapsImageFilter&lt; TPixelType &gt;::DynamicThreadedGenerateData()</a>.</p>
+
+</div>
+</div>
+<a id="a68965b6c42297203d4198274a0d1ac3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68965b6c42297203d4198274a0d1ac3b">&#9670;&nbsp;</a></span>GetApparentParallelDiffusivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::BaseCompartment::GetApparentParallelDiffusivity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get approximation to parallel diffusivity of the compartment (may be different from axial diffusivity which is an internal parameter of the model) </p>
+
+<p>Reimplemented in <a class="el" href="classanima_1_1TensorCompartment.html#abd6690366cb73d050eb89556847979af">anima::TensorCompartment</a>, <a class="el" href="classanima_1_1ZeppelinCompartment.html#ab383839ab65e8db5e463f1a4219107e6">anima::ZeppelinCompartment</a>, <a class="el" href="classanima_1_1StickCompartment.html#a05979abc3c322207d1d397939b26629a">anima::StickCompartment</a>, and <a class="el" href="classanima_1_1BaseIsotropicCompartment.html#a4a3738b338fcc638fb51da6eaf4416f1">anima::BaseIsotropicCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8cxx_source.html#l00135">135</a> of file <a class="el" href="animaBaseCompartment_8cxx_source.html">animaBaseCompartment.cxx</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="animaMCMScalarMapsImageFilter_8hxx_source.html#l00013">anima::MCMScalarMapsImageFilter&lt; TPixelType &gt;::DynamicThreadedGenerateData()</a>.</p>
+
+</div>
+</div>
+<a id="a32b137dbfbf7ef8f908dd2fcea163ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b137dbfbf7ef8f908dd2fcea163ad9">&#9670;&nbsp;</a></span>GetApparentPerpendicularDiffusivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double anima::BaseCompartment::GetApparentPerpendicularDiffusivity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get approximation to perpendicular diffusivity of the compartment (may be different from radial diffusivities which are internal parameters of the model) </p>
+
+<p>Reimplemented in <a class="el" href="classanima_1_1TensorCompartment.html#a02513d7a46b5663b25eb90aaa89171be">anima::TensorCompartment</a>, <a class="el" href="classanima_1_1ZeppelinCompartment.html#a3d5c5cca9fee62510cd96e85a1640e1f">anima::ZeppelinCompartment</a>, <a class="el" href="classanima_1_1StickCompartment.html#acab0b1a0411512dfd9993f29a2611011">anima::StickCompartment</a>, and <a class="el" href="classanima_1_1BaseIsotropicCompartment.html#abdff27e0802adc6a55c318d7f791a195">anima::BaseIsotropicCompartment</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8cxx_source.html#l00140">140</a> of file <a class="el" href="animaBaseCompartment_8cxx_source.html">animaBaseCompartment.cxx</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="animaMCMScalarMapsImageFilter_8hxx_source.html#l00013">anima::MCMScalarMapsImageFilter&lt; TPixelType &gt;::DynamicThreadedGenerateData()</a>.</p>
+
+</div>
+</div>
 <a id="afaf993809d013e4dd230273a1dcab982"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afaf993809d013e4dd230273a1dcab982">&#9670;&nbsp;</a></span>GetAxialDiffusivity()</h2>
 
@@ -500,7 +636,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00085">85</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00150">anima::TensorCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00093">anima::BaseIsotropicCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00287">anima::StaniszCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00103">anima::BaseIsotropicCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00457">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00009">anima::BaseIsotropicCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00224">anima::StickCompartment::GetFractionalAnisotropy()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00247">anima::ZeppelinCompartment::GetFractionalAnisotropy()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00500">anima::NODDICompartment::GetFractionalAnisotropy()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00029">anima::BaseIsotropicCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00184">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00047">anima::BaseIsotropicCompartment::GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00279">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00185">anima::StaniszCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00084">anima::StaniszCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00160">anima::StaniszCompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00245">anima::NODDICompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00009">anima::StaniszCompartment::UpdateSignals()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00224">anima::StickCompartment::GetApparentFractionalAnisotropy()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00247">anima::ZeppelinCompartment::GetApparentFractionalAnisotropy()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00502">anima::NODDICompartment::GetApparentFractionalAnisotropy()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00118">anima::BaseIsotropicCompartment::GetApparentMeanDiffusivity()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00238">anima::StickCompartment::GetApparentMeanDiffusivity()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00261">anima::ZeppelinCompartment::GetApparentMeanDiffusivity()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00123">anima::BaseIsotropicCompartment::GetApparentParallelDiffusivity()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00246">anima::StickCompartment::GetApparentParallelDiffusivity()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00269">anima::ZeppelinCompartment::GetApparentParallelDiffusivity()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00128">anima::BaseIsotropicCompartment::GetApparentPerpendicularDiffusivity()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00150">anima::TensorCompartment::GetAxialDiffusivity()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00093">anima::BaseIsotropicCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00287">anima::StaniszCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00103">anima::BaseIsotropicCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00459">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00009">anima::BaseIsotropicCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00029">anima::BaseIsotropicCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00186">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00047">anima::BaseIsotropicCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00185">anima::StaniszCompartment::GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00281">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00084">anima::StaniszCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00160">anima::StaniszCompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00247">anima::NODDICompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00009">anima::StaniszCompartment::UpdateSignals()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
 
 </div>
 </div>
@@ -560,7 +696,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classanima_1_1TensorCompartment.html#a6e2a62f43b2ab0823a2e148b93745bc8">anima::TensorCompartment</a>, <a class="el" href="classanima_1_1ZeppelinCompartment.html#a549f1474db90cf4fa947f056b5e85b4e">anima::ZeppelinCompartment</a>, <a class="el" href="classanima_1_1NODDICompartment.html#acac54f0f17a304c5b84bcda202fe5b79">anima::NODDICompartment</a>, <a class="el" href="classanima_1_1StaniszCompartment.html#a9a949debd26618344a999ee60bcb34d2">anima::StaniszCompartment</a>, <a class="el" href="classanima_1_1StickCompartment.html#ac9a4d1e8df1b804d4aec569565790cbb">anima::StickCompartment</a>, <a class="el" href="classanima_1_1FreeWaterCompartment.html#ae91a99d329e21e50e269f48661983690">anima::FreeWaterCompartment</a>, <a class="el" href="classanima_1_1IsotropicRestrictedWaterCompartment.html#a864947216e1261453fb9c5cbbfeaff8b">anima::IsotropicRestrictedWaterCompartment</a>, and <a class="el" href="classanima_1_1StationaryWaterCompartment.html#a582074a5a864a473d474d5e4daa5addc">anima::StationaryWaterCompartment</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaMultiCompartmentModel_8cxx_source.html#l00041">anima::MultiCompartmentModel::AddCompartment()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaMultiCompartmentModel_8cxx_source.html#l00041">anima::MultiCompartmentModel::AddCompartment()</a>, and <a class="el" href="animaMCMScalarMapsImageFilter_8hxx_source.html#l00013">anima::MCMScalarMapsImageFilter&lt; TPixelType &gt;::DynamicThreadedGenerateData()</a>.</p>
 
 </div>
 </div>
@@ -651,7 +787,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00089">89</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00457">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00093">anima::NODDICompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00500">anima::NODDICompartment::GetFractionalAnisotropy()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00184">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00279">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00236">anima::NODDICompartment::SetExtraAxonalFraction()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00502">anima::NODDICompartment::GetApparentFractionalAnisotropy()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00459">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00093">anima::NODDICompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00186">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00281">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00238">anima::NODDICompartment::SetExtraAxonalFraction()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
 
 </div>
 </div>
@@ -704,35 +840,6 @@ Static Protected Attributes</h2></td></tr>
 <p>Implemented in <a class="el" href="classanima_1_1TensorCompartment.html#a6129ceaa41a62815ddc548038912d81d">anima::TensorCompartment</a>, <a class="el" href="classanima_1_1ZeppelinCompartment.html#aebfe7bbf5fa2d503014956a150f41a4b">anima::ZeppelinCompartment</a>, <a class="el" href="classanima_1_1NODDICompartment.html#ae4e2031aeede440a72b385692628880e">anima::NODDICompartment</a>, <a class="el" href="classanima_1_1StaniszCompartment.html#a403b10b9423a87feb04450d8c96e4dc1">anima::StaniszCompartment</a>, <a class="el" href="classanima_1_1StickCompartment.html#ae25f84a4c302d12e41e117deefeada59">anima::StickCompartment</a>, and <a class="el" href="classanima_1_1BaseIsotropicCompartment.html#a5ded9aef3cd2d62a84c0610964fb404e">anima::BaseIsotropicCompartment</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00009">GetPredictedSignal()</a>.</p>
-
-</div>
-</div>
-<a id="a45264001ee6887f4419cd56a90461871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45264001ee6887f4419cd56a90461871">&#9670;&nbsp;</a></span>GetFractionalAnisotropy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double anima::BaseCompartment::GetFractionalAnisotropy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classanima_1_1TensorCompartment.html#a801327552636ad8e397e1dfd2e2b1412">anima::TensorCompartment</a>, <a class="el" href="classanima_1_1NODDICompartment.html#a83540d9830fb26129f06c964822c87aa">anima::NODDICompartment</a>, <a class="el" href="classanima_1_1StaniszCompartment.html#a0ac3ecb50b84211d90c9c0382eab41f2">anima::StaniszCompartment</a>, <a class="el" href="classanima_1_1ZeppelinCompartment.html#a7a3ed948e607518e492a0387bc1ce283">anima::ZeppelinCompartment</a>, <a class="el" href="classanima_1_1StickCompartment.html#a28c91ae2cf64e400653d919193258414">anima::StickCompartment</a>, and <a class="el" href="classanima_1_1BaseIsotropicCompartment.html#a94f7ffa5806321a3340c117f2d06c7e9">anima::BaseIsotropicCompartment</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8cxx_source.html#l00125">125</a> of file <a class="el" href="animaBaseCompartment_8cxx_source.html">animaBaseCompartment.cxx</a>.</p>
 
 </div>
 </div>
@@ -846,7 +953,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00088">88</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00279">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00226">anima::NODDICompartment::SetOrientationConcentration()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00486">anima::NODDICompartment::UpdateKappaValues()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00281">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00228">anima::NODDICompartment::SetOrientationConcentration()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00488">anima::NODDICompartment::UpdateKappaValues()</a>.</p>
 
 </div>
 </div>
@@ -877,7 +984,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00083">83</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00457">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00184">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00119">anima::TensorCompartment::GetOrientationPhi()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00279">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">Reorient()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00217">anima::NODDICompartment::SetOrientationPhi()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00459">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00186">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00119">anima::TensorCompartment::GetOrientationPhi()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00281">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">Reorient()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00219">anima::NODDICompartment::SetOrientationPhi()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
 
 </div>
 </div>
@@ -908,7 +1015,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00082">82</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00457">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00184">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00103">anima::TensorCompartment::GetOrientationTheta()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00279">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">Reorient()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00208">anima::NODDICompartment::SetOrientationTheta()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00459">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00186">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00103">anima::TensorCompartment::GetOrientationTheta()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00281">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">Reorient()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00210">anima::NODDICompartment::SetOrientationTheta()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1202,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00086">86</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00224">anima::StickCompartment::GetFractionalAnisotropy()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00247">anima::ZeppelinCompartment::GetFractionalAnisotropy()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00165">anima::TensorCompartment::GetRadialDiffusivity1()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, and <a class="el" href="animaStickCompartment_8cxx_source.html#l00062">anima::StickCompartment::SetParametersFromVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00224">anima::StickCompartment::GetApparentFractionalAnisotropy()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00247">anima::ZeppelinCompartment::GetApparentFractionalAnisotropy()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00238">anima::StickCompartment::GetApparentMeanDiffusivity()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00261">anima::ZeppelinCompartment::GetApparentMeanDiffusivity()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00251">anima::StickCompartment::GetApparentPerpendicularDiffusivity()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00274">anima::ZeppelinCompartment::GetApparentPerpendicularDiffusivity()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00165">anima::TensorCompartment::GetRadialDiffusivity1()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">IsEqual()</a>, and <a class="el" href="animaStickCompartment_8cxx_source.html#l00062">anima::StickCompartment::SetParametersFromVector()</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1467,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00096">96</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00160">anima::StaniszCompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00245">anima::NODDICompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00141">anima::TensorCompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00066">anima::BaseIsotropicCompartment::SetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00038">anima::BaseIsotropicCompartment::SetParametersFromVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00062">anima::StickCompartment::SetParametersFromVector()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00073">anima::ZeppelinCompartment::SetParametersFromVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00160">anima::StaniszCompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00247">anima::NODDICompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00141">anima::TensorCompartment::SetAxialDiffusivity()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00066">anima::BaseIsotropicCompartment::SetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00038">anima::BaseIsotropicCompartment::SetParametersFromVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00062">anima::StickCompartment::SetParametersFromVector()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00073">anima::ZeppelinCompartment::SetParametersFromVector()</a>.</p>
 
 </div>
 </div>
@@ -1392,7 +1499,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classanima_1_1NODDICompartment.html#a3a83cda0ab5f5ad8835823e1a8599b75">anima::NODDICompartment</a>, <a class="el" href="classanima_1_1TensorCompartment.html#a1135b79943bfbce37a382198c777ee59">anima::TensorCompartment</a>, <a class="el" href="classanima_1_1StaniszCompartment.html#ae39c8cfa0996f6f13880f546c286439a">anima::StaniszCompartment</a>, <a class="el" href="classanima_1_1ZeppelinCompartment.html#aefa0c4b2235e16c4904501910453c8ba">anima::ZeppelinCompartment</a>, <a class="el" href="classanima_1_1StickCompartment.html#af49585fa964eec51a1c6688db82bfc29">anima::StickCompartment</a>, and <a class="el" href="classanima_1_1BaseIsotropicCompartment.html#a82fb271a04d85db500274509b378a18e">anima::BaseIsotropicCompartment</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00207">anima::MCMWeightedAverager::ComputeOutputTensorModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00210">anima::MCMWeightedAverager::ComputeOutputTensorCompatibleModel()</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1531,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00100">100</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00236">anima::NODDICompartment::SetExtraAxonalFraction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00238">anima::NODDICompartment::SetExtraAxonalFraction()</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1563,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00099">99</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00226">anima::NODDICompartment::SetOrientationConcentration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00228">anima::NODDICompartment::SetOrientationConcentration()</a>.</p>
 
 </div>
 </div>
@@ -1488,7 +1595,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00094">94</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">Reorient()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00217">anima::NODDICompartment::SetOrientationPhi()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00109">anima::TensorCompartment::SetOrientationPhi()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00062">anima::StickCompartment::SetParametersFromVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00073">anima::ZeppelinCompartment::SetParametersFromVector()</a>, and <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01326">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::SparseInitializeSticks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">Reorient()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00219">anima::NODDICompartment::SetOrientationPhi()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00109">anima::TensorCompartment::SetOrientationPhi()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00062">anima::StickCompartment::SetParametersFromVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00073">anima::ZeppelinCompartment::SetParametersFromVector()</a>, and <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01328">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::SparseInitializeSticks()</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1627,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00093">93</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">Reorient()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00208">anima::NODDICompartment::SetOrientationTheta()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00093">anima::TensorCompartment::SetOrientationTheta()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00062">anima::StickCompartment::SetParametersFromVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00073">anima::ZeppelinCompartment::SetParametersFromVector()</a>, and <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01326">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::SparseInitializeSticks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8cxx_source.html#l00086">CopyFromOther()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">Reorient()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00210">anima::NODDICompartment::SetOrientationTheta()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00093">anima::TensorCompartment::SetOrientationTheta()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00062">anima::StickCompartment::SetParametersFromVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00073">anima::ZeppelinCompartment::SetParametersFromVector()</a>, and <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01328">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::SparseInitializeSticks()</a>.</p>
 
 </div>
 </div>
@@ -1705,9 +1812,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Vector to hold working value of compartment vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00146">146</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00155">155</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00093">anima::BaseIsotropicCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00287">anima::StaniszCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">anima::NODDICompartment::GetCompartmentVector()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00354">anima::TensorCompartment::GetCompartmentVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00093">anima::BaseIsotropicCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00287">anima::StaniszCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">anima::NODDICompartment::GetCompartmentVector()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00354">anima::TensorCompartment::GetCompartmentVector()</a>.</p>
 
 </div>
 </div>
@@ -1733,9 +1840,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Matrix to hold working value of diffusion tensor approximation to the model. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00131">131</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00140">140</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00457">anima::NODDICompartment::GetDiffusionTensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00459">anima::NODDICompartment::GetDiffusionTensor()</a>.</p>
 
 </div>
 </div>
@@ -1761,7 +1868,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Vector holding current jacobian value. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00134">134</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00143">143</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00015">anima::BaseIsotropicCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00084">anima::StaniszCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00028">anima::TensorCompartment::GetSignalAttenuationJacobian()</a>.</p>
 
@@ -1789,9 +1896,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Vector holding current parameters lower bounds. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00140">140</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00149">149</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaFreeWaterCompartment_8cxx_source.html#l00007">anima::FreeWaterCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaIsotropicRestrictedWaterCompartment_8cxx_source.html#l00007">anima::IsotropicRestrictedWaterCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStationaryWaterCompartment_8cxx_source.html#l00006">anima::StationaryWaterCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00087">anima::StickCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00202">anima::StaniszCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00305">anima::NODDICompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00221">anima::TensorCompartment::GetParameterLowerBounds()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00104">anima::ZeppelinCompartment::GetParameterLowerBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaFreeWaterCompartment_8cxx_source.html#l00007">anima::FreeWaterCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaIsotropicRestrictedWaterCompartment_8cxx_source.html#l00007">anima::IsotropicRestrictedWaterCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStationaryWaterCompartment_8cxx_source.html#l00006">anima::StationaryWaterCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00087">anima::StickCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00202">anima::StaniszCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00307">anima::NODDICompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00221">anima::TensorCompartment::GetParameterLowerBounds()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00104">anima::ZeppelinCompartment::GetParameterLowerBounds()</a>.</p>
 
 </div>
 </div>
@@ -1817,9 +1924,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Vector holding current parameters upper bounds. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00143">143</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00152">152</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaFreeWaterCompartment_8cxx_source.html#l00017">anima::FreeWaterCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaIsotropicRestrictedWaterCompartment_8cxx_source.html#l00017">anima::IsotropicRestrictedWaterCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStationaryWaterCompartment_8cxx_source.html#l00012">anima::StationaryWaterCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">anima::StickCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00219">anima::StaniszCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00317">anima::NODDICompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00235">anima::TensorCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaFreeWaterCompartment_8cxx_source.html#l00017">anima::FreeWaterCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaIsotropicRestrictedWaterCompartment_8cxx_source.html#l00017">anima::IsotropicRestrictedWaterCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStationaryWaterCompartment_8cxx_source.html#l00012">anima::StationaryWaterCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">anima::StickCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00219">anima::StaniszCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">anima::NODDICompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00235">anima::TensorCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>.</p>
 
 </div>
 </div>
@@ -1845,9 +1952,9 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Vector holding current parameters vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00137">137</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00146">146</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00047">anima::BaseIsotropicCompartment::GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00279">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00185">anima::StaniszCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00203">anima::TensorCompartment::GetParametersAsVector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00047">anima::BaseIsotropicCompartment::GetParametersAsVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00281">anima::NODDICompartment::GetParametersAsVector()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00074">anima::StickCompartment::GetParametersAsVector()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00185">anima::StaniszCompartment::GetParametersAsVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00088">anima::ZeppelinCompartment::GetParametersAsVector()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00203">anima::TensorCompartment::GetParametersAsVector()</a>.</p>
 
 </div>
 </div>
@@ -1871,9 +1978,9 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00128">128</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseCompartment_8h_source.html#l00137">137</a> of file <a class="el" href="animaBaseCompartment_8h_source.html">animaBaseCompartment.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00429">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00103">anima::BaseIsotropicCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00457">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00010">anima::TensorCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00073">anima::TensorCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00262">anima::TensorCompartment::SetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00371">anima::NODDICompartment::SetCompartmentVector()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00400">anima::TensorCompartment::UpdateDiffusionTensor()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00431">anima::TensorCompartment::UpdateInverseDiffusionTensor()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00281">anima::TensorCompartment::UpdateParametersFromTensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaStickCompartment_8cxx_source.html#l00178">anima::StickCompartment::GetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00201">anima::ZeppelinCompartment::GetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00431">anima::NODDICompartment::GetCompartmentVector()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00103">anima::BaseIsotropicCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00203">anima::StickCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00226">anima::ZeppelinCompartment::GetDiffusionTensor()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00459">anima::NODDICompartment::GetDiffusionTensor()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00010">anima::TensorCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00073">anima::TensorCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00262">anima::TensorCompartment::SetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">anima::NODDICompartment::SetCompartmentVector()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00400">anima::TensorCompartment::UpdateDiffusionTensor()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00431">anima::TensorCompartment::UpdateInverseDiffusionTensor()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00281">anima::TensorCompartment::UpdateParametersFromTensor()</a>.</p>
 
 </div>
 </div>

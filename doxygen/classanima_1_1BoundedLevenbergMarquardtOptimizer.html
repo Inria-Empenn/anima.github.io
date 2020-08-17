@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Levenberg-Marquardt optimizer with lower and upper bounds on parameters Implementation of the original algorithmm, very well described in K. Madsen, H.B. Nielsen and O. Tingleff. Methods for non-linear least squares problems. 2004 <a href="http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3215/pdf/imm3215.pdf">http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3215/pdf/imm3215.pdf</a> Bounded version by projection as suggested by Kanzow et al. C. Kanzow, N. Yamashita and M. Fukushima. Levenberg-Marquardt methods with strong local convergence properties for solving nonlinear equations with convex constraints. Journal of computational and applied mathematics. 172:375-397, 2004.  
+<p>Levenberg-Marquardt optimizer with lower and upper bounds on parameters Implementation of the original algorithmm, very well described in K. Madsen, H.B. Nielsen and O. Tingleff. Methods for non-linear least squares problems. 2004 <a href="http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3215/pdf/imm3215.pdf">http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3215/pdf/imm3215.pdf</a> Bounded version by projection as suggested by Kanzow et al. but with a lot of modifications, including calculation of optimal lambda C. Kanzow, N. Yamashita and M. Fukushima. Levenberg-Marquardt methods with strong local convergence properties for solving nonlinear equations with convex constraints. Journal of computational and applied mathematics. 172:375-397, 2004.  
  <a href="classanima_1_1BoundedLevenbergMarquardtOptimizer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8h_source.html">animaBoundedLevenbergMarquardtOptimizer.h</a>&gt;</code></p>
@@ -148,8 +148,8 @@ Static Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a289a1891349f7d159960e99506387f83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BoundedLevenbergMarquardtOptimizer.html#a289a1891349f7d159960e99506387f83">BoundedLevenbergMarquardtOptimizer</a> ()</td></tr>
 <tr class="separator:a289a1891349f7d159960e99506387f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af994b19627764083842060249da25f86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BoundedLevenbergMarquardtOptimizer.html#af994b19627764083842060249da25f86">CheckConditions</a> (unsigned int numIterations, ParametersType &amp;newParams, ParametersType &amp;dValues, double newCostValue)</td></tr>
-<tr class="separator:af994b19627764083842060249da25f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b05c0f82e5b60f08fe3ae75497bdcdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BoundedLevenbergMarquardtOptimizer.html#a1b05c0f82e5b60f08fe3ae75497bdcdd">CheckConditions</a> (unsigned int numIterations, ParametersType &amp;newParams, ParametersType &amp;oldParams, ParametersType &amp;dValues, double newCostValue)</td></tr>
+<tr class="separator:a1b05c0f82e5b60f08fe3ae75497bdcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7466e74f7139efb05b37195c0b0c9322"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BoundedLevenbergMarquardtOptimizer.html#a7466e74f7139efb05b37195c0b0c9322">CheckSolutionIsInBounds</a> (ParametersType &amp;solutionVector, ParametersType &amp;lowerBounds, ParametersType &amp;upperBounds, unsigned int rank)</td></tr>
 <tr class="separator:a7466e74f7139efb05b37195c0b0c9322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0092747b3d37758e441a20882675bd0d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1BoundedLevenbergMarquardtOptimizer.html#a0092747b3d37758e441a20882675bd0d">EvaluateCostFunctionAtParameters</a> (ParametersType &amp;parameters, <a class="el" href="classanima_1_1BoundedLevenbergMarquardtOptimizer.html#a681ee3fad654c6703d50c48e908ec2bd">MeasureType</a> &amp;residualValues)</td></tr>
@@ -160,7 +160,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:af013a1310d9648a73b9be4ba88ba63c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Levenberg-Marquardt optimizer with lower and upper bounds on parameters Implementation of the original algorithmm, very well described in K. Madsen, H.B. Nielsen and O. Tingleff. Methods for non-linear least squares problems. 2004 <a href="http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3215/pdf/imm3215.pdf">http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3215/pdf/imm3215.pdf</a> Bounded version by projection as suggested by Kanzow et al. C. Kanzow, N. Yamashita and M. Fukushima. Levenberg-Marquardt methods with strong local convergence properties for solving nonlinear equations with convex constraints. Journal of computational and applied mathematics. 172:375-397, 2004. </p>
+<div class="textblock"><p>Levenberg-Marquardt optimizer with lower and upper bounds on parameters Implementation of the original algorithmm, very well described in K. Madsen, H.B. Nielsen and O. Tingleff. Methods for non-linear least squares problems. 2004 <a href="http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3215/pdf/imm3215.pdf">http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3215/pdf/imm3215.pdf</a> Bounded version by projection as suggested by Kanzow et al. but with a lot of modifications, including calculation of optimal lambda C. Kanzow, N. Yamashita and M. Fukushima. Levenberg-Marquardt methods with strong local convergence properties for solving nonlinear equations with convex constraints. Journal of computational and applied mathematics. 172:375-397, 2004. </p>
 
 <p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8h_source.html#l00021">21</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8h_source.html">animaBoundedLevenbergMarquardtOptimizer.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -319,8 +319,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af994b19627764083842060249da25f86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af994b19627764083842060249da25f86">&#9670;&nbsp;</a></span>CheckConditions()</h2>
+<a id="a1b05c0f82e5b60f08fe3ae75497bdcdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b05c0f82e5b60f08fe3ae75497bdcdd">&#9670;&nbsp;</a></span>CheckConditions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,6 +339,12 @@ Protected Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">ParametersType &amp;&#160;</td>
           <td class="paramname"><em>newParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ParametersType &amp;&#160;</td>
+          <td class="paramname"><em>oldParams</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -365,9 +371,9 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00330">330</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00335">335</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00008">StartOptimization()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00009">StartOptimization()</a>.</p>
 
 </div>
 </div>
@@ -417,7 +423,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00242">242</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00246">246</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
 
 </div>
 </div>
@@ -473,9 +479,9 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00318">318</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00323">323</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00008">StartOptimization()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00009">StartOptimization()</a>.</p>
 
 </div>
 </div>
@@ -702,9 +708,9 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Start optimization </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00008">8</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00009">9</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00330">CheckConditions()</a>, <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00318">EvaluateCostFunctionAtParameters()</a>, <a class="el" href="animaQRDecomposition_8hxx_source.html#l00221">anima::GetQtBFromQRPivotDecomposition()</a>, <a class="el" href="animaQRDecomposition_8hxx_source.html#l00057">anima::QRPivotDecomposition()</a>, and <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00257">UpdateLambdaParameter()</a>.</p>
+<p class="reference">References <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00335">CheckConditions()</a>, <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00323">EvaluateCostFunctionAtParameters()</a>, <a class="el" href="animaQRDecomposition_8hxx_source.html#l00221">anima::GetQtBFromQRPivotDecomposition()</a>, <a class="el" href="animaQRDecomposition_8hxx_source.html#l00057">anima::QRPivotDecomposition()</a>, and <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00261">UpdateLambdaParameter()</a>.</p>
 
 </div>
 </div>
@@ -760,9 +766,11 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00257">257</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00261">261</a> of file <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html">animaBoundedLevenbergMarquardtOptimizer.cxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00008">StartOptimization()</a>.</p>
+<p class="reference">References <a class="el" href="animaDekkerRootFindingAlgorithm_8cxx_source.html#l00006">anima::DekkerRootFindingAlgorithm::Optimize()</a>, <a class="el" href="animaBaseRootFindingAlgorithm_8h_source.html#l00055">anima::BaseRootFindingAlgorithm::SetCostFunctionTolerance()</a>, <a class="el" href="animaBaseRootFindingAlgorithm_8cxx_source.html#l00017">anima::BaseRootFindingAlgorithm::SetFunctionValueAtInitialLowerBound()</a>, <a class="el" href="animaBaseRootFindingAlgorithm_8h_source.html#l00058">anima::BaseRootFindingAlgorithm::SetLowerBound()</a>, <a class="el" href="animaBaseRootFindingAlgorithm_8h_source.html#l00056">anima::BaseRootFindingAlgorithm::SetMaximumNumberOfIterations()</a>, <a class="el" href="animaBaseRootFindingAlgorithm_8h_source.html#l00057">anima::BaseRootFindingAlgorithm::SetRootFindingFunction()</a>, <a class="el" href="animaBaseRootFindingAlgorithm_8h_source.html#l00054">anima::BaseRootFindingAlgorithm::SetRootRelativeTolerance()</a>, and <a class="el" href="animaBaseRootFindingAlgorithm_8h_source.html#l00059">anima::BaseRootFindingAlgorithm::SetUpperBound()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="animaBoundedLevenbergMarquardtOptimizer_8cxx_source.html#l00009">StartOptimization()</a>.</p>
 
 </div>
 </div>

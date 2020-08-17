@@ -3,6 +3,7 @@ var searchData=
   ['dawsonintegrand',['DawsonIntegrand',['../classanima_1_1DawsonIntegrand.html',1,'anima']]],
   ['dblock',['DBlock',['../classanima_1_1DBlock.html',1,'anima']]],
   ['dblock_3c_20anima_3a_3agraph_3a_3anodeptr_20_3e',['DBlock&lt; anima::Graph::nodeptr &gt;',['../classanima_1_1DBlock.html',1,'anima']]],
+  ['dekkerrootfindingalgorithm',['DekkerRootFindingAlgorithm',['../classanima_1_1DekkerRootFindingAlgorithm.html',1,'anima']]],
   ['densesvftransformagregator',['DenseSVFTransformAgregator',['../classanima_1_1DenseSVFTransformAgregator.html',1,'anima']]],
   ['directionscaleskewtransform',['DirectionScaleSkewTransform',['../classanima_1_1DirectionScaleSkewTransform.html',1,'anima']]],
   ['directionscaletransform',['DirectionScaleTransform',['../classanima_1_1DirectionScaleTransform.html',1,'anima']]],

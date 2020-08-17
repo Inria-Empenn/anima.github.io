@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ANIMA
-   &#160;<span id="projectnumber">3.4</span>
+   &#160;<span id="projectnumber">4.0</span>
    </div>
   </td>
  </tr>
@@ -104,6 +104,7 @@ $(function() {
 <area shape="rect" id="node7" href="animaCropImage_8cxx.html" title="animaCropImage.cxx" alt="" coords="956,80,1099,107"/>
 <area shape="rect" id="node8" href="animaVectorizeImages_8cxx.html" title="animaVectorizeImages.cxx" alt="" coords="1123,80,1297,107"/>
 <area shape="rect" id="node9" href="animaApplyTransformSerie_8cxx.html" title="animaApplyTransformSerie.cxx" alt="" coords="1321,80,1520,107"/>
+<area shape="rect" id="node10" href="animaMaskImage_8cxx.html" title="animaMaskImage.cxx" alt="" coords="1545,80,1691,107"/>
 </map>
 </div>
 </div>
@@ -167,7 +168,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">switch</span> (imageIO-&gt;GetNumberOfComponents())\</div><div class="line">{\</div><div class="line">case 0:\</div><div class="line">    {\</div><div class="line">        itk::ExceptionObject excp(__FILE__, __LINE__, <span class="stringliteral">&quot;Number of Component not supported.&quot;</span>, ITK_LOCATION);\</div><div class="line">        throw excp;\</div><div class="line">        break;\</div><div class="line">    }\</div><div class="line">case 1:\</div><div class="line">    {\</div><div class="line">        typedef itk::Image&lt;ComponentType, Dimension&gt; ImageType;\</div><div class="line">        function&lt;ImageType&gt;(__VA_ARGS__);\</div><div class="line">        break;\</div><div class="line">    }\</div><div class="line">default:\</div><div class="line">    {\</div><div class="line">        typedef itk::VectorImage&lt;ComponentType, Dimension&gt; VectorImageType;\</div><div class="line">        function&lt;VectorImageType&gt;(__VA_ARGS__);\</div><div class="line">    }\</div><div class="line">}</div></div><!-- fragment --><p>Check if one image is a Scalar image or not from an itk::ImageIOBase, then call a given function templated on either a itk::Image or itk::VectorImage</p>
 <p>imageIO -&gt; An itk::ImageIOBase setted for your image file. ComponentType -&gt; The type used to templatized the function to call. Dimension -&gt; The number of dimension on used to templatized the function yo call. function -&gt; The name of the function to call. function&lt;itk::Image&lt;ComponentType, Dimension&gt; &gt;(args, args...) or function&lt;itk::VectorImage&lt;ComponentType, Dimension&gt; &gt;(args, args...) args... -&gt; A list of arguments to pass to the function </p>
 
-<p class="definition">Definition at line <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00085">85</a> of file <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html">animaRetrieveImageTypeMacros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00088">88</a> of file <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html">animaRetrieveImageTypeMacros.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animaConvertImage_8cxx_source.html#l00099">checkIfComponentsAreVectors()</a>.</p>
 
@@ -204,12 +205,12 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">switch</span> (imageIO-&gt;GetComponentType())\</div><div class="line">{\</div><div class="line">    case itk::ImageIOBase::UCHAR:\</div><div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;Component type detected is &#39;unsigned char&#39;, anima only use &#39;char&#39;, overflow may happen&quot;</span> &lt;&lt; std::endl;\</div><div class="line">    case itk::ImageIOBase::CHAR:\</div><div class="line">        function&lt;char&gt;(__VA_ARGS__);\</div><div class="line">        break;\</div><div class="line">    case itk::ImageIOBase::UINT:\</div><div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;Component type detected is &#39;unsigned int&#39;, anima only use &#39;unsigned short&#39;.\n&quot;</span>\</div><div class="line">                     <span class="stringliteral">&quot;Undetermine behavor may happen.&quot;</span> &lt;&lt; std::endl;\</div><div class="line">    case itk::ImageIOBase::USHORT:\</div><div class="line">        function&lt;unsigned short&gt;(__VA_ARGS__);\</div><div class="line">        break;\</div><div class="line">    case itk::ImageIOBase::INT:\</div><div class="line">        std::cerr &lt;&lt; <span class="stringliteral">&quot;Component type detected is &#39;int&#39;, anima only use &#39;short&#39;.&quot;</span>\</div><div class="line">                     <span class="stringliteral">&quot;Undetermine behavor may happen&quot;</span> &lt;&lt; std::endl;\</div><div class="line">    case itk::ImageIOBase::SHORT:\</div><div class="line">        function&lt;short&gt;(__VA_ARGS__);\</div><div class="line">        break;\</div><div class="line">    case itk::ImageIOBase::FLOAT:\</div><div class="line">        function&lt;float&gt;(__VA_ARGS__);\</div><div class="line">        break;\</div><div class="line">    case itk::ImageIOBase::DOUBLE:\</div><div class="line">        function&lt;double&gt;(__VA_ARGS__);\</div><div class="line">        break;\</div><div class="line">    default:\</div><div class="line">        itk::ExceptionObject excp(__FILE__, __LINE__, <span class="stringliteral">&quot;Component type not supported.&quot;</span>, ITK_LOCATION);\</div><div class="line">        throw excp;\</div><div class="line">}</div></div><!-- fragment --><p>Retrieve the type of the components of one image from an itk::ImageIOBase, then call a given function templated on that type.</p>
+<p>Retrieve the type of the components of one image from an itk::ImageIOBase, then call a given function templated on that type.</p>
 <p>imageIO -&gt; An itk::ImageIOBase setted for your image file. function -&gt; The name of the function to call: function&lt;ComponentType&gt;(args, args...) args... -&gt; A list of arguments to pass to the function. </p>
 
 <p class="definition">Definition at line <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00016">16</a> of file <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html">animaRetrieveImageTypeMacros.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaApplyTransformSerie_8cxx_source.html#l00424">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaApplyTransformSerie_8cxx_source.html#l00459">main()</a>.</p>
 
 </div>
 </div>
@@ -259,7 +260,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">switch</span> (imageIO-&gt;GetNumberOfComponents())\</div><div class="line">{\</div><div class="line">case 1:\</div><div class="line">    function&lt;itk::Image&lt;ComponentType, dimension&gt;(__VA_ARGS__);\</div><div class="line">    break;\</div><div class="line">case 3:\</div><div class="line">    function&lt;itk::Image&lt;itk::Vector&lt;ComponentType, 3&gt;, 1&gt;(__VA_ARGS__);\</div><div class="line">case 6:\</div><div class="line">    function&lt;itk::Image&lt;itk::Vector&lt;ComponentType, 6&gt;, 1&gt;(__VA_ARGS__);\</div><div class="line">default:\</div><div class="line">    itk::ExceptionObject excp(__FILE__, __LINE__, <span class="stringliteral">&quot;Number of Component not supported.&quot;</span>, ITK_LOCATION);\</div><div class="line">    throw excp;\</div><div class="line">}</div></div><!-- fragment --><p>Retrieve the number of components of one image from an itk::ImageIOBase, then call a given function templated on a vector image of the right size.</p>
 <p>imageIO -&gt; An itk::ImageIOBase setted for your image file. ComponentType -&gt; The type used to templatized the function to call. Dimension -&gt; The number of dimension on used to templatized the function yo call. function -&gt; The name of the function to call. function&lt;itk::Image&lt;ik::Vector&lt;ComponentType, ComponentSize&gt;, Dimension&gt; &gt;(args, args...) args... -&gt; A list of arguments to pass to the function </p>
 
-<p class="definition">Definition at line <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00118">118</a> of file <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html">animaRetrieveImageTypeMacros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00121">121</a> of file <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html">animaRetrieveImageTypeMacros.h</a>.</p>
 
 </div>
 </div>
@@ -303,7 +304,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">switch</span> (imageIO-&gt;GetNumberOfDimensions())\</div><div class="line">{\</div><div class="line">    case 3:\</div><div class="line">        function&lt;ComponentType, 3&gt;(__VA_ARGS__);\</div><div class="line">        break;\</div><div class="line">    case 4:\</div><div class="line">        function&lt;ComponentType, 4&gt;(__VA_ARGS__);\</div><div class="line">        break;\</div><div class="line">    default:\</div><div class="line">        itk::ExceptionObject excp(__FILE__, __LINE__, <span class="stringliteral">&quot;Number of type not supported.&quot;</span>, ITK_LOCATION);\</div><div class="line">        throw excp;\</div><div class="line">}</div></div><!-- fragment --><p>Retrieve the number dimension of one image from an itk::ImageIOBase, then call a given function templated on that a Component type and the found number of dimension.</p>
 <p>imageIO -&gt; An itk::ImageIOBase setted for your image file. ComponentType -&gt; The type used to templatized the function to call. function -&gt; The name of the function to call. function&lt;ComponentType Dimensions&gt;(args, args...) args... -&gt; A list of arguments to pass to the function. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00057">57</a> of file <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html">animaRetrieveImageTypeMacros.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html#l00060">60</a> of file <a class="el" href="animaRetrieveImageTypeMacros_8h_source.html">animaRetrieveImageTypeMacros.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animaCollapseImage_8cxx_source.html#l00094">retrieveNbDimensions()</a>.</p>
 
