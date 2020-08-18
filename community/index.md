@@ -5,7 +5,7 @@ permalink: /community/
 order: 4
 ---
 
-Anima would not have been developed without the constant support of our institutions. Thanks to them !
+Anima, both main code and scripts, would not have been developed without the constant support of our institutions. Thanks to all of them !
 
 * [CNRS](https://www.cnrs.fr) and particularly the [IRISA](https://www.irisa.fr)
 * [Inria](https://www.inria.fr) and particularly [Inria Rennes](https://www.inria.fr/rennes)
