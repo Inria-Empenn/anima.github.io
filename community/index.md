@@ -12,7 +12,7 @@ Anima would not have been developed without the constant support of our institut
 * [Inserm](https://www.inserm.fr)
 * [University of Rennes 1](https://www.univ-rennes1.fr)
 
-![logos](images/logos_equipe.png)
+![logos]({{ site.baseurl }}/images/logos_equipe.png)
 
 # Anima contributors
 
