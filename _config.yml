@@ -3,8 +3,8 @@ title: Anima
 #email: test@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   library and python scripts for medical image processing
-baseurl: "/anima.github.io" # the subpath of your site, e.g. /blog/
-#url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/anima.github.io/" # the subpath of your site, e.g. /blog/
+url: "http://inria-visages.github.io/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
