@@ -1,10 +1,11 @@
 # Site settings
 title: Anima
-#email: test@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  library and python scripts for medical image processing
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "https://anima.irisa.fr/" # the base hostname & protocol for your site
+#email: anima-users@inria.fr
+
+base-url: "/"
+ref-url: "https://anima.irisa.fr"
+
+description: library and python scripts for medical image processing
 
 # Build settings
 markdown: kramdown

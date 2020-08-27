@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Downloads
-permalink: /downloads/
+permalink: downloads/
 order: 3
 ---
 

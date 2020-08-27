@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/" style="background: -webkit-linear-gradient(#C9272D, #861a1e);
+    <a class="site-title" href="{{ site.base-url }}" style="background: -webkit-linear-gradient(#C9272D, #861a1e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;">{{ site.title }}: {{ site.description }}</a>
     
@@ -15,11 +15,11 @@
       </a>
  
       <div class="trigger">
-        <a class="page-link" href="{{ site.baseurl }}">Home</a>
+        <a class="page-link" href="{{ site.base-url }}">Home</a>
         {% assign sorted_pages = site.pages | sort:"order" %}
         {% for page in sorted_pages %}
           {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <a class="page-link" href="{{ page.url }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>

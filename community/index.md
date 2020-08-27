@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Community
-permalink: /community/
+permalink: community/
 order: 4
 ---
 
@@ -12,12 +12,12 @@ Anima, both main code and scripts, would not have been developed without the con
 * [Inserm](https://www.inserm.fr)
 * [University of Rennes 1](https://www.univ-rennes1.fr)
 
-![logos]({{ site.baseurl }}/images/logos_equipe.png)
+![logos]({{ site.base-url }}images/logos_equipe.png)
 
 # Anima contributors
 
 <p align="justify">
-We thank the contributors over the years for their valuable corrections and updates to the software. You can yourself join the crowd by getting involved on the Anima Github repositories available from the <a href="{{ site.baseurl }}/downloads">downloads page</a>.
+We thank the contributors over the years for their valuable corrections and updates to the software. You can yourself join the crowd by getting involved on the Anima Github repositories available from the <a href="{{ site.base-url }}downloads">downloads page</a>.
 </p>
 
 {% for contributor in site.data.contributors %}
