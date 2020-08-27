@@ -27,7 +27,7 @@ order: 3
 Anima and Anima scripts also come in several binary packages released from time to time.
 </p>
 
-{% assign release = site.github.latest_release %}
+{% assign release = site.data.anima_releases[0] %}
 <p align="justify">
 <strong>Latest Anima binary release</strong>: {{ release.name }} - <a href="{{ release.html_url }}">Release notes</a>
 </p>
