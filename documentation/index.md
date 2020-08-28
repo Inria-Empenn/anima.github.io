@@ -13,7 +13,7 @@ We provide for Anima a set of different documentations, with the aim of helping 
 
 <ul>
 	<li><a href="http://anima.rtfd.io/">End user guide</a>: a user driven documentation of the various tools and scripts available</li>
-	<li><a href="{{ site.base-url }}/doxygen/classes.html">Doxygen documentation</a>: developer driven documentation of all classes included in Anima current release</li>
+	<li><a href="{{ site.base-url }}doxygen/classes.html">Doxygen documentation</a>: developer driven documentation of all classes included in Anima current release</li>
 </ul>
 
 # Community help
