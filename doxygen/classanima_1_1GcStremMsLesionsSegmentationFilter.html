@@ -82,6 +82,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class performing lesion segmentation.  
+ <a href="classanima_1_1GcStremMsLesionsSegmentationFilter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;:</div>
@@ -89,8 +92,6 @@ $(function() {
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classanima_1_1GcStremMsLesionsSegmentationFilter__inherit__graph.png" border="0" usemap="#anima_1_1GcStremMsLesionsSegmentationFilter_3_01TInputImage_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="anima_1_1GcStremMsLesionsSegmentationFilter_3_01TInputImage_01_4_inherit__map" id="anima_1_1GcStremMsLesionsSegmentationFilter_3_01TInputImage_01_4_inherit__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;:</div>
@@ -98,8 +99,6 @@ $(function() {
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classanima_1_1GcStremMsLesionsSegmentationFilter__coll__graph.png" border="0" usemap="#anima_1_1GcStremMsLesionsSegmentationFilter_3_01TInputImage_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="anima_1_1GcStremMsLesionsSegmentationFilter_3_01TInputImage_01_4_coll__map" id="anima_1_1GcStremMsLesionsSegmentationFilter_3_01TInputImage_01_4_coll__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -540,8 +539,24 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TInputImage&gt;<br />
 class anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;</h3>
 
+<p>Class performing lesion segmentation. </p>
+<p>The segmentation method has three steps:</p>
+<p>1) Estimation of the NABT model: The NABT model computation requires strictly 3 sequences: T1-w and two sequences among T2-w, DP and FLAIR.</p>
+<p>2) Detection of candidate lesions: The lesion detection can be done two different ways:</p><ul>
+<li>applying a simple threshold after computing the mahalanobis distances on each one of the healthy tissues. (LesionSegmentationType == strem)</li>
+<li><p class="startli">applying a graph cut segmentation. (LesionSegmentationType == gcem) The automatic graph cut segmentation requires a sources and a sink probabilities maps that are computed from the mahalanobis images. The sources map is computed using also fuzzy weights between 0 and 1, based on T2-w, DP and FLAIR hyper-intensities. Additionally, binary sources and sinks masks can be added as entries of the graph cut.(LesionSegmentationType == gcemAndManualGC) Their information will be mixed with the automatic sources and sinks probabilities map. This option simulates the lesion segmentation correction done by a user that adds/removes seeds for the graph cut computation.</p>
+<p class="startli">The last segmentation type option (LesionSegmentationType == manualGC) just uses manual binary sources and sinks masks as entries of the graph cut. This option does not perform the estimation of the NABT model.</p>
+</li>
+</ul>
+<p>3) Application of a priori heuristic rules to extract the MS lesions from others outliers: The heuritic rules that can be used to refine the segmentation are:</p><ul>
+<li>the size rule to remove small lesions</li>
+<li>the border rule to remove lesions touching the border of the brain mask if the NABT model has being computed, the following rules can be applied:</li>
+<li>hyper-intensity rule to remove voxels that are not hyper-intense comparing to the white matter in T2, DP and FLAIR sequence.</li>
+<li>white matter neighbor rule to remove lesions that are not in white matter.</li>
+</ul>
+<p>Additionally to the lesions segmentation, the filter provides a segmentation of the healthy tissues based on the NABT estimation. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00070">70</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00071">71</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a8ad0719383292c21cfcf3c573f6758fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ad0719383292c21cfcf3c573f6758fe">&#9670;&nbsp;</a></span>BinaryThresholdImageFilterType_F_UC</h2>
@@ -557,7 +572,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00125">125</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00126">126</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -575,7 +590,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00126">126</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00127">127</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -593,7 +608,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00115">115</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00116">116</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -611,7 +626,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00118">118</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00119">119</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +644,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00119">119</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00120">120</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +662,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00130">130</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00131">131</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -665,7 +680,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00079">79</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00080">80</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -683,7 +698,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00111">111</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00112">112</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +717,7 @@ template&lt;typename TInputImage &gt; </div>
 </div><div class="memdoc">
 <p>Define filters. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00114">114</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00115">115</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -720,7 +735,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00089">89</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00090">90</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +753,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00100">100</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00101">101</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -756,7 +771,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00104">104</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00105">105</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -774,7 +789,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00108">108</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00109">109</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -792,7 +807,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00099">99</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00100">100</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -810,7 +825,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00103">103</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00104">104</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +843,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00107">107</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00108">108</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -846,7 +861,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00098">98</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00099">99</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -865,7 +880,7 @@ template&lt;typename TInputImage &gt; </div>
 </div><div class="memdoc">
 <p>Type of the input images. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00088">88</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00089">89</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -883,7 +898,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00127">127</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00128">128</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -901,7 +916,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00129">129</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00130">130</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -919,7 +934,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00128">128</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00129">129</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -937,7 +952,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00122">122</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00123">123</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -955,7 +970,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00110">110</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00111">111</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -973,7 +988,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00123">123</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00124">124</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +1006,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00124">124</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00125">125</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1024,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00093">93</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00094">94</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1043,7 @@ template&lt;typename TInputImage &gt; </div>
 </div><div class="memdoc">
 <p>Type of the output images. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00092">92</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00093">93</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1061,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00094">94</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00095">95</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1079,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00095">95</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00096">96</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1097,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00102">102</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00103">103</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1115,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00106">106</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00107">107</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1133,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00097">97</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00098">98</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1136,7 +1151,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00078">78</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00079">79</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1154,7 +1169,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00131">131</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00132">132</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1187,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00116">116</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00117">117</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1205,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00121">121</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00122">122</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1209,7 +1224,7 @@ template&lt;typename TInputImage &gt; </div>
 </div><div class="memdoc">
 <p>Standard class typedefs. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00075">75</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00076">76</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1242,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00077">77</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00078">78</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1245,7 +1260,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00117">117</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00118">118</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1263,7 +1278,7 @@ template&lt;typename TInputImage &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00076">76</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00077">77</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1308,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00353">353</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00354">354</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00193">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::MakeOutput()</a>, <a class="el" href="classanima_1_1GraphCutFilter.html#acae2eb7f64ed6ef040711830dcede548">anima::GraphCutFilter&lt; TInput, TOutput &gt;::New()</a>, <a class="el" href="classanima_1_1ComputeMahalanobisImagesFilter.html#a7b92f2d536620b521dbd379d1f44040a">anima::ComputeMahalanobisImagesFilter&lt; TInputImage, TMaskImage, TOutput &gt;::New()</a>, <a class="el" href="classanima_1_1TLinksFilter.html#a112396b173f84aedc8044d3027615b6f">anima::TLinksFilter&lt; TInput, TOutput &gt;::New()</a>, and <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00021">strem</a>.</p>
 
@@ -1324,7 +1339,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">458</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">459</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="classanima_1_1GcStremMsLesionsSegmentationFilter.html#a78f2712021ee3af1d0d30b84b126f2e6">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::EmitProgress()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00152">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputCSFAtlas()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00159">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputGMAtlas()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00131">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputImageDP()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00138">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputImageFLAIR()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00117">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputImageT1()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00144">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputImageT1Gd()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00124">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputImageT2()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00173">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputLesionPrior()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00166">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetInputWMAtlas()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00110">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetMask()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00185">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetSinksMask()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00179">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GetSourcesMask()</a>, <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00193">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::MakeOutput()</a>, and <a class="el" href="classanima_1_1GcStremMsLesionsSegmentationFilter.html#a12650421a2a9f8449b42cd1361e73ef1">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::ManageProgress()</a>.</p>
 
@@ -1490,7 +1505,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -1650,7 +1665,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00313">313</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00314">314</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1777,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00152">152</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -1793,7 +1808,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00159">159</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -1824,7 +1839,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00131">131</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -1855,7 +1870,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00138">138</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -1886,7 +1901,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00117">117</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -1917,7 +1932,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00144">144</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -1948,7 +1963,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00124">124</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -1979,7 +1994,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00173">173</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -2010,7 +2025,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00166">166</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -2147,7 +2162,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00280">280</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00281">281</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2259,7 +2274,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00110">110</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -2288,7 +2303,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00343">343</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00344">344</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2474,7 +2489,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00286">286</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00287">287</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2524,7 +2539,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00298">298</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00299">299</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2574,7 +2589,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00289">289</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00290">290</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2645,7 +2660,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00331">331</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00332">332</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2695,7 +2710,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00334">334</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00335">335</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2724,7 +2739,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00283">283</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00284">284</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2774,7 +2789,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00316">316</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00317">317</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2824,7 +2839,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00319">319</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00320">320</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2874,7 +2889,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00325">325</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00326">326</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2924,7 +2939,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00328">328</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00329">329</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2974,7 +2989,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00322">322</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00323">323</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -3066,7 +3081,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00304">304</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00305">305</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -3095,7 +3110,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00301">301</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00302">302</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -3145,7 +3160,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00307">307</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00308">308</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -3195,7 +3210,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00310">310</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00311">311</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -3224,7 +3239,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00295">295</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00296">296</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -3295,7 +3310,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00292">292</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00293">293</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -3461,7 +3476,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00185">185</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -3490,7 +3505,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00338">338</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00339">339</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -3521,7 +3536,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00179">179</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -3739,7 +3754,7 @@ template&lt;typename TInputImage &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html#l00193">193</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8hxx_source.html">animaGcStremMsLesionsSegmentationFilter.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00353">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GcStremMsLesionsSegmentationFilter()</a>, and <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00354">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::GcStremMsLesionsSegmentationFilter()</a>, and <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -3785,7 +3800,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00458">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00459">anima::GcStremMsLesionsSegmentationFilter&lt; TInputImage &gt;::~GcStremMsLesionsSegmentationFilter()</a>.</p>
 
 </div>
 </div>
@@ -4037,7 +4052,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00337">337</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00338">338</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4407,7 +4422,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00281">281</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00282">282</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4543,7 +4558,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00344">344</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00345">345</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4685,7 +4700,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00287">287</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00288">288</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4715,7 +4730,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00314">314</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00315">315</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4745,7 +4760,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00299">299</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00300">300</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4775,7 +4790,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00290">290</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00291">291</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4805,7 +4820,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00332">332</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00333">333</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4835,7 +4850,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00335">335</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00336">336</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4865,7 +4880,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00284">284</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00285">285</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4895,7 +4910,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00317">317</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00318">318</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4925,7 +4940,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00320">320</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00321">321</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4955,7 +4970,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00326">326</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00327">327</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -4985,7 +5000,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00329">329</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00330">330</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5015,7 +5030,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00323">323</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00324">324</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5045,7 +5060,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00305">305</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00306">306</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5075,7 +5090,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00302">302</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00303">303</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5105,7 +5120,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00308">308</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00309">309</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5135,7 +5150,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00311">311</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00312">312</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5165,7 +5180,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00296">296</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00297">297</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5195,7 +5210,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00293">293</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00294">294</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5387,7 +5402,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00340">340</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00341">341</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5417,7 +5432,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00341">341</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00342">342</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5497,7 +5512,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00183">183</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00184">184</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5710,7 +5725,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00350">350</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00351">351</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5736,7 +5751,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00349">349</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00350">350</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5762,7 +5777,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00347">347</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00348">348</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5788,7 +5803,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00351">351</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00352">352</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -5814,7 +5829,7 @@ template&lt;typename TInputImage &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00348">348</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html#l00349">349</a> of file <a class="el" href="animaGcStremMsLesionsSegmentationFilter_8h_source.html">animaGcStremMsLesionsSegmentationFilter.h</a>.</p>
 
 </div>
 </div>

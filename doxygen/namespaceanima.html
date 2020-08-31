@@ -74,9 +74,6 @@ $(function() {
 <div class="title">anima Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Class performing lesion segmentation.  
-<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -244,6 +241,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the Gauss Laguerre quadrature of a function defined from R^+ into R. Recenters the function on the interest zone with an affine relation, then uses Gauss Legendre on the left out part of the function and computes the main part with Gauss Laguerre.  <a href="classanima_1_1GaussLaguerreQuadrature.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1GcStremMsLesionsSegmentationFilter.html">GcStremMsLesionsSegmentationFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class performing lesion segmentation.  <a href="classanima_1_1GcStremMsLesionsSegmentationFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1GeneralizedFAImageFilter.html">GeneralizedFAImageFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1186,24 +1184,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:a523469d292420bf340ac458750565617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default zero lower bound (in case we want something else than zero one day)  <a href="#a523469d292420bf340ac458750565617">More...</a><br /></td></tr>
 <tr class="separator:a523469d292420bf340ac458750565617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class performing lesion segmentation. </p>
-<p>The segmentation method has three steps:</p>
-<p>1) Estimation of the NABT model: The NABT model computation requires strictly 3 sequences: T1-w and two sequences among T2-w, DP and FLAIR.</p>
-<p>2) Detection of candidate lesions: The lesion detection can be done two different ways:</p><ul>
-<li>applying a simple threshold after computing the mahalanobis distances on each one of the healthy tissues. (LesionSegmentationType == strem)</li>
-<li><p class="startli">applying a graph cut segmentation. (LesionSegmentationType == gcem) The automatic graph cut segmentation requires a sources and a sink probabilities maps that are computed from the mahalanobis images. The sources map is computed using also fuzzy weights between 0 and 1, based on T2-w, DP and FLAIR hyper-intensities. Additionally, binary sources and sinks masks can be added as entries of the graph cut.(LesionSegmentationType == gcemAndManualGC) Their information will be mixed with the automatic sources and sinks probabilities map. This option simulates the lesion segmentation correction done by a user that adds/removes seeds for the graph cut computation.</p>
-<p class="startli">The last segmentation type option (LesionSegmentationType == manualGC) just uses manual binary sources and sinks masks as entries of the graph cut. This option does not perform the estimation of the NABT model.</p>
-</li>
-</ul>
-<p>3) Application of a priori heuristic rules to extract the MS lesions from others outliers: The heuritic rules that can be used to refine the segmentation are:</p><ul>
-<li>the size rule to remove small lesions</li>
-<li>the border rule to remove lesions touching the border of the brain mask if the NABT model has being computed, the following rules can be applied:</li>
-<li>hyper-intensity rule to remove voxels that are not hyper-intense comparing to the white matter in T2, DP and FLAIR sequence.</li>
-<li>white matter neighbor rule to remove lesions that are not in white matter.</li>
-</ul>
-<p>Additionally to the lesions segmentation, the filter provides a segmentation of the healthy tissues based on the NABT estimation. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="aa396e1ba4810cd2511974bb42a12b45b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa396e1ba4810cd2511974bb42a12b45b">&#9670;&nbsp;</a></span>DiffusionModelCompartmentType</h2>
 
@@ -4317,7 +4298,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMatrixLogExp_8hxx_source.html#l00198">198</a> of file <a class="el" href="animaMatrixLogExp_8hxx_source.html">animaMatrixLogExp.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaLinearTransformEstimationTools_8hxx_source.html#l00261">computeLogEuclideanAverage()</a>, <a class="el" href="animaLogRigid3DTransform_8hxx_source.html#l00083">anima::LogRigid3DTransform&lt; TScalarType &gt;::ComputeMatrix()</a>, <a class="el" href="animaDirectionScaleSkewTransform_8hxx_source.html#l00125">anima::DirectionScaleSkewTransform&lt; TScalarType &gt;::ComputeMatrix()</a>, <a class="el" href="animaLinearTransformArithmetic_8cxx_source.html#l00008">main()</a>, <a class="el" href="animaSymmetricBMRegistrationMethod_8hxx_source.html#l00013">anima::SymmetricBMRegistrationMethod&lt; TInputImageType &gt;::PerformOneIteration()</a>, and <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8hxx_source.html#l00016">anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;::PerformOneIteration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaLinearTransformEstimationTools_8hxx_source.html#l00261">computeLogEuclideanAverage()</a>, <a class="el" href="animaLogRigid3DTransform_8hxx_source.html#l00083">anima::LogRigid3DTransform&lt; TScalarType &gt;::ComputeMatrix()</a>, <a class="el" href="animaLinearTransformArithmetic_8cxx_source.html#l00008">main()</a>, <a class="el" href="animaSymmetricBMRegistrationMethod_8hxx_source.html#l00013">anima::SymmetricBMRegistrationMethod&lt; TInputImageType &gt;::PerformOneIteration()</a>, and <a class="el" href="animaKissingSymmetricBMRegistrationMethod_8hxx_source.html#l00016">anima::KissingSymmetricBMRegistrationMethod&lt; TInputImageType &gt;::PerformOneIteration()</a>.</p>
 
 </div>
 </div>
