@@ -70,6 +70,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -81,6 +82,7 @@ $(function() {
 <code>#include &lt;vnl/vnl_diag_matrix.h&gt;</code><br />
 <code>#include &lt;itkVariableLengthVector.h&gt;</code><br />
 <code>#include &lt;itkMatrixOffsetTransformBase.h&gt;</code><br />
+<code>#include &lt;itkSymmetricEigenAnalysis.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for animaBaseTensorTools.h:</div>
@@ -89,17 +91,17 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="animaBaseTensorTools_8h__incl.png" border="0" usemap="#animaBaseTensorTools_8h" alt=""/></div>
 <map name="animaBaseTensorTools_8h" id="animaBaseTensorTools_8h">
-<area shape="rect" id="node7" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="953,80,1132,107"/>
-<area shape="rect" id="node9" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="1125,311,1291,338"/>
-<area shape="rect" id="node20" href="animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="961,155,1125,181"/>
-<area shape="rect" id="node15" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="1449,401,1628,427"/>
-<area shape="rect" id="node17" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="1605,483,1785,509"/>
-<area shape="rect" id="node18" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="1548,565,1740,591"/>
-<area shape="rect" id="node21" href="animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="955,229,1131,256"/>
-<area shape="rect" id="node22" href="animaLinearTransformEstimationTools_8h.html" title="animaLinearTransformEstimation\lTools.h" alt="" coords="372,304,583,345"/>
-<area shape="rect" id="node25" href="animaLinearTransformEstimationTools_8hxx.html" title="animaLinearTransformEstimation\lTools.hxx" alt="" coords="151,393,361,435"/>
-<area shape="rect" id="node26" href="animaMatrixLogExp_8h.html" title="animaMatrixLogExp.h" alt="" coords="559,483,703,509"/>
-<area shape="rect" id="node30" href="animaMatrixLogExp_8hxx.html" title="animaMatrixLogExp.hxx" alt="" coords="423,565,579,591"/>
+<area shape="rect" id="node8" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="623,80,801,107"/>
+<area shape="rect" id="node9" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="1038,311,1205,338"/>
+<area shape="rect" id="node20" href="animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="634,155,798,181"/>
+<area shape="rect" id="node15" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="1184,401,1363,427"/>
+<area shape="rect" id="node17" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="1185,483,1365,509"/>
+<area shape="rect" id="node18" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="1173,565,1365,591"/>
+<area shape="rect" id="node21" href="animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="631,229,807,256"/>
+<area shape="rect" id="node22" href="animaLinearTransformEstimationTools_8h.html" title="animaLinearTransformEstimation\lTools.h" alt="" coords="604,304,815,345"/>
+<area shape="rect" id="node25" href="animaLinearTransformEstimationTools_8hxx.html" title="animaLinearTransformEstimation\lTools.hxx" alt="" coords="423,393,633,435"/>
+<area shape="rect" id="node26" href="animaMatrixLogExp_8h.html" title="animaMatrixLogExp.h" alt="" coords="620,483,764,509"/>
+<area shape="rect" id="node30" href="animaMatrixLogExp_8hxx.html" title="animaMatrixLogExp.hxx" alt="" coords="721,565,877,591"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -110,59 +112,64 @@ $(function() {
 <div class="center"><img src="animaBaseTensorTools_8h__dep__incl.png" border="0" usemap="#animaBaseTensorTools_8hdep" alt=""/></div>
 <map name="animaBaseTensorTools_8hdep" id="animaBaseTensorTools_8hdep">
 <area shape="rect" id="node2" href="animaDTIEstimationImageFilter_8hxx.html" title="animaDTIEstimationImageFilter.hxx" alt="" coords="5,87,231,114"/>
-<area shape="rect" id="node5" href="animaDTIScalarMapsImageFilter_8hxx.html" title="animaDTIScalarMapsImageFilter.hxx" alt="" coords="255,87,488,114"/>
-<area shape="rect" id="node8" href="animaGaussianMCMCost_8cxx.html" title="animaGaussianMCMCost.cxx" alt="" coords="513,87,702,114"/>
-<area shape="rect" id="node9" href="animaGaussianMCMVariableProjectionCost_8cxx.html" title="animaGaussianMCMVariable\lProjectionCost.cxx" alt="" coords="726,80,913,121"/>
-<area shape="rect" id="node10" href="animaTensorCompartment_8cxx.html" title="animaTensorCompartment.cxx" alt="" coords="937,87,1133,114"/>
-<area shape="rect" id="node11" href="animaMCMEstimatorImageFilter_8hxx.html" title="animaMCMEstimatorImageFilter.hxx" alt="" coords="1158,87,1387,114"/>
-<area shape="rect" id="node14" href="animaDTIProbabilisticTractographyImageFilter_8cxx.html" title="animaDTIProbabilisticTractography\lImageFilter.cxx" alt="" coords="1416,259,1639,300"/>
-<area shape="rect" id="node15" href="animaDTITractographyImageFilter_8cxx.html" title="animaDTITractographyImage\lFilter.cxx" alt="" coords="1683,80,1873,121"/>
-<area shape="rect" id="node16" href="animaExpTensorImageFilter_8hxx.html" title="animaExpTensorImageFilter.hxx" alt="" coords="1673,177,1877,203"/>
-<area shape="rect" id="node21" href="animaLogTensorImageFilter_8hxx.html" title="animaLogTensorImageFilter.hxx" alt="" coords="1901,177,2105,203"/>
-<area shape="rect" id="node23" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="2299,87,2478,114"/>
-<area shape="rect" id="node24" href="animaMCML2DistanceComputer_8cxx.html" title="animaMCML2DistanceComputer.cxx" alt="" coords="2503,87,2733,114"/>
-<area shape="rect" id="node25" href="animaMCMWeightedAverager_8cxx.html" title="animaMCMWeightedAverager.cxx" alt="" coords="2757,87,2972,114"/>
-<area shape="rect" id="node26" href="animaODFFunctions_8cxx.html" title="animaODFFunctions.cxx" alt="" coords="2997,87,3159,114"/>
-<area shape="rect" id="node27" href="animaDistributionSampling_8hxx.html" title="animaDistributionSampling.hxx" alt="" coords="1411,87,1609,114"/>
-<area shape="rect" id="node29" href="animaB1GammaMixtureT2RelaxometryCostFunction_8cxx.html" title="animaB1GammaMixtureT2Relaxometry\lCostFunction.cxx" alt="" coords="3184,80,3431,121"/>
-<area shape="rect" id="node30" href="animaB1GMMRelaxometryCostFunction_8cxx.html" title="animaB1GMMRelaxometryCost\lFunction.cxx" alt="" coords="3455,80,3658,121"/>
-<area shape="rect" id="node31" href="animaOrientedModelBaseResampleImageFilter_8hxx.html" title="animaOrientedModelBaseResample\lImageFilter.hxx" alt="" coords="1998,80,2225,121"/>
-<area shape="rect" id="node34" href="animaTensorResampleImageFilter_8hxx.html" title="animaTensorResampleImage\lFilter.hxx" alt="" coords="2214,348,2403,389"/>
-<area shape="rect" id="node35" href="animaBaseOrientedModelImageToImageMetric_8hxx.html" title="animaBaseOrientedModelImage\lToImageMetric.hxx" alt="" coords="4163,80,4369,121"/>
-<area shape="rect" id="node38" href="animaMCMCorrelationImageToImageMetric_8hxx.html" title="animaMCMCorrelationImage\lToImageMetric.hxx" alt="" coords="3522,348,3709,389"/>
-<area shape="rect" id="node40" href="animaMCMMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMMeanSquaresImage\lToImageMetric.hxx" alt="" coords="3783,348,3986,389"/>
-<area shape="rect" id="node42" href="animaMCMPairingMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.hxx" alt="" coords="4061,348,4268,389"/>
-<area shape="rect" id="node44" href="animaMTPairingCorrelationImageToImageMetric_8hxx.html" title="animaMTPairingCorrelation\lImageToImageMetric.hxx" alt="" coords="4293,348,4471,389"/>
-<area shape="rect" id="node46" href="animaTensorCorrelationImageToImageMetric_8hxx.html" title="animaTensorCorrelationImage\lToImageMetric.hxx" alt="" coords="4546,348,4741,389"/>
-<area shape="rect" id="node48" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx.html" title="animaTensorGeneralizedCorrelation\lImageToImageMetric.hxx" alt="" coords="4815,348,5042,389"/>
-<area shape="rect" id="node50" href="animaTensorMeanSquaresImageToImageMetric_8hxx.html" title="animaTensorMeanSquaresImage\lToImageMetric.hxx" alt="" coords="5117,348,5327,389"/>
-<area shape="rect" id="node3" href="animaDTIEstimationImageFilter_8h.html" title="animaDTIEstimationImageFilter.h" alt="" coords="11,177,225,203"/>
-<area shape="rect" id="node4" href="animaDTIEstimator_8cxx.html" title="animaDTIEstimator.cxx" alt="" coords="41,266,195,293"/>
-<area shape="rect" id="node6" href="animaDTIScalarMapsImageFilter_8h.html" title="animaDTIScalarMapsImageFilter.h" alt="" coords="261,177,482,203"/>
-<area shape="rect" id="node7" href="animaComputeDTIScalarMaps_8cxx.html" title="animaComputeDTIScalarMaps.cxx" alt="" coords="261,266,481,293"/>
-<area shape="rect" id="node12" href="animaMCMEstimatorImageFilter_8h.html" title="animaMCMEstimatorImageFilter.h" alt="" coords="1164,177,1381,203"/>
-<area shape="rect" id="node13" href="animaMCMEstimator_8cxx.html" title="animaMCMEstimator.cxx" alt="" coords="1191,266,1355,293"/>
-<area shape="rect" id="node17" href="animaExpTensorImageFilter_8h.html" title="animaExpTensorImageFilter.h" alt="" coords="1686,266,1878,293"/>
-<area shape="rect" id="node18" href="animaExpTensors_8cxx.html" title="animaExpTensors.cxx" alt="" coords="1644,355,1789,382"/>
-<area shape="rect" id="node19" href="animaPyramidalDenseTensorSVFMatchingBridge_8hxx.html" title="animaPyramidalDenseTensor\lSVFMatchingBridge.hxx" alt="" coords="1814,348,2003,389"/>
-<area shape="rect" id="node20" href="animaPyramidImage_8cxx.html" title="animaPyramidImage.cxx" alt="" coords="2027,355,2190,382"/>
-<area shape="rect" id="node22" href="animaLogTensorImageFilter_8h.html" title="animaLogTensorImageFilter.h" alt="" coords="1907,266,2099,293"/>
-<area shape="rect" id="node28" href="animaDistributionSampling_8h.html" title="animaDistributionSampling.h" alt="" coords="1412,177,1597,203"/>
-<area shape="rect" id="node32" href="animaOrientedModelBaseResampleImageFilter_8h.html" title="animaOrientedModelBaseResample\lImageFilter.h" alt="" coords="2130,169,2357,211"/>
-<area shape="rect" id="node33" href="animaTensorResampleImageFilter_8h.html" title="animaTensorResampleImage\lFilter.h" alt="" coords="2149,259,2338,300"/>
-<area shape="rect" id="node36" href="animaBaseOrientedModelImageToImageMetric_8h.html" title="animaBaseOrientedModelImage\lToImageMetric.h" alt="" coords="4163,169,4369,211"/>
-<area shape="rect" id="node37" href="animaMCMCorrelationImageToImageMetric_8h.html" title="animaMCMCorrelationImage\lToImageMetric.h" alt="" coords="3522,259,3709,300"/>
-<area shape="rect" id="node39" href="animaMCMMeanSquaresImageToImageMetric_8h.html" title="animaMCMMeanSquaresImage\lToImageMetric.h" alt="" coords="3783,259,3986,300"/>
-<area shape="rect" id="node41" href="animaMCMPairingMeanSquaresImageToImageMetric_8h.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.h" alt="" coords="4061,259,4268,300"/>
-<area shape="rect" id="node43" href="animaMTPairingCorrelationImageToImageMetric_8h.html" title="animaMTPairingCorrelation\lImageToImageMetric.h" alt="" coords="4293,259,4471,300"/>
-<area shape="rect" id="node45" href="animaTensorCorrelationImageToImageMetric_8h.html" title="animaTensorCorrelationImage\lToImageMetric.h" alt="" coords="4546,259,4741,300"/>
-<area shape="rect" id="node47" href="animaTensorGeneralizedCorrelationImageToImageMetric_8h.html" title="animaTensorGeneralizedCorrelation\lImageToImageMetric.h" alt="" coords="4815,259,5042,300"/>
-<area shape="rect" id="node49" href="animaTensorMeanSquaresImageToImageMetric_8h.html" title="animaTensorMeanSquaresImage\lToImageMetric.h" alt="" coords="5117,259,5327,300"/>
+<area shape="rect" id="node4" href="animaDTIScalarMapsImageFilter_8hxx.html" title="animaDTIScalarMapsImageFilter.hxx" alt="" coords="255,87,488,114"/>
+<area shape="rect" id="node6" href="animaGaussianMCMCost_8cxx.html" title="animaGaussianMCMCost.cxx" alt="" coords="803,87,993,114"/>
+<area shape="rect" id="node7" href="animaGaussianMCMVariableProjectionCost_8h.html" title="animaGaussianMCMVariable\lProjectionCost.h" alt="" coords="1017,80,1203,121"/>
+<area shape="rect" id="node11" href="animaMCMEstimatorImageFilter_8hxx.html" title="animaMCMEstimatorImageFilter.hxx" alt="" coords="1191,184,1421,211"/>
+<area shape="rect" id="node13" href="animaTensorCompartment_8h.html" title="animaTensorCompartment.h" alt="" coords="1742,87,1926,114"/>
+<area shape="rect" id="node17" href="animaDTIProbabilisticTractographyImageFilter_8cxx.html" title="animaDTIProbabilisticTractography\lImageFilter.cxx" alt="" coords="2111,80,2333,121"/>
+<area shape="rect" id="node18" href="animaDTITractographyImageFilter_8cxx.html" title="animaDTITractographyImage\lFilter.cxx" alt="" coords="2358,80,2547,121"/>
+<area shape="rect" id="node19" href="animaExpTensorImageFilter_8h.html" title="animaExpTensorImageFilter.h" alt="" coords="2571,87,2763,114"/>
+<area shape="rect" id="node25" href="animaLogTensorImageFilter_8h.html" title="animaLogTensorImageFilter.h" alt="" coords="2787,87,2979,114"/>
+<area shape="rect" id="node31" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="3003,87,3182,114"/>
+<area shape="rect" id="node32" href="animaMCML2DistanceComputer_8cxx.html" title="animaMCML2DistanceComputer.cxx" alt="" coords="3207,87,3437,114"/>
+<area shape="rect" id="node33" href="animaMCMWeightedAverager_8h.html" title="animaMCMWeightedAverager.h" alt="" coords="3462,87,3665,114"/>
+<area shape="rect" id="node37" href="animaODFFunctions_8cxx.html" title="animaODFFunctions.cxx" alt="" coords="3689,87,3851,114"/>
+<area shape="rect" id="node38" href="animaDistributionSampling_8hxx.html" title="animaDistributionSampling.hxx" alt="" coords="3875,87,4073,114"/>
+<area shape="rect" id="node39" href="animaB1GammaMixtureT2RelaxometryCostFunction_8h.html" title="animaB1GammaMixtureT2Relaxometry\lCostFunction.h" alt="" coords="4097,80,4344,121"/>
+<area shape="rect" id="node40" href="animaB1GMMRelaxometryCostFunction_8cxx.html" title="animaB1GMMRelaxometryCost\lFunction.cxx" alt="" coords="4369,80,4571,121"/>
+<area shape="rect" id="node41" href="animaOrientedModelBaseResampleImageFilter_8hxx.html" title="animaOrientedModelBaseResample\lImageFilter.hxx" alt="" coords="4595,80,4822,121"/>
+<area shape="rect" id="node42" href="animaTensorResampleImageFilter_8hxx.html" title="animaTensorResampleImage\lFilter.hxx" alt="" coords="4846,80,5035,121"/>
+<area shape="rect" id="node43" href="animaBaseOrientedModelImageToImageMetric_8hxx.html" title="animaBaseOrientedModelImage\lToImageMetric.hxx" alt="" coords="5060,80,5267,121"/>
+<area shape="rect" id="node44" href="animaMCMCorrelationImageToImageMetric_8hxx.html" title="animaMCMCorrelationImage\lToImageMetric.hxx" alt="" coords="5291,80,5478,121"/>
+<area shape="rect" id="node45" href="animaMCMMeanSquaresImageToImageMetric_8hxx.html" title="animaMCMMeanSquaresImage\lToImageMetric.hxx" alt="" coords="5502,80,5705,121"/>
+<area shape="rect" id="node46" href="animaMCMPairingMeanSquaresImageToImageMetric_8h.html" title="animaMCMPairingMeanSquares\lImageToImageMetric.h" alt="" coords="5729,80,5936,121"/>
+<area shape="rect" id="node47" href="animaMTPairingCorrelationImageToImageMetric_8h.html" title="animaMTPairingCorrelation\lImageToImageMetric.h" alt="" coords="5961,80,6139,121"/>
+<area shape="rect" id="node48" href="animaTensorCorrelationImageToImageMetric_8hxx.html" title="animaTensorCorrelationImage\lToImageMetric.hxx" alt="" coords="6163,80,6358,121"/>
+<area shape="rect" id="node49" href="animaTensorGeneralizedCorrelationImageToImageMetric_8h.html" title="animaTensorGeneralizedCorrelation\lImageToImageMetric.h" alt="" coords="6382,80,6609,121"/>
+<area shape="rect" id="node50" href="animaTensorMeanSquaresImageToImageMetric_8hxx.html" title="animaTensorMeanSquaresImage\lToImageMetric.hxx" alt="" coords="6633,80,6843,121"/>
+<area shape="rect" id="node3" href="animaDTIEstimationImageFilter_8h.html" title="animaDTIEstimationImageFilter.h" alt="" coords="11,184,225,211"/>
+<area shape="rect" id="node5" href="animaDTIScalarMapsImageFilter_8h.html" title="animaDTIScalarMapsImageFilter.h" alt="" coords="254,184,475,211"/>
+<area shape="rect" id="node8" href="animaGaussianMCMVariableProjectionCost_8cxx.html" title="animaGaussianMCMVariable\lProjectionCost.cxx" alt="" coords="499,177,686,218"/>
+<area shape="rect" id="node9" href="animaGaussianMCMVariableProjectionMultipleValuedCostFunction_8h.html" title="animaGaussianMCMVariable\lProjectionMultipleValuedCost\lFunction.h" alt="" coords="711,169,901,225"/>
+<area shape="rect" id="node10" href="animaGaussianMCMVariableProjectionSingleValuedCostFunction_8h.html" title="animaGaussianMCMVariable\lProjectionSingleValuedCostFunction.h" alt="" coords="925,177,1167,218"/>
+<area shape="rect" id="node12" href="animaMCMEstimatorImageFilter_8h.html" title="animaMCMEstimatorImageFilter.h" alt="" coords="1197,273,1415,300"/>
+<area shape="rect" id="node14" href="animaMultiCompartmentModelCreator_8cxx.html" title="animaMultiCompartmentModel\lCreator.cxx" alt="" coords="1445,177,1644,218"/>
+<area shape="rect" id="node15" href="animaTensorCompartment_8cxx.html" title="animaTensorCompartment.cxx" alt="" coords="1668,184,1864,211"/>
+<area shape="rect" id="node16" href="animaMCMFileReader_8hxx.html" title="animaMCMFileReader.hxx" alt="" coords="1888,184,2060,211"/>
+<area shape="rect" id="node20" href="animaExpTensorImageFilter_8hxx.html" title="animaExpTensorImageFilter.hxx" alt="" coords="2084,184,2288,211"/>
+<area shape="rect" id="node21" href="animaExpTensors_8cxx.html" title="animaExpTensors.cxx" alt="" coords="2312,184,2457,211"/>
+<area shape="rect" id="node22" href="animaPyramidalDenseTensorSVFMatchingBridge_8hxx.html" title="animaPyramidalDenseTensor\lSVFMatchingBridge.hxx" alt="" coords="2482,177,2671,218"/>
+<area shape="rect" id="node23" href="animaPyramidImage_8cxx.html" title="animaPyramidImage.cxx" alt="" coords="2695,184,2858,211"/>
+<area shape="rect" id="node24" href="animaTensorApplyTransformSerie_8cxx.html" title="animaTensorApplyTransform\lSerie.cxx" alt="" coords="2882,177,3069,218"/>
+<area shape="rect" id="node26" href="animaDTIProbabilisticTractography_8cxx.html" title="animaDTIProbabilisticTractography.cxx" alt="" coords="3966,184,4211,211"/>
+<area shape="rect" id="node27" href="animaDTITractography_8cxx.html" title="animaDTITractography.cxx" alt="" coords="3093,184,3268,211"/>
+<area shape="rect" id="node28" href="animaODFProbabilisticTractography_8cxx.html" title="animaODFProbabilisticTractography.cxx" alt="" coords="3293,184,3543,211"/>
+<area shape="rect" id="node29" href="animaLogTensorImageFilter_8hxx.html" title="animaLogTensorImageFilter.hxx" alt="" coords="3568,184,3772,211"/>
+<area shape="rect" id="node30" href="animaLogTensors_8cxx.html" title="animaLogTensors.cxx" alt="" coords="3796,184,3941,211"/>
+<area shape="rect" id="node34" href="animaMCMAverageImagesImageFilter_8h.html" title="animaMCMAverageImagesImage\lFilter.h" alt="" coords="4235,177,4449,218"/>
+<area shape="rect" id="node35" href="animaMCMLinearInterpolateImageFunction_8h.html" title="animaMCMLinearInterpolate\lImageFunction.h" alt="" coords="4473,177,4657,218"/>
+<area shape="rect" id="node36" href="animaMCMWeightedAverager_8cxx.html" title="animaMCMWeightedAverager.cxx" alt="" coords="4681,184,4896,211"/>
 </map>
 </div>
 </div>
 <p><a href="animaBaseTensorTools_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1LogEuclideanTensorCalculator.html">anima::LogEuclideanTensorCalculator&lt; TScalarType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceanima"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanima.html">anima</a></td></tr>
@@ -176,18 +183,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6679a60636e09b56ec885ae1cc6ea8a8"><td class="memTemplParams" colspan="2">template&lt;typename RealType &gt; </td></tr>
 <tr class="memitem:a6679a60636e09b56ec885ae1cc6ea8a8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a6679a60636e09b56ec885ae1cc6ea8a8">anima::ExtractRotationFromJacobianMatrix</a> (vnl_matrix&lt; RealType &gt; &amp;jacobianMatrix, vnl_matrix&lt; RealType &gt; &amp;rotationMatrix, vnl_matrix&lt; RealType &gt; &amp;tmpMat)</td></tr>
 <tr class="separator:a6679a60636e09b56ec885ae1cc6ea8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58182974c47595bfcab0eb38f21b1e7b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a58182974c47595bfcab0eb38f21b1e7b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a58182974c47595bfcab0eb38f21b1e7b">anima::GetTensorExponential</a> (const vnl_matrix&lt; T &gt; &amp;log_tensor, vnl_matrix&lt; T &gt; &amp;tensor)</td></tr>
-<tr class="separator:a58182974c47595bfcab0eb38f21b1e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e0c95cf3b70dde9b0d8acdaffdd8dcc"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 &gt; </td></tr>
 <tr class="memitem:a3e0c95cf3b70dde9b0d8acdaffdd8dcc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a3e0c95cf3b70dde9b0d8acdaffdd8dcc">anima::GetTensorFromVectorRepresentation</a> (const itk::VariableLengthVector&lt; T1 &gt; &amp;vector, vnl_matrix&lt; T2 &gt; &amp;tensor, unsigned int tensDim=0, bool scale=false)</td></tr>
 <tr class="separator:a3e0c95cf3b70dde9b0d8acdaffdd8dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a765144e8a4a17ccb22def89761317aad"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a765144e8a4a17ccb22def89761317aad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a765144e8a4a17ccb22def89761317aad">anima::GetTensorLogarithm</a> (const vnl_matrix&lt; T &gt; &amp;tensor, vnl_matrix&lt; T &gt; &amp;log_tensor)</td></tr>
-<tr class="separator:a765144e8a4a17ccb22def89761317aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a094f5340728b719975b6d4fa20484685"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a094f5340728b719975b6d4fa20484685"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a094f5340728b719975b6d4fa20484685">anima::GetTensorPower</a> (const vnl_matrix&lt; T &gt; &amp;tensor, vnl_matrix&lt; T &gt; &amp;outputTensor, double powerValue)</td></tr>
-<tr class="separator:a094f5340728b719975b6d4fa20484685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c5a40480f2d9052b981119f0a432c6"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 &gt; </td></tr>
 <tr class="memitem:a57c5a40480f2d9052b981119f0a432c6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a57c5a40480f2d9052b981119f0a432c6">anima::GetVectorRepresentation</a> (const vnl_matrix&lt; T1 &gt; &amp;tensor, itk::VariableLengthVector&lt; T2 &gt; &amp;vector, unsigned int vecDim=0, bool scale=false)</td></tr>
 <tr class="separator:a57c5a40480f2d9052b981119f0a432c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,13 +217,13 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36582801-1"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-36582801-1', 'auto');
-  ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-36582801-1');
 </script>
 </body>
 </html>

@@ -78,6 +78,8 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;vnl/vnl_matrix.h&gt;</code><br />
+<code>#include &lt;vnl/vnl_diag_matrix.h&gt;</code><br />
+<code>#include &lt;itkSymmetricEigenAnalysis.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="animaFuzzyCMeansFilter_8h_source.html">animaFuzzyCMeansFilter.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="animaSpectralClusteringFilter_8hxx_source.html">animaSpectralClusteringFilter.hxx</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -87,11 +89,11 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="animaSpectralClusteringFilter_8h__incl.png" border="0" usemap="#animaSpectralClusteringFilter_8h" alt=""/></div>
 <map name="animaSpectralClusteringFilter_8h" id="animaSpectralClusteringFilter_8h">
-<area shape="rect" id="node4" href="animaFuzzyCMeansFilter_8h.html" title="animaFuzzyCMeansFilter.h" alt="" coords="63,80,239,107"/>
-<area shape="rect" id="node11" href="animaSpectralClusteringFilter_8hxx.html" title="animaSpectralClusteringFilter.hxx" alt="" coords="399,80,613,107"/>
-<area shape="rect" id="node5" href="animaFuzzyCMeansFilter_8hxx.html" title="animaFuzzyCMeansFilter.hxx" alt="" coords="117,155,305,181"/>
-<area shape="rect" id="node9" href="animaLogExpMapsUnitSphere_8h.html" title="animaLogExpMapsUnitSphere.h" alt="" coords="83,229,287,256"/>
-<area shape="rect" id="node10" href="animaLogExpMapsUnitSphere_8hxx.html" title="animaLogExpMapsUnitSphere.hxx" alt="" coords="87,304,303,331"/>
+<area shape="rect" id="node6" href="animaFuzzyCMeansFilter_8h.html" title="animaFuzzyCMeansFilter.h" alt="" coords="63,80,239,107"/>
+<area shape="rect" id="node13" href="animaSpectralClusteringFilter_8hxx.html" title="animaSpectralClusteringFilter.hxx" alt="" coords="775,80,989,107"/>
+<area shape="rect" id="node7" href="animaFuzzyCMeansFilter_8hxx.html" title="animaFuzzyCMeansFilter.hxx" alt="" coords="171,155,359,181"/>
+<area shape="rect" id="node11" href="animaLogExpMapsUnitSphere_8h.html" title="animaLogExpMapsUnitSphere.h" alt="" coords="83,229,287,256"/>
+<area shape="rect" id="node12" href="animaLogExpMapsUnitSphere_8hxx.html" title="animaLogExpMapsUnitSphere.hxx" alt="" coords="87,304,303,331"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -102,11 +104,26 @@ $(function() {
 <div class="center"><img src="animaSpectralClusteringFilter_8h__dep__incl.png" border="0" usemap="#animaSpectralClusteringFilter_8hdep" alt=""/></div>
 <map name="animaSpectralClusteringFilter_8hdep" id="animaSpectralClusteringFilter_8hdep">
 <area shape="rect" id="node2" href="animaMCMEstimatorImageFilter_8hxx.html" title="animaMCMEstimatorImageFilter.hxx" alt="" coords="5,80,235,107"/>
-<area shape="rect" id="node5" href="animaSpectralClusteringFilter_8hxx.html" title="animaSpectralClusteringFilter.hxx" alt="" coords="259,80,472,107"/>
-<area shape="rect" id="node6" href="animaMCML2DistanceComputer_8cxx.html" title="animaMCML2DistanceComputer.cxx" alt="" coords="497,80,727,107"/>
-<area shape="rect" id="node7" href="animaMCMWeightedAverager_8cxx.html" title="animaMCMWeightedAverager.cxx" alt="" coords="751,80,966,107"/>
-<area shape="rect" id="node3" href="animaMCMEstimatorImageFilter_8h.html" title="animaMCMEstimatorImageFilter.h" alt="" coords="11,155,229,181"/>
-<area shape="rect" id="node4" href="animaMCMEstimator_8cxx.html" title="animaMCMEstimator.cxx" alt="" coords="38,229,202,256"/>
+<area shape="rect" id="node5" href="animaSpectralClusteringFilter_8hxx.html" title="animaSpectralClusteringFilter.hxx" alt="" coords="324,80,537,107"/>
+<area shape="rect" id="node6" href="animaMCML2DistanceComputer_8cxx.html" title="animaMCML2DistanceComputer.cxx" alt="" coords="562,80,793,107"/>
+<area shape="rect" id="node7" href="animaMCMWeightedAverager_8h.html" title="animaMCMWeightedAverager.h" alt="" coords="849,80,1052,107"/>
+<area shape="rect" id="node3" href="animaMCMEstimatorImageFilter_8h.html" title="animaMCMEstimatorImageFilter.h" alt="" coords="11,162,229,189"/>
+<area shape="rect" id="node4" href="animaMCMEstimator_8cxx.html" title="animaMCMEstimator.cxx" alt="" coords="21,251,185,278"/>
+<area shape="rect" id="node8" href="animaMCMAverageImagesImageFilter_8h.html" title="animaMCMAverageImagesImage\lFilter.h" alt="" coords="432,155,645,196"/>
+<area shape="rect" id="node11" href="animaMCMLinearInterpolateImageFunction_8h.html" title="animaMCMLinearInterpolate\lImageFunction.h" alt="" coords="875,155,1059,196"/>
+<area shape="rect" id="node22" href="animaMCMWeightedAverager_8cxx.html" title="animaMCMWeightedAverager.cxx" alt="" coords="1083,162,1298,189"/>
+<area shape="rect" id="node9" href="animaMCMAverageImages_8cxx.html" title="animaMCMAverageImages.cxx" alt="" coords="209,251,407,278"/>
+<area shape="rect" id="node10" href="animaMCMAverageImagesImageFilter_8hxx.html" title="animaMCMAverageImagesImage\lFilter.hxx" alt="" coords="432,244,645,285"/>
+<area shape="rect" id="node12" href="animaMCMLinearInterpolateImageFunction_8hxx.html" title="animaMCMLinearInterpolate\lImageFunction.hxx" alt="" coords="669,244,853,285"/>
+<area shape="rect" id="node13" href="animaMCMBlockMatcher_8h.html" title="animaMCMBlockMatcher.h" alt="" coords="877,251,1056,278"/>
+<area shape="rect" id="node15" href="animaPyramidalDenseMCMSVFMatchingBridge_8h.html" title="animaPyramidalDenseMCMSVFMatching\lBridge.h" alt="" coords="859,333,1117,375"/>
+<area shape="rect" id="node18" href="animaMCMResampleImageFilter_8hxx.html" title="animaMCMResampleImageFilter.hxx" alt="" coords="1131,251,1363,278"/>
+<area shape="rect" id="node20" href="animaMCMApplyTransformSerie_8cxx.html" title="animaMCMApplyTransformSerie.cxx" alt="" coords="1249,430,1479,457"/>
+<area shape="rect" id="node21" href="animaMCMMeasureTest_8cxx.html" title="animaMCMMeasureTest.cxx" alt="" coords="1437,251,1621,278"/>
+<area shape="rect" id="node14" href="animaMCMBlockMatcher_8hxx.html" title="animaMCMBlockMatcher.hxx" alt="" coords="643,341,834,367"/>
+<area shape="rect" id="node16" href="animaDenseMCMSVFBMRegistration_8cxx.html" title="animaDenseMCMSVFBMRegistration.cxx" alt="" coords="612,430,871,457"/>
+<area shape="rect" id="node17" href="animaPyramidalDenseMCMSVFMatchingBridge_8hxx.html" title="animaPyramidalDenseMCMSVFMatching\lBridge.hxx" alt="" coords="895,423,1153,464"/>
+<area shape="rect" id="node19" href="animaMCMResampleImageFilter_8h.html" title="animaMCMResampleImageFilter.h" alt="" coords="1142,341,1362,367"/>
 </map>
 </div>
 </div>
@@ -130,13 +147,13 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36582801-1"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-36582801-1', 'auto');
-  ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-36582801-1');
 </script>
 </body>
 </html>

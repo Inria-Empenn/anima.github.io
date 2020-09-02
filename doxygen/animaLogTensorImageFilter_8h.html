@@ -79,6 +79,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;itkImageToImageFilter.h&gt;</code><br />
 <code>#include &lt;itkVectorImage.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="animaBaseTensorTools_8h_source.html">animaBaseTensorTools.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="animaLogTensorImageFilter_8hxx_source.html">animaLogTensorImageFilter.hxx</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for animaLogTensorImageFilter.h:</div>
@@ -87,19 +88,19 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="animaLogTensorImageFilter_8h__incl.png" border="0" usemap="#animaLogTensorImageFilter_8h" alt=""/></div>
 <map name="animaLogTensorImageFilter_8h" id="animaLogTensorImageFilter_8h">
-<area shape="rect" id="node5" href="animaLogTensorImageFilter_8hxx.html" title="animaLogTensorImageFilter.hxx" alt="" coords="269,80,473,107"/>
-<area shape="rect" id="node8" href="animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="849,155,1015,181"/>
-<area shape="rect" id="node14" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="843,229,1021,256"/>
-<area shape="rect" id="node16" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="918,461,1085,487"/>
-<area shape="rect" id="node27" href="animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="725,304,889,331"/>
-<area shape="rect" id="node22" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="1152,550,1331,577"/>
-<area shape="rect" id="node24" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="1151,632,1331,659"/>
-<area shape="rect" id="node25" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="1143,714,1335,741"/>
-<area shape="rect" id="node28" href="animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="719,379,895,405"/>
-<area shape="rect" id="node29" href="animaLinearTransformEstimationTools_8h.html" title="animaLinearTransformEstimation\lTools.h" alt="" coords="360,453,571,495"/>
-<area shape="rect" id="node32" href="animaLinearTransformEstimationTools_8hxx.html" title="animaLinearTransformEstimation\lTools.hxx" alt="" coords="360,543,571,584"/>
-<area shape="rect" id="node33" href="animaMatrixLogExp_8h.html" title="animaMatrixLogExp.h" alt="" coords="552,632,696,659"/>
-<area shape="rect" id="node37" href="animaMatrixLogExp_8hxx.html" title="animaMatrixLogExp.hxx" alt="" coords="725,714,881,741"/>
+<area shape="rect" id="node5" href="animaBaseTensorTools_8h.html" title="animaBaseTensorTools.h" alt="" coords="1148,80,1315,107"/>
+<area shape="rect" id="node42" href="animaLogTensorImageFilter_8hxx.html" title="animaLogTensorImageFilter.hxx" alt="" coords="1577,80,1781,107"/>
+<area shape="rect" id="node12" href="animaBaseTensorTools_8hxx.html" title="animaBaseTensorTools.hxx" alt="" coords="1142,155,1321,181"/>
+<area shape="rect" id="node13" href="animaVectorOperations_8h.html" title="animaVectorOperations.h" alt="" coords="1275,386,1441,413"/>
+<area shape="rect" id="node24" href="animaMatrixOperations_8h.html" title="animaMatrixOperations.h" alt="" coords="1075,229,1239,256"/>
+<area shape="rect" id="node19" href="animaVectorOperations_8hxx.html" title="animaVectorOperations.hxx" alt="" coords="1583,475,1762,502"/>
+<area shape="rect" id="node21" href="animaLogarithmFunctions_8h.html" title="animaLogarithmFunctions.h" alt="" coords="1581,557,1761,584"/>
+<area shape="rect" id="node22" href="animaLogarithmFunctions_8hxx.html" title="animaLogarithmFunctions.hxx" alt="" coords="1575,639,1767,666"/>
+<area shape="rect" id="node25" href="animaMatrixOperations_8hxx.html" title="animaMatrixOperations.hxx" alt="" coords="1038,304,1214,331"/>
+<area shape="rect" id="node26" href="animaLinearTransformEstimationTools_8h.html" title="animaLinearTransformEstimation\lTools.h" alt="" coords="550,379,761,420"/>
+<area shape="rect" id="node29" href="animaLinearTransformEstimationTools_8hxx.html" title="animaLinearTransformEstimation\lTools.hxx" alt="" coords="550,468,761,509"/>
+<area shape="rect" id="node30" href="animaMatrixLogExp_8h.html" title="animaMatrixLogExp.h" alt="" coords="382,557,526,584"/>
+<area shape="rect" id="node34" href="animaMatrixLogExp_8hxx.html" title="animaMatrixLogExp.hxx" alt="" coords="431,639,587,666"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -112,12 +113,13 @@ $(function() {
 <area shape="rect" id="node2" href="animaDTIProbabilisticTractography_8cxx.html" title="animaDTIProbabilisticTractography.cxx" alt="" coords="5,87,251,114"/>
 <area shape="rect" id="node3" href="animaDTITractography_8cxx.html" title="animaDTITractography.cxx" alt="" coords="275,87,450,114"/>
 <area shape="rect" id="node4" href="animaODFProbabilisticTractography_8cxx.html" title="animaODFProbabilisticTractography.cxx" alt="" coords="475,87,725,114"/>
-<area shape="rect" id="node5" href="animaLogTensors_8cxx.html" title="animaLogTensors.cxx" alt="" coords="750,87,895,114"/>
-<area shape="rect" id="node6" href="animaPyramidalDenseTensorSVFMatchingBridge_8hxx.html" title="animaPyramidalDenseTensor\lSVFMatchingBridge.hxx" alt="" coords="920,80,1109,121"/>
-<area shape="rect" id="node9" href="animaPyramidImage_8cxx.html" title="animaPyramidImage.cxx" alt="" coords="1133,87,1296,114"/>
-<area shape="rect" id="node10" href="animaTensorApplyTransformSerie_8cxx.html" title="animaTensorApplyTransform\lSerie.cxx" alt="" coords="1320,80,1507,121"/>
-<area shape="rect" id="node7" href="animaPyramidalDenseTensorSVFMatchingBridge_8h.html" title="animaPyramidalDenseTensor\lSVFMatchingBridge.h" alt="" coords="920,169,1109,211"/>
-<area shape="rect" id="node8" href="animaDenseTensorSVFBMRegistration_8cxx.html" title="animaDenseTensorSVFBMRegistration.cxx" alt="" coords="881,259,1148,285"/>
+<area shape="rect" id="node5" href="animaLogTensorImageFilter_8hxx.html" title="animaLogTensorImageFilter.hxx" alt="" coords="750,87,954,114"/>
+<area shape="rect" id="node6" href="animaLogTensors_8cxx.html" title="animaLogTensors.cxx" alt="" coords="978,87,1123,114"/>
+<area shape="rect" id="node7" href="animaPyramidalDenseTensorSVFMatchingBridge_8hxx.html" title="animaPyramidalDenseTensor\lSVFMatchingBridge.hxx" alt="" coords="1148,80,1337,121"/>
+<area shape="rect" id="node10" href="animaPyramidImage_8cxx.html" title="animaPyramidImage.cxx" alt="" coords="1361,87,1524,114"/>
+<area shape="rect" id="node11" href="animaTensorApplyTransformSerie_8cxx.html" title="animaTensorApplyTransform\lSerie.cxx" alt="" coords="1548,80,1735,121"/>
+<area shape="rect" id="node8" href="animaPyramidalDenseTensorSVFMatchingBridge_8h.html" title="animaPyramidalDenseTensor\lSVFMatchingBridge.h" alt="" coords="1148,169,1337,211"/>
+<area shape="rect" id="node9" href="animaDenseTensorSVFBMRegistration_8cxx.html" title="animaDenseTensorSVFBMRegistration.cxx" alt="" coords="1109,259,1376,285"/>
 </map>
 </div>
 </div>
@@ -140,13 +142,13 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36582801-1"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-36582801-1', 'auto');
-  ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-36582801-1');
 </script>
 </body>
 </html>

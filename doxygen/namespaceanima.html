@@ -280,6 +280,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1LocalPatchMeanDistanceImageFilter.html">LocalPatchMeanDistanceImageFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1LogEuclideanTensorCalculator.html">LogEuclideanTensorCalculator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1LogRigid3DTransform.html">LogRigid3DTransform</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanima_1_1LogTensorImageFilter.html">LogTensorImageFilter</a></td></tr>
@@ -879,18 +881,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a869b6ab525502df88aea8272c7a60a73"><td class="memTemplParams" colspan="2">template&lt;class ScalarType , unsigned int NDimensions&gt; </td></tr>
 <tr class="memitem:a869b6ab525502df88aea8272c7a60a73"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a869b6ab525502df88aea8272c7a60a73">GetSVFExponential</a> (itk::StationaryVelocityFieldTransform&lt; ScalarType, NDimensions &gt; *baseTrsf, rpi::DisplacementFieldTransform&lt; ScalarType, NDimensions &gt; *resultTransform, unsigned int exponentiationOrder, unsigned int numThreads, bool invert)</td></tr>
 <tr class="separator:a869b6ab525502df88aea8272c7a60a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58182974c47595bfcab0eb38f21b1e7b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a58182974c47595bfcab0eb38f21b1e7b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a58182974c47595bfcab0eb38f21b1e7b">GetTensorExponential</a> (const vnl_matrix&lt; T &gt; &amp;log_tensor, vnl_matrix&lt; T &gt; &amp;tensor)</td></tr>
-<tr class="separator:a58182974c47595bfcab0eb38f21b1e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e0c95cf3b70dde9b0d8acdaffdd8dcc"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 &gt; </td></tr>
 <tr class="memitem:a3e0c95cf3b70dde9b0d8acdaffdd8dcc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a3e0c95cf3b70dde9b0d8acdaffdd8dcc">GetTensorFromVectorRepresentation</a> (const itk::VariableLengthVector&lt; T1 &gt; &amp;vector, vnl_matrix&lt; T2 &gt; &amp;tensor, unsigned int tensDim=0, bool scale=false)</td></tr>
 <tr class="separator:a3e0c95cf3b70dde9b0d8acdaffdd8dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a765144e8a4a17ccb22def89761317aad"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a765144e8a4a17ccb22def89761317aad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a765144e8a4a17ccb22def89761317aad">GetTensorLogarithm</a> (const vnl_matrix&lt; T &gt; &amp;tensor, vnl_matrix&lt; T &gt; &amp;log_tensor)</td></tr>
-<tr class="separator:a765144e8a4a17ccb22def89761317aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a094f5340728b719975b6d4fa20484685"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a094f5340728b719975b6d4fa20484685"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a094f5340728b719975b6d4fa20484685">GetTensorPower</a> (const vnl_matrix&lt; T &gt; &amp;tensor, vnl_matrix&lt; T &gt; &amp;outputTensor, double powerValue)</td></tr>
-<tr class="separator:a094f5340728b719975b6d4fa20484685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c5a40480f2d9052b981119f0a432c6"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 &gt; </td></tr>
 <tr class="memitem:a57c5a40480f2d9052b981119f0a432c6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanima.html#a57c5a40480f2d9052b981119f0a432c6">GetVectorRepresentation</a> (const vnl_matrix&lt; T1 &gt; &amp;tensor, itk::VariableLengthVector&lt; T2 &gt; &amp;vector, unsigned int vecDim=0, bool scale=false)</td></tr>
 <tr class="separator:a57c5a40480f2d9052b981119f0a432c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2928,7 +2921,7 @@ template&lt;class VectorType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaVectorOperations_8hxx_source.html#l00196">196</a> of file <a class="el" href="animaVectorOperations_8hxx_source.html">animaVectorOperations.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaVectorOperations_8hxx_source.html#l00422">ComputeAngle()</a>, <a class="el" href="animaBaseTractographyImageFilter_8cxx_source.html#l00315">anima::BaseTractographyImageFilter::ComputeFiber()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00314">ComputeNorm()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00437">ComputeOrientationAngle()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00206">ComputeScalarProduct()</a>, <a class="el" href="animaVMFDistribution_8hxx_source.html#l00015">ComputeVMFPdf()</a>, <a class="el" href="animaWatsonDistribution_8hxx_source.html#l00017">EvaluateWatsonPDF()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00186">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00118">anima::dtiTractographyImageFilter::GetNextDirection()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00028">anima::TensorCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00092">anima::DTIProbabilisticTractographyImageFilter::InitializeFirstIterationFromModel()</a>, <a class="el" href="animaODFProbabilisticTractographyImageFilter_8cxx_source.html#l00141">anima::ODFProbabilisticTractographyImageFilter::InitializeFirstIterationFromModel()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">anima::BaseCompartment::IsEqual()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00529">ProjectOnOrthogonalPlane()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00033">anima::DTIProbabilisticTractographyImageFilter::ProposeNewDirection()</a>, <a class="el" href="animaODFProbabilisticTractographyImageFilter_8cxx_source.html#l00053">anima::ODFProbabilisticTractographyImageFilter::ProposeNewDirection()</a>, <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01328">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::SparseInitializeSticks()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaVectorOperations_8hxx_source.html#l00422">ComputeAngle()</a>, <a class="el" href="animaBaseTractographyImageFilter_8cxx_source.html#l00315">anima::BaseTractographyImageFilter::ComputeFiber()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00314">ComputeNorm()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00437">ComputeOrientationAngle()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00206">ComputeScalarProduct()</a>, <a class="el" href="animaVMFDistribution_8hxx_source.html#l00015">ComputeVMFPdf()</a>, <a class="el" href="animaWatsonDistribution_8hxx_source.html#l00017">EvaluateWatsonPDF()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00186">anima::NODDICompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00048">anima::StickCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00053">anima::ZeppelinCompartment::GetLogDiffusionProfile()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00118">anima::dtiTractographyImageFilter::GetNextDirection()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00027">anima::TensorCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00092">anima::DTIProbabilisticTractographyImageFilter::InitializeFirstIterationFromModel()</a>, <a class="el" href="animaODFProbabilisticTractographyImageFilter_8cxx_source.html#l00141">anima::ODFProbabilisticTractographyImageFilter::InitializeFirstIterationFromModel()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00016">anima::BaseCompartment::IsEqual()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00529">ProjectOnOrthogonalPlane()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00033">anima::DTIProbabilisticTractographyImageFilter::ProposeNewDirection()</a>, <a class="el" href="animaODFProbabilisticTractographyImageFilter_8cxx_source.html#l00053">anima::ODFProbabilisticTractographyImageFilter::ProposeNewDirection()</a>, <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01328">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::SparseInitializeSticks()</a>, and <a class="el" href="animaNODDICompartment_8cxx_source.html#l00012">anima::NODDICompartment::UpdateSignals()</a>.</p>
 
 </div>
 </div>
@@ -3210,7 +3203,7 @@ template&lt;class ScalarType &gt; </div>
 
 <p class="reference">References <a class="el" href="animaLogExpMapsUnitSphere_8hxx_source.html#l00032">sphere_exp_map()</a>, and <a class="el" href="animaLogExpMapsUnitSphere_8hxx_source.html#l00008">sphere_log_map()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaFuzzyCMeansFilter_8hxx_source.html#l00094">anima::FuzzyCMeansFilter&lt; ScalarType &gt;::ComputeCentroids()</a>, and <a class="el" href="animaSphereAverageTest_8cxx_source.html#l00008">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaFuzzyCMeansFilter_8hxx_source.html#l00082">anima::FuzzyCMeansFilter&lt; double &gt;::ComputeCentroids()</a>, and <a class="el" href="animaSphereAverageTest_8cxx_source.html#l00008">main()</a>.</p>
 
 </div>
 </div>
@@ -3978,11 +3971,11 @@ template&lt;typename RealType , typename MatrixType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00189">189</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00192">192</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
 <p class="reference">References <a class="el" href="animaMatrixOperations_8hxx_source.html#l00013">GetRotationMatrixFromVectors()</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00326">Normalize()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaTensorMeanSquaresImageToImageMetric_8hxx_source.html#l00022">anima::TensorMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCorrelationImageToImageMetric_8hxx_source.html#l00033">anima::TensorCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00365">anima::TensorCompartment::Reorient()</a>, and <a class="el" href="animaTensorResampleImageFilter_8hxx_source.html#l00036">anima::TensorResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ReorientInterpolatedModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaTensorMeanSquaresImageToImageMetric_8hxx_source.html#l00022">anima::TensorMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCorrelationImageToImageMetric_8hxx_source.html#l00033">anima::TensorCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00364">anima::TensorCompartment::Reorient()</a>, and <a class="el" href="animaTensorResampleImageFilter_8hxx_source.html#l00036">anima::TensorResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ReorientInterpolatedModel()</a>.</p>
 
 </div>
 </div>
@@ -4020,9 +4013,9 @@ template&lt;typename RealType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00154">154</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00157">157</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00251">RecomposeTensor()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00254">RecomposeTensor()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animaOrientedModelBaseResampleImageFilter_8hxx_source.html#l00319">anima::OrientedModelBaseResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ComputeRotationParametersFromReorientationMatrix()</a>, and <a class="el" href="animaBaseOrientedModelImageToImageMetric_8hxx_source.html#l00043">anima::BaseOrientedModelImageToImageMetric&lt; anima::MCMImage&lt; TFixedImagePixelType, ImageDimension &gt;, anima::MCMImage&lt; TMovingImagePixelType, ImageDimension &gt; &gt;::SetTransformParameters()</a>.</p>
 
@@ -4186,7 +4179,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMConstants_8h_source.html#l00013">13</a> of file <a class="el" href="animaMCMConstants_8h_source.html">animaMCMConstants.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l00099">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::CheckComputationMask()</a>, <a class="el" href="animaApproximateMCMSmoothingCostFunction_8cxx_source.html#l00151">anima::ApproximateMCMSmoothingCostFunction::GetDerivative()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00009">anima::BaseIsotropicCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00093">anima::NODDICompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00010">anima::TensorCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00015">anima::BaseIsotropicCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00084">anima::StaniszCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00028">anima::TensorCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaApproximateMCMSmoothingCostFunction_8cxx_source.html#l00100">anima::ApproximateMCMSmoothingCostFunction::GetValue()</a>, <a class="el" href="animaMCML2DistanceComputer_8cxx_source.html#l00053">anima::MCML2DistanceComputer::UpdateSphereWeights()</a>, and <a class="el" href="animaMCMCorrelationImageToImageMetric_8hxx_source.html#l00262">anima::MCMCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::UpdateSphereWeights()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l00099">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::CheckComputationMask()</a>, <a class="el" href="animaApproximateMCMSmoothingCostFunction_8cxx_source.html#l00151">anima::ApproximateMCMSmoothingCostFunction::GetDerivative()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00009">anima::BaseIsotropicCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00093">anima::NODDICompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00010">anima::StickCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00010">anima::ZeppelinCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00009">anima::TensorCompartment::GetFourierTransformedDiffusionProfile()</a>, <a class="el" href="animaBaseIsotropicCompartment_8cxx_source.html#l00015">anima::BaseIsotropicCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00102">anima::NODDICompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00084">anima::StaniszCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00021">anima::StickCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00022">anima::ZeppelinCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00027">anima::TensorCompartment::GetSignalAttenuationJacobian()</a>, <a class="el" href="animaApproximateMCMSmoothingCostFunction_8cxx_source.html#l00100">anima::ApproximateMCMSmoothingCostFunction::GetValue()</a>, <a class="el" href="animaMCML2DistanceComputer_8cxx_source.html#l00053">anima::MCML2DistanceComputer::UpdateSphereWeights()</a>, and <a class="el" href="animaMCMCorrelationImageToImageMetric_8hxx_source.html#l00262">anima::MCMCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::UpdateSphereWeights()</a>.</p>
 
 </div>
 </div>
@@ -4732,7 +4725,7 @@ template&lt;class VectorType &gt; </div>
 
 <p class="reference">References <a class="el" href="animaLinearTransformEstimationTools_8hxx_source.html#l00388">pairingToQuaternion()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00189">ExtractPPDRotationFromJacobianMatrix()</a>, <a class="el" href="animaMatrixOperations_8hxx_source.html#l00054">GetRotationMatrixFromVectors()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00093">SampleFromVMFDistribution()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00143">SampleFromVMFDistributionNumericallyStable()</a>, <a class="el" href="animaAxisRotationTransform_8hxx_source.html#l00122">anima::AxisRotationTransform&lt; TScalarType &gt;::SetReferencePlaneNormal()</a>, and <a class="el" href="animaPyramidalSymmetryConstrainedRegistrationBridge_8hxx_source.html#l00329">anima::PyramidalSymmetryConstrainedRegistrationBridge&lt; ScalarType &gt;::SetupPyramids()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00192">ExtractPPDRotationFromJacobianMatrix()</a>, <a class="el" href="animaMatrixOperations_8hxx_source.html#l00054">GetRotationMatrixFromVectors()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00093">SampleFromVMFDistribution()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00143">SampleFromVMFDistributionNumericallyStable()</a>, <a class="el" href="animaAxisRotationTransform_8hxx_source.html#l00122">anima::AxisRotationTransform&lt; TScalarType &gt;::SetReferencePlaneNormal()</a>, and <a class="el" href="animaPyramidalSymmetryConstrainedRegistrationBridge_8hxx_source.html#l00329">anima::PyramidalSymmetryConstrainedRegistrationBridge&lt; ScalarType &gt;::SetupPyramids()</a>.</p>
 
 </div>
 </div>
@@ -5068,42 +5061,6 @@ template&lt;class ScalarType , unsigned int NDimensions&gt; </div>
 
 </div>
 </div>
-<a id="a58182974c47595bfcab0eb38f21b1e7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58182974c47595bfcab0eb38f21b1e7b">&#9670;&nbsp;</a></span>GetTensorExponential()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void anima::GetTensorExponential </td>
-          <td>(</td>
-          <td class="paramtype">const vnl_matrix&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>log_tensor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vnl_matrix&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>tensor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00061">61</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
-
-<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00251">RecomposeTensor()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00169">anima::dtiTractographyImageFilter::ComputeAdditionalScalarMaps()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00291">anima::DTIProbabilisticTractographyImageFilter::ComputeModelValue()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00210">anima::MCMWeightedAverager::ComputeOutputTensorCompatibleModel()</a>, and <a class="el" href="animaExpTensorImageFilter_8hxx_source.html#l00044">anima::ExpTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>.</p>
-
-</div>
-</div>
 <a id="a3e0c95cf3b70dde9b0d8acdaffdd8dcc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e0c95cf3b70dde9b0d8acdaffdd8dcc">&#9670;&nbsp;</a></span>GetTensorFromVectorRepresentation()</h2>
 
@@ -5144,87 +5101,9 @@ template&lt;class T1 , class T2 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00104">104</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00107">107</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00030">anima::dtiTractographyImageFilter::CheckModelCompatibility()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00169">anima::dtiTractographyImageFilter::ComputeAdditionalScalarMaps()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00403">anima::DTIProbabilisticTractographyImageFilter::ComputeAdditionalScalarMaps()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00291">anima::DTIProbabilisticTractographyImageFilter::ComputeModelValue()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00210">anima::MCMWeightedAverager::ComputeOutputTensorCompatibleModel()</a>, <a class="el" href="animaExpTensorImageFilter_8hxx_source.html#l00044">anima::ExpTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaLogTensorImageFilter_8hxx_source.html#l00044">anima::LogTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaDTIScalarMapsImageFilter_8hxx_source.html#l00044">anima::DTIScalarMapsImageFilter&lt; ImageDimension &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaDTIEstimationImageFilter_8hxx_source.html#l00160">anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00082">anima::dtiTractographyImageFilter::GetModelPrincipalDirection()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00118">anima::dtiTractographyImageFilter::GetNextDirection()</a>, <a class="el" href="animaTensorMeanSquaresImageToImageMetric_8hxx_source.html#l00022">anima::TensorMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCorrelationImageToImageMetric_8hxx_source.html#l00033">anima::TensorCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorResampleImageFilter_8hxx_source.html#l00036">anima::TensorResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ReorientInterpolatedModel()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00262">anima::TensorCompartment::SetCompartmentVector()</a>.</p>
-
-</div>
-</div>
-<a id="a765144e8a4a17ccb22def89761317aad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a765144e8a4a17ccb22def89761317aad">&#9670;&nbsp;</a></span>GetTensorLogarithm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void anima::GetTensorLogarithm </td>
-          <td>(</td>
-          <td class="paramtype">const vnl_matrix&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>tensor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vnl_matrix&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>log_tensor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00013">13</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
-
-<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00251">RecomposeTensor()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="animaMCMPairingMeanSquaresImageToImageMetric_8hxx_source.html#l00132">anima::MCMPairingMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::ComputeTensorBasedMetricPart()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00177">anima::MCMWeightedAverager::ComputeTensorDistanceMatrix()</a>, <a class="el" href="animaLogTensorImageFilter_8hxx_source.html#l00044">anima::LogTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaMTPairingCorrelationImageToImageMetric_8hxx_source.html#l00058">anima::MTPairingCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, and <a class="el" href="animaMTPairingCorrelationImageToImageMetric_8hxx_source.html#l00278">anima::MTPairingCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::PreComputeFixedValues()</a>.</p>
-
-</div>
-</div>
-<a id="a094f5340728b719975b6d4fa20484685"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a094f5340728b719975b6d4fa20484685">&#9670;&nbsp;</a></span>GetTensorPower()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void anima::GetTensorPower </td>
-          <td>(</td>
-          <td class="paramtype">const vnl_matrix&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>tensor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vnl_matrix&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>outputTensor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>powerValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00037">37</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
-
-<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00251">RecomposeTensor()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00213">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::PreComputeFixedValues()</a>, <a class="el" href="animaGaussianMCMVariableProjectionCost_8cxx_source.html#l00236">anima::GaussianMCMVariableProjectionCost::PrepareDataForDerivative()</a>, <a class="el" href="animaB1GammaMixtureT2RelaxometryCostFunction_8cxx_source.html#l00260">anima::B1GammaMixtureT2RelaxometryCostFunction::PrepareDataForDerivative()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00431">anima::TensorCompartment::UpdateInverseDiffusionTensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00030">anima::dtiTractographyImageFilter::CheckModelCompatibility()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00169">anima::dtiTractographyImageFilter::ComputeAdditionalScalarMaps()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00408">anima::DTIProbabilisticTractographyImageFilter::ComputeAdditionalScalarMaps()</a>, <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00291">anima::DTIProbabilisticTractographyImageFilter::ComputeModelValue()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00207">anima::MCMWeightedAverager::ComputeOutputTensorCompatibleModel()</a>, <a class="el" href="animaExpTensorImageFilter_8hxx_source.html#l00043">anima::ExpTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaLogTensorImageFilter_8hxx_source.html#l00043">anima::LogTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaDTIScalarMapsImageFilter_8hxx_source.html#l00044">anima::DTIScalarMapsImageFilter&lt; ImageDimension &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaDTIEstimationImageFilter_8hxx_source.html#l00160">anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00082">anima::dtiTractographyImageFilter::GetModelPrincipalDirection()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00118">anima::dtiTractographyImageFilter::GetNextDirection()</a>, <a class="el" href="animaTensorMeanSquaresImageToImageMetric_8hxx_source.html#l00022">anima::TensorMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCorrelationImageToImageMetric_8hxx_source.html#l00033">anima::TensorCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorResampleImageFilter_8hxx_source.html#l00036">anima::TensorResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ReorientInterpolatedModel()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00261">anima::TensorCompartment::SetCompartmentVector()</a>.</p>
 
 </div>
 </div>
@@ -5268,9 +5147,9 @@ template&lt;class T1 , class T2 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00080">80</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00083">83</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00291">anima::DTIProbabilisticTractographyImageFilter::ComputeModelValue()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00210">anima::MCMWeightedAverager::ComputeOutputTensorCompatibleModel()</a>, <a class="el" href="animaMCMPairingMeanSquaresImageToImageMetric_8hxx_source.html#l00132">anima::MCMPairingMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::ComputeTensorBasedMetricPart()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00177">anima::MCMWeightedAverager::ComputeTensorDistanceMatrix()</a>, <a class="el" href="animaLogTensorImageFilter_8hxx_source.html#l00044">anima::LogTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaExpTensorImageFilter_8hxx_source.html#l00044">anima::ExpTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaDTIEstimationImageFilter_8hxx_source.html#l00160">anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00354">anima::TensorCompartment::GetCompartmentVector()</a>, <a class="el" href="animaTensorMeanSquaresImageToImageMetric_8hxx_source.html#l00022">anima::TensorMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCorrelationImageToImageMetric_8hxx_source.html#l00033">anima::TensorCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaMTPairingCorrelationImageToImageMetric_8hxx_source.html#l00058">anima::MTPairingCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaMTPairingCorrelationImageToImageMetric_8hxx_source.html#l00278">anima::MTPairingCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::PreComputeFixedValues()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00365">anima::TensorCompartment::Reorient()</a>, and <a class="el" href="animaTensorResampleImageFilter_8hxx_source.html#l00036">anima::TensorResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ReorientInterpolatedModel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaDTIProbabilisticTractographyImageFilter_8cxx_source.html#l00291">anima::DTIProbabilisticTractographyImageFilter::ComputeModelValue()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00207">anima::MCMWeightedAverager::ComputeOutputTensorCompatibleModel()</a>, <a class="el" href="animaMCMPairingMeanSquaresImageToImageMetric_8hxx_source.html#l00133">anima::MCMPairingMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::ComputeTensorBasedMetricPart()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00175">anima::MCMWeightedAverager::ComputeTensorDistanceMatrix()</a>, <a class="el" href="animaLogTensorImageFilter_8hxx_source.html#l00043">anima::LogTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaExpTensorImageFilter_8hxx_source.html#l00043">anima::ExpTensorImageFilter&lt; TScalarType, NDimensions &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaDTIEstimationImageFilter_8hxx_source.html#l00160">anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00353">anima::TensorCompartment::GetCompartmentVector()</a>, <a class="el" href="animaTensorMeanSquaresImageToImageMetric_8hxx_source.html#l00022">anima::TensorMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCorrelationImageToImageMetric_8hxx_source.html#l00033">anima::TensorCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaMTPairingCorrelationImageToImageMetric_8hxx_source.html#l00059">anima::MTPairingCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaMTPairingCorrelationImageToImageMetric_8hxx_source.html#l00279">anima::MTPairingCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::PreComputeFixedValues()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00364">anima::TensorCompartment::Reorient()</a>, and <a class="el" href="animaTensorResampleImageFilter_8hxx_source.html#l00036">anima::TensorResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ReorientInterpolatedModel()</a>.</p>
 
 </div>
 </div>
@@ -5845,7 +5724,7 @@ template&lt;class VectorType &gt; </div>
 
 <p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00314">ComputeNorm()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00189">ExtractPPDRotationFromJacobianMatrix()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00118">anima::dtiTractographyImageFilter::GetNextDirection()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00339">Normalize()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00529">ProjectOnOrthogonalPlane()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00177">SampleFromWatsonDistribution()</a>, <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00039">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::SetBValuesList()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00474">TransformCartesianToSphericalCoordinates()</a>, and <a class="el" href="animaGradientFileReader_8hxx_source.html#l00099">anima::GradientFileReader&lt; GradientType, BValueScalarType &gt;::Update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00192">ExtractPPDRotationFromJacobianMatrix()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00118">anima::dtiTractographyImageFilter::GetNextDirection()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00339">Normalize()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00529">ProjectOnOrthogonalPlane()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00177">SampleFromWatsonDistribution()</a>, <a class="el" href="animaODFEstimatorImageFilter_8h_source.html#l00039">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::SetBValuesList()</a>, <a class="el" href="animaVectorOperations_8hxx_source.html#l00474">TransformCartesianToSphericalCoordinates()</a>, and <a class="el" href="animaGradientFileReader_8hxx_source.html#l00099">anima::GradientFileReader&lt; GradientType, BValueScalarType &gt;::Update()</a>.</p>
 
 </div>
 </div>
@@ -6093,7 +5972,7 @@ template&lt;class T1 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00314">314</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00317">317</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>.</p>
 
@@ -6465,9 +6344,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00132">132</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00135">135</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00251">RecomposeTensor()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00254">RecomposeTensor()</a>.</p>
 
 </div>
 </div>
@@ -6647,9 +6526,9 @@ template&lt;class T1 , class T2 &gt; </div>
 
 <p>Recompose tensor from values extracted using SymmetricEigenAnalysis (vnl_symmetric_eigensystem transposes all this) </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00251">251</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00254">254</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaDTIEstimationImageFilter_8hxx_source.html#l00392">anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::ComputeCostAtPosition()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00210">anima::MCMWeightedAverager::ComputeOutputTensorCompatibleModel()</a>, <a class="el" href="animaDTIEstimationImageFilter_8hxx_source.html#l00160">anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00154">ExtractRotationFromJacobianMatrix()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00118">anima::dtiTractographyImageFilter::GetNextDirection()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00061">GetTensorExponential()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00013">GetTensorLogarithm()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00037">GetTensorPower()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00132">ProjectOnTensorSpace()</a>, and <a class="el" href="animaDistributionSampling_8hxx_source.html#l00059">SampleFromMultivariateGaussianDistribution()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaDTIEstimationImageFilter_8hxx_source.html#l00392">anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::ComputeCostAtPosition()</a>, <a class="el" href="animaMCMWeightedAverager_8cxx_source.html#l00207">anima::MCMWeightedAverager::ComputeOutputTensorCompatibleModel()</a>, <a class="el" href="animaDTIEstimationImageFilter_8hxx_source.html#l00160">anima::DTIEstimationImageFilter&lt; InputPixelScalarType, OutputPixelScalarType &gt;::DynamicThreadedGenerateData()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00157">ExtractRotationFromJacobianMatrix()</a>, <a class="el" href="animaDTITractographyImageFilter_8cxx_source.html#l00118">anima::dtiTractographyImageFilter::GetNextDirection()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00064">anima::LogEuclideanTensorCalculator&lt; TScalarType &gt;::GetTensorExponential()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00014">anima::LogEuclideanTensorCalculator&lt; TScalarType &gt;::GetTensorLogarithm()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00039">anima::LogEuclideanTensorCalculator&lt; TScalarType &gt;::GetTensorPower()</a>, <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00135">ProjectOnTensorSpace()</a>, and <a class="el" href="animaDistributionSampling_8hxx_source.html#l00059">SampleFromMultivariateGaussianDistribution()</a>.</p>
 
 </div>
 </div>
@@ -7027,9 +6906,9 @@ template&lt;class T1 , class T2 , class T3 &gt; </div>
 
 <p>Rotates a symmetric matrix by performing R^T D R where R is a rotation matrix and D the symmetric matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00273">273</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00276">276</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaTensorMeanSquaresImageToImageMetric_8hxx_source.html#l00022">anima::TensorMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCorrelationImageToImageMetric_8hxx_source.html#l00033">anima::TensorCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00365">anima::TensorCompartment::Reorient()</a>, <a class="el" href="animaTensorResampleImageFilter_8hxx_source.html#l00036">anima::TensorResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ReorientInterpolatedModel()</a>, and <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00297">RotateSymmetricMatrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaTensorMeanSquaresImageToImageMetric_8hxx_source.html#l00022">anima::TensorMeanSquaresImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorGeneralizedCorrelationImageToImageMetric_8hxx_source.html#l00032">anima::TensorGeneralizedCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCorrelationImageToImageMetric_8hxx_source.html#l00033">anima::TensorCorrelationImageToImageMetric&lt; TFixedImagePixelType, TMovingImagePixelType, ImageDimension &gt;::GetValue()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00364">anima::TensorCompartment::Reorient()</a>, <a class="el" href="animaTensorResampleImageFilter_8hxx_source.html#l00036">anima::TensorResampleImageFilter&lt; TImageType, TInterpolatorPrecisionType &gt;::ReorientInterpolatedModel()</a>, and <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00300">RotateSymmetricMatrix()</a>.</p>
 
 </div>
 </div>
@@ -7067,9 +6946,9 @@ template&lt;class T1 , class T2 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00297">297</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00300">300</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00273">RotateSymmetricMatrix()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00276">RotateSymmetricMatrix()</a>.</p>
 
 </div>
 </div>
@@ -7107,9 +6986,9 @@ template&lt;class T1 , class T2 , unsigned int NDim&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00306">306</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00309">309</a> of file <a class="el" href="animaBaseTensorTools_8hxx_source.html">animaBaseTensorTools.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00273">RotateSymmetricMatrix()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00276">RotateSymmetricMatrix()</a>.</p>
 
 </div>
 </div>
@@ -7257,7 +7136,7 @@ template&lt;class VectorType , class ScalarType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaDistributionSampling_8hxx_source.html#l00059">59</a> of file <a class="el" href="animaDistributionSampling_8hxx_source.html">animaDistributionSampling.hxx</a>.</p>
 
-<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00251">RecomposeTensor()</a>, and <a class="el" href="animaDistributionSampling_8hxx_source.html#l00052">SampleFromGaussianDistribution()</a>.</p>
+<p class="reference">References <a class="el" href="animaBaseTensorTools_8hxx_source.html#l00254">RecomposeTensor()</a>, and <a class="el" href="animaDistributionSampling_8hxx_source.html#l00052">SampleFromGaussianDistribution()</a>.</p>
 
 </div>
 </div>
@@ -7935,7 +7814,7 @@ template&lt;class VectorType &gt; </div>
 
 <p class="reference">References <a class="el" href="animaVectorOperations_8hxx_source.html#l00314">ComputeNorm()</a>, and <a class="el" href="animaVectorOperations_8hxx_source.html#l00326">Normalize()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00019">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::AddGradientDirection()</a>, <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00052">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::BeforeThreadedGenerateData()</a>, <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l00135">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::BeforeThreadedGenerateData()</a>, <a class="el" href="animaODFProbabilisticTractographyImageFilter_8cxx_source.html#l00248">anima::ODFProbabilisticTractographyImageFilter::FindODFMaxima()</a>, <a class="el" href="animaODFFunctions_8cxx_source.html#l00015">InitializeSampleDirections()</a>, <a class="el" href="animaODFProbabilisticTractographyImageFilter_8cxx_source.html#l00053">anima::ODFProbabilisticTractographyImageFilter::ProposeNewDirection()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">anima::BaseCompartment::Reorient()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00093">SampleFromVMFDistribution()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00143">SampleFromVMFDistributionNumericallyStable()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00177">SampleFromWatsonDistribution()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">anima::NODDICompartment::SetCompartmentVector()</a>, <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01328">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::SparseInitializeSticks()</a>, <a class="el" href="animaPyramidalSymmetryBridge_8hxx_source.html#l00024">anima::PyramidalSymmetryBridge&lt; PixelType, ScalarType &gt;::Update()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00281">anima::TensorCompartment::UpdateParametersFromTensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00019">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::AddGradientDirection()</a>, <a class="el" href="animaODFEstimatorImageFilter_8hxx_source.html#l00052">anima::ODFEstimatorImageFilter&lt; TInputPixelType, TOutputPixelType &gt;::BeforeThreadedGenerateData()</a>, <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l00135">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::BeforeThreadedGenerateData()</a>, <a class="el" href="animaODFProbabilisticTractographyImageFilter_8cxx_source.html#l00248">anima::ODFProbabilisticTractographyImageFilter::FindODFMaxima()</a>, <a class="el" href="animaODFFunctions_8cxx_source.html#l00015">InitializeSampleDirections()</a>, <a class="el" href="animaODFProbabilisticTractographyImageFilter_8cxx_source.html#l00053">anima::ODFProbabilisticTractographyImageFilter::ProposeNewDirection()</a>, <a class="el" href="animaBaseCompartment_8cxx_source.html#l00099">anima::BaseCompartment::Reorient()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00093">SampleFromVMFDistribution()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00143">SampleFromVMFDistributionNumericallyStable()</a>, <a class="el" href="animaDistributionSampling_8hxx_source.html#l00177">SampleFromWatsonDistribution()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00120">anima::StickCompartment::SetCompartmentVector()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00143">anima::ZeppelinCompartment::SetCompartmentVector()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00373">anima::NODDICompartment::SetCompartmentVector()</a>, <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01328">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::SparseInitializeSticks()</a>, <a class="el" href="animaPyramidalSymmetryBridge_8hxx_source.html#l00024">anima::PyramidalSymmetryBridge&lt; PixelType, ScalarType &gt;::Update()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00280">anima::TensorCompartment::UpdateParametersFromTensor()</a>.</p>
 
 </div>
 </div>
@@ -8341,7 +8220,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMConstants_8h_source.html#l00042">42</a> of file <a class="el" href="animaMCMConstants_8h_source.html">animaMCMConstants.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaStickCompartment_8cxx_source.html#l00087">anima::StickCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00104">anima::ZeppelinCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00221">anima::TensorCompartment::GetParameterLowerBounds()</a>, and <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01049">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::TensorCoarseGridInitialization()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaStickCompartment_8cxx_source.html#l00087">anima::StickCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00104">anima::ZeppelinCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00220">anima::TensorCompartment::GetParameterLowerBounds()</a>, and <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01049">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::TensorCoarseGridInitialization()</a>.</p>
 
 </div>
 </div>
@@ -8361,7 +8240,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMConstants_8h_source.html#l00069">69</a> of file <a class="el" href="animaMCMConstants_8h_source.html">animaMCMConstants.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8h_source.html#l00120">anima::BaseCompartment::BaseCompartment()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">anima::NODDICompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">anima::StickCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00235">anima::TensorCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaBaseCompartment_8h_source.html#l00120">anima::BaseCompartment::BaseCompartment()</a>, <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">anima::NODDICompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">anima::StickCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00234">anima::TensorCompartment::GetParameterUpperBounds()</a>.</p>
 
 </div>
 </div>
@@ -8421,7 +8300,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMConstants_8h_source.html#l00045">45</a> of file <a class="el" href="animaMCMConstants_8h_source.html">animaMCMConstants.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00307">anima::NODDICompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00202">anima::StaniszCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00221">anima::TensorCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00104">anima::ZeppelinCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01049">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::TensorCoarseGridInitialization()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00281">anima::TensorCompartment::UpdateParametersFromTensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00307">anima::NODDICompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00202">anima::StaniszCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00104">anima::ZeppelinCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00220">anima::TensorCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaMCMEstimatorImageFilter_8hxx_source.html#l01049">anima::MCMEstimatorImageFilter&lt; InputPixelType, OutputPixelType &gt;::TensorCoarseGridInitialization()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00280">anima::TensorCompartment::UpdateParametersFromTensor()</a>.</p>
 
 </div>
 </div>
@@ -8441,7 +8320,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMConstants_8h_source.html#l00048">48</a> of file <a class="el" href="animaMCMConstants_8h_source.html">animaMCMConstants.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">anima::NODDICompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00219">anima::StaniszCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">anima::StickCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00235">anima::TensorCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00281">anima::TensorCompartment::UpdateParametersFromTensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">anima::NODDICompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStaniszCompartment_8cxx_source.html#l00219">anima::StaniszCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">anima::StickCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00234">anima::TensorCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00280">anima::TensorCompartment::UpdateParametersFromTensor()</a>.</p>
 
 </div>
 </div>
@@ -8579,7 +8458,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMConstants_8h_source.html#l00066">66</a> of file <a class="el" href="animaMCMConstants_8h_source.html">animaMCMConstants.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">anima::NODDICompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">anima::StickCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00235">anima::TensorCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00319">anima::NODDICompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00098">anima::StickCompartment::GetParameterUpperBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00234">anima::TensorCompartment::GetParameterUpperBounds()</a>.</p>
 
 </div>
 </div>
@@ -8599,7 +8478,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMConstants_8h_source.html#l00051">51</a> of file <a class="el" href="animaMCMConstants_8h_source.html">animaMCMConstants.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaTensorCompartment_8cxx_source.html#l00235">anima::TensorCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00118">anima::ZeppelinCompartment::GetParameterUpperBounds()</a>, and <a class="el" href="animaTensorCompartment_8cxx_source.html#l00234">anima::TensorCompartment::GetParameterUpperBounds()</a>.</p>
 
 </div>
 </div>
@@ -8659,7 +8538,7 @@ template&lt;class T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="animaMCMConstants_8h_source.html#l00033">33</a> of file <a class="el" href="animaMCMConstants_8h_source.html">animaMCMConstants.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00307">anima::NODDICompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00087">anima::StickCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00221">anima::TensorCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00104">anima::ZeppelinCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaMultiCompartmentModel_8cxx_source.html#l00291">anima::MultiCompartmentModel::GetParameterLowerBounds()</a>, and <a class="el" href="animaMultiCompartmentModel_8cxx_source.html#l00329">anima::MultiCompartmentModel::GetParameterUpperBounds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="animaNODDICompartment_8cxx_source.html#l00307">anima::NODDICompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaStickCompartment_8cxx_source.html#l00087">anima::StickCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaZeppelinCompartment_8cxx_source.html#l00104">anima::ZeppelinCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaTensorCompartment_8cxx_source.html#l00220">anima::TensorCompartment::GetParameterLowerBounds()</a>, <a class="el" href="animaMultiCompartmentModel_8cxx_source.html#l00291">anima::MultiCompartmentModel::GetParameterLowerBounds()</a>, and <a class="el" href="animaMultiCompartmentModel_8cxx_source.html#l00329">anima::MultiCompartmentModel::GetParameterUpperBounds()</a>.</p>
 
 </div>
 </div>
@@ -8670,13 +8549,13 @@ Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36582801-1"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-36582801-1', 'auto');
-  ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-36582801-1');
 </script>
 </body>
 </html>
