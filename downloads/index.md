@@ -53,7 +53,7 @@ Anima and Anima scripts also come in several binary packages released from time 
 </p>
 <ul>
 <li>
-<a href="https://github.com/Inria-Visages/Anima-Scripts-Data-Public/archive/v3.0.zip">Zip file</a>
+<a href="https://github.com/Inria-Visages/Anima-Scripts-Data-Public/releases/download/v3.0/Anima-Scripts-Data-Public.zip">Zip file</a>
 </li>
 </ul>
 
