@@ -40,11 +40,11 @@ Anima and Anima scripts also come in several binary packages released from time 
 </ul>
 
 <p align="justify">
-<strong>Latest Anima scripts release</strong>: Anima scripts v3.0 - <a href="https://github.com/Inria-Visages/Anima-Scripts-Public/releases/tag/v3.0">Release notes</a>
+<strong>Latest Anima scripts release</strong>: Anima scripts v3.0.1 - <a href="https://github.com/Inria-Visages/Anima-Scripts-Public/releases/tag/v3.0.1">Release notes</a>
 </p>
 <ul>
 <li>
-<a href="https://github.com/Inria-Visages/Anima-Scripts-Public/archive/v3.0.zip">Zip file</a>
+<a href="https://github.com/Inria-Visages/Anima-Scripts-Public/archive/v3.0.1.zip">Zip file</a>
 </li>
 </ul>
 

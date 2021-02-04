@@ -8,6 +8,10 @@ Anima provides a set of software tools contributed by and coming from the resear
 Anima core software tools are also the base for Anima scripts, a set of <a href="https://www.python.org/">python</a> scripts and additional data from the <a href="https://team.inria.fr/empenn">Empenn research team</a>, to perform complex preprocessing and core processing tasks on medical images such as diffusion imaging, atlasing, brain extraction, relaxometry.
 </p>
 
+# News
+
+<p align="justify">February 4, 2021: Anima v4.0.1 and Anima scripts v3.0.1 bug fix releases are out ! Have a look at the <a href="{{ site.base-url }}downloads">downloads page</a> and <a href="http://anima.rtfd.io/">documentation</a> to install them.</p>
+
 # Referencing Anima and Anima scripts
 
 <p align="justify">So far, there is no paper on Anima or Anima scripts which you can cite directly. If you are using Anima for your research, please take the time to:</p>
