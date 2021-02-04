@@ -17,7 +17,7 @@ Anima, both main code and scripts, would not have been developed without the con
 # Anima contributors
 
 <p align="justify">
-We thank the contributors over the years for their valuable corrections and updates to the software. You can yourself join the crowd by getting involved on the Anima Github repositories available from the <a href="{{ site.base-url }}downloads">downloads page</a>.
+We thank the contributors over the years for their valuable corrections and updates to the software. You can yourself join the crowd by getting involved on the Anima Github repositories available from the <a href="{{ site.base-url }}downloads/">downloads page</a>.
 </p>
 
 {% for contributor in site.data.contributors %}
