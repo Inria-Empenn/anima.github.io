@@ -1,9 +1,186 @@
 [
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/37222458",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/37222458/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/37222458/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v4.0.1",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/42546515",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/42546515/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/42546515/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v4.1",
+    "id": 42546515,
+    "author": {
+      "login": "ocommowi",
+      "id": 2983208,
+      "node_id": "MDQ6VXNlcjI5ODMyMDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2983208?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ocommowi",
+      "html_url": "https://github.com/ocommowi",
+      "followers_url": "https://api.github.com/users/ocommowi/followers",
+      "following_url": "https://api.github.com/users/ocommowi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ocommowi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ocommowi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ocommowi/subscriptions",
+      "organizations_url": "https://api.github.com/users/ocommowi/orgs",
+      "repos_url": "https://api.github.com/users/ocommowi/repos",
+      "events_url": "https://api.github.com/users/ocommowi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ocommowi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "node_id": "MDc6UmVsZWFzZTQyNTQ2NTE1",
+    "tag_name": "v4.1",
+    "target_commitish": "master",
+    "name": "Anima v4.1",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2021-05-06T15:56:58Z",
+    "published_at": "2021-05-10T13:55:37Z",
+    "assets": [
+      {
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/36732529",
+        "id": 36732529,
+        "node_id": "MDEyOlJlbGVhc2VBc3NldDM2NzMyNTI5",
+        "name": "Anima-Fedora-4.1.zip",
+        "label": null,
+        "uploader": {
+          "login": "ocommowi",
+          "id": 2983208,
+          "node_id": "MDQ6VXNlcjI5ODMyMDg=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2983208?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ocommowi",
+          "html_url": "https://github.com/ocommowi",
+          "followers_url": "https://api.github.com/users/ocommowi/followers",
+          "following_url": "https://api.github.com/users/ocommowi/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ocommowi/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ocommowi/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ocommowi/subscriptions",
+          "organizations_url": "https://api.github.com/users/ocommowi/orgs",
+          "repos_url": "https://api.github.com/users/ocommowi/repos",
+          "events_url": "https://api.github.com/users/ocommowi/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ocommowi/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "content_type": "application/zip",
+        "state": "uploaded",
+        "size": 634339876,
+        "download_count": 0,
+        "created_at": "2021-05-10T12:49:38Z",
+        "updated_at": "2021-05-10T12:51:16Z",
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.1/Anima-Fedora-4.1.zip"
+      },
+      {
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/36732660",
+        "id": 36732660,
+        "node_id": "MDEyOlJlbGVhc2VBc3NldDM2NzMyNjYw",
+        "name": "Anima-macOS-4.1.zip",
+        "label": null,
+        "uploader": {
+          "login": "ocommowi",
+          "id": 2983208,
+          "node_id": "MDQ6VXNlcjI5ODMyMDg=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2983208?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ocommowi",
+          "html_url": "https://github.com/ocommowi",
+          "followers_url": "https://api.github.com/users/ocommowi/followers",
+          "following_url": "https://api.github.com/users/ocommowi/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ocommowi/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ocommowi/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ocommowi/subscriptions",
+          "organizations_url": "https://api.github.com/users/ocommowi/orgs",
+          "repos_url": "https://api.github.com/users/ocommowi/repos",
+          "events_url": "https://api.github.com/users/ocommowi/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ocommowi/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "content_type": "application/zip",
+        "state": "uploaded",
+        "size": 591345990,
+        "download_count": 0,
+        "created_at": "2021-05-10T12:51:25Z",
+        "updated_at": "2021-05-10T12:53:28Z",
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.1/Anima-macOS-4.1.zip"
+      },
+      {
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/36732712",
+        "id": 36732712,
+        "node_id": "MDEyOlJlbGVhc2VBc3NldDM2NzMyNzEy",
+        "name": "Anima-Ubuntu-4.1.zip",
+        "label": null,
+        "uploader": {
+          "login": "ocommowi",
+          "id": 2983208,
+          "node_id": "MDQ6VXNlcjI5ODMyMDg=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2983208?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ocommowi",
+          "html_url": "https://github.com/ocommowi",
+          "followers_url": "https://api.github.com/users/ocommowi/followers",
+          "following_url": "https://api.github.com/users/ocommowi/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ocommowi/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ocommowi/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ocommowi/subscriptions",
+          "organizations_url": "https://api.github.com/users/ocommowi/orgs",
+          "repos_url": "https://api.github.com/users/ocommowi/repos",
+          "events_url": "https://api.github.com/users/ocommowi/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ocommowi/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "content_type": "application/zip",
+        "state": "uploaded",
+        "size": 687400439,
+        "download_count": 0,
+        "created_at": "2021-05-10T12:53:28Z",
+        "updated_at": "2021-05-10T12:55:10Z",
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.1/Anima-Ubuntu-4.1.zip"
+      },
+      {
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/36732767",
+        "id": 36732767,
+        "node_id": "MDEyOlJlbGVhc2VBc3NldDM2NzMyNzY3",
+        "name": "Anima-Windows-4.1.zip",
+        "label": null,
+        "uploader": {
+          "login": "ocommowi",
+          "id": 2983208,
+          "node_id": "MDQ6VXNlcjI5ODMyMDg=",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2983208?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ocommowi",
+          "html_url": "https://github.com/ocommowi",
+          "followers_url": "https://api.github.com/users/ocommowi/followers",
+          "following_url": "https://api.github.com/users/ocommowi/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ocommowi/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ocommowi/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ocommowi/subscriptions",
+          "organizations_url": "https://api.github.com/users/ocommowi/orgs",
+          "repos_url": "https://api.github.com/users/ocommowi/repos",
+          "events_url": "https://api.github.com/users/ocommowi/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ocommowi/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "content_type": "application/zip",
+        "state": "uploaded",
+        "size": 331664669,
+        "download_count": 0,
+        "created_at": "2021-05-10T12:55:10Z",
+        "updated_at": "2021-05-10T12:57:34Z",
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.1/Anima-Windows-4.1.zip"
+      }
+    ],
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v4.1",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v4.1",
+    "body": "Binary versions are compiled for Fedora 26 (64 bits) and above, Ubuntu 18.04 (64 bits) and above, OSX 10.13 and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [documentation](https://anima.rtfd.io) for this). If you are using Anima for your research, please take the time to:\r\n\r\n- Cite the relevant papers referenced in the [documentation](https://anima.rtfd.io)\r\n- Add a sentence in your acknowledgments section or in the methods part of your paper referencing the [RRID](https://www.rrids.org) of Anima: RRID:SCR_017017 (should be written like this to ensure it is recognized by search bots)\r\n- if possible, add the link to Anima website: https://anima.irisa.fr\r\n\r\nAmong new things are the following:\r\n\r\n- relaxometry multi-compartment myelin water fraction speed improvement and major bug correction\r\n- bug corrections in multi-component T2 relaxometry estimation\r\n- add tools for MCM properties extraction along tracts and patient to group comparison along tracts\r\n- add a shape format conversion tool\r\n- faster ODF computation, especially in fiber tracking tools\r\n- other minor bugs correction and cmake improvements\r\n\r\nPlease refer to the [documentation](https://anima.rtfd.io) or send us an [email](mailto:anima-users@inria.fr) for more details on how to use these tools.",
+    "discussion_url": "https://github.com/Inria-Empenn/Anima-Public/discussions/79"
+  },
+  {
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/37222458",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/37222458/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/37222458/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v4.0.1",
     "id": 37222458,
     "author": {
       "login": "ocommowi",
@@ -35,7 +212,7 @@
     "published_at": "2021-02-04T10:52:31Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/31529221",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/31529221",
         "id": 31529221,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDMxNTI5MjIx",
         "name": "Anima-Fedora-4.0.1.zip",
@@ -63,13 +240,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 610972247,
-        "download_count": 0,
+        "download_count": 31,
         "created_at": "2021-02-02T13:51:36Z",
         "updated_at": "2021-02-02T13:53:29Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v4.0.1/Anima-Fedora-4.0.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.0.1/Anima-Fedora-4.0.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/31529285",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/31529285",
         "id": 31529285,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDMxNTI5Mjg1",
         "name": "Anima-macOS-4.0.1.zip",
@@ -97,13 +274,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 572497852,
-        "download_count": 0,
+        "download_count": 35,
         "created_at": "2021-02-02T13:53:29Z",
         "updated_at": "2021-02-02T13:54:26Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v4.0.1/Anima-macOS-4.0.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.0.1/Anima-macOS-4.0.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/31529333",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/31529333",
         "id": 31529333,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDMxNTI5MzMz",
         "name": "Anima-Ubuntu-4.0.1.zip",
@@ -131,13 +308,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 662686949,
-        "download_count": 0,
+        "download_count": 106,
         "created_at": "2021-02-02T13:54:26Z",
         "updated_at": "2021-02-02T13:55:59Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v4.0.1/Anima-Ubuntu-4.0.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.0.1/Anima-Ubuntu-4.0.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/31529393",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/31529393",
         "id": 31529393,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDMxNTI5Mzkz",
         "name": "Anima-Windows-4.0.1.zip",
@@ -165,21 +342,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 321817675,
-        "download_count": 0,
+        "download_count": 42,
         "created_at": "2021-02-02T13:55:59Z",
         "updated_at": "2021-02-02T13:56:44Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v4.0.1/Anima-Windows-4.0.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.0.1/Anima-Windows-4.0.1.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v4.0.1",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v4.0.1",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v4.0.1",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v4.0.1",
     "body": "Bug fix release of Anima\r\n\r\nBinary versions are compiled for Fedora 26 (64 bits) and above, Ubuntu 18.04 (64 bits) and above, OSX 10.13 and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [documentation](https://anima.rtfd.io) for this). If you are using Anima for your research, please take the time to:\r\n\r\n- Cite the relevant papers referenced in the [documentation](https://anima.rtfd.io)\r\n- Add a sentence in your acknowledgments section or in the methods part of your paper referencing the [RRID](https://www.rrids.org) of Anima: RRID:SCR_017017 (should be written like this to ensure it is recognized by search bots)\r\n- if possible, add the link to Anima website: https://anima.irisa.fr\r\n\r\nAmong new things are the following:\r\n\r\n- update deterministic tractography (Runge Kutta interpolation, allow use of all potential directions coming from a starting seed)\r\n- add ROI statistics tool\r\n- correct rare inifinite loops and bugs in MCM estimation\r\n- correct bugs in multi component T2 estimation\r\n- other minor bugs correction and cmake improvements\r\n\r\nPlease refer to the [documentation](https://anima.rtfd.io) or send us an [email](mailto:anima-users@inria.fr) for more details on how to use these tools."
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/30426807",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/30426807/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/30426807/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v4.0",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/30426807",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/30426807/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/30426807/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v4.0",
     "id": 30426807,
     "author": {
       "login": "ocommowi",
@@ -211,7 +388,7 @@
     "published_at": "2020-09-04T07:26:05Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/24881721",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/24881721",
         "id": 24881721,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDI0ODgxNzIx",
         "name": "Anima-Fedora-4.0.zip",
@@ -239,13 +416,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 599560098,
-        "download_count": 66,
+        "download_count": 91,
         "created_at": "2020-09-04T07:21:39Z",
         "updated_at": "2020-09-04T07:22:56Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v4.0/Anima-Fedora-4.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.0/Anima-Fedora-4.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/24881777",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/24881777",
         "id": 24881777,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDI0ODgxNzc3",
         "name": "Anima-macOS-4.0.zip",
@@ -273,13 +450,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 561912227,
-        "download_count": 57,
+        "download_count": 82,
         "created_at": "2020-09-04T07:22:56Z",
         "updated_at": "2020-09-04T07:23:56Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v4.0/Anima-macOS-4.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.0/Anima-macOS-4.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/24881825",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/24881825",
         "id": 24881825,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDI0ODgxODI1",
         "name": "Anima-Ubuntu-4.0.zip",
@@ -307,13 +484,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 650323729,
-        "download_count": 89,
+        "download_count": 112,
         "created_at": "2020-09-04T07:23:56Z",
         "updated_at": "2020-09-04T07:24:51Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v4.0/Anima-Ubuntu-4.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.0/Anima-Ubuntu-4.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/24881859",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/24881859",
         "id": 24881859,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDI0ODgxODU5",
         "name": "Anima-Windows-4.0.zip",
@@ -341,21 +518,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 318781952,
-        "download_count": 85,
+        "download_count": 109,
         "created_at": "2020-09-04T07:24:51Z",
         "updated_at": "2020-09-04T07:25:19Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v4.0/Anima-Windows-4.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v4.0/Anima-Windows-4.0.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v4.0",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v4.0",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v4.0",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v4.0",
     "body": "Major release of Anima and Anima scripts: more docs and a website are coming to town !\r\n\r\nBinary versions are compiled for Fedora 26 (64 bits) and above, Ubuntu 18.04 (64 bits) and above, OSX 10.13 and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [documentation](https://anima.rtfd.io) for this). If you are using Anima for your research, please take the time to:\r\n\r\n- Cite the relevant papers referenced in the [documentation](https://anima.rtfd.io)\r\n- Add a sentence in your acknowledgments section or in the methods part of your paper referencing the [RRID](https://www.rrids.org) of Anima: RRID:SCR_017017 (should be written like this to ensure it is recognized by search bots)\r\n- if possible, add the link to Anima website: https://anima.irisa.fr\r\n\r\nAmong new things are the following:\r\n\r\n- new [website](https://anima.irisa.fr) for Anima\r\n- Transfer of the documentation to read-the-docs: [documentation](https://anima.rtfd.io) - all other documentations are now deprecated\r\n- use latest versions of ITK (5.1.1) and VTK (9.0.1)\r\n- switch all tools to double precision (storage and processing)\r\n- much faster estimation algorithms for multi-compartment relaxometry (animaGammaMixtureT2RelaxometryEstimation and animaGMMT2RelaxometryEstimation)\r\n- faster distortion correction tools (animaBMDistortionCorrection and animaEddyCurrentCorrection)\r\n- correct bug in animaDistortionCorrection\r\n- faster bounded levenberg marquardt optimization for MCM\r\n- add MCM scalar maps tool\r\n- MCM file format change for easier use\r\n- tractography algorithms do not output scalar values along fibers by default, for faster processing and lighter weight output files \r\n- add fibers counter tool from tractography files\r\n- faster MCM registration\r\n- MCM resampling update: sticks and zeppelins can now be interpolated and registered\r\n- add animaFuzzyDiceMeasure tool for evaluation using generalized Dice\r\n- add b-value shell selection to ODF estimation\r\n- fixes in reorientation algorithms for diffusion images registration and resampling\r\n- under the hood work in registration: resampling now automatically sets default background value to -1024 for CT images\r\n- bug corrections in NODDI compartment implementation\r\n- bug corrections in noise generation tool\r\n- new release of [Anima scripts](https://github.com/Inria-Visages/Anima-Scripts-Public/releases/tag/v3.0) along with this release\r\n- Other minor bug corrections\r\n\r\nPlease refer to the [documentation](https://anima.rtfd.io) or send us an [email](mailto:anima-users@inria.fr) for more details on how to use these tools."
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/24258039",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/24258039/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/24258039/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v3.4",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/24258039",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/24258039/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/24258039/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v3.4",
     "id": 24258039,
     "author": {
       "login": "ocommowi",
@@ -387,7 +564,7 @@
     "published_at": "2020-03-06T13:39:30Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/18521459",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/18521459",
         "id": 18521459,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE4NTIxNDU5",
         "name": "Anima-Fedora-3.4.zip",
@@ -415,13 +592,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 578494670,
-        "download_count": 73,
+        "download_count": 76,
         "created_at": "2020-03-06T13:14:11Z",
         "updated_at": "2020-03-06T13:17:10Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.4/Anima-Fedora-3.4.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.4/Anima-Fedora-3.4.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/18521593",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/18521593",
         "id": 18521593,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE4NTIxNTkz",
         "name": "Anima-macOS-3.4.zip",
@@ -449,13 +626,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 541340814,
-        "download_count": 86,
+        "download_count": 90,
         "created_at": "2020-03-06T13:17:24Z",
         "updated_at": "2020-03-06T13:19:43Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.4/Anima-macOS-3.4.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.4/Anima-macOS-3.4.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/18521676",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/18521676",
         "id": 18521676,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE4NTIxNjc2",
         "name": "Anima-Ubuntu-3.4.zip",
@@ -483,13 +660,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 628304956,
-        "download_count": 85,
+        "download_count": 107,
         "created_at": "2020-03-06T13:19:50Z",
         "updated_at": "2020-03-06T13:22:37Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.4/Anima-Ubuntu-3.4.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.4/Anima-Ubuntu-3.4.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/18521802",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/18521802",
         "id": 18521802,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE4NTIxODAy",
         "name": "Anima-Windows-3.4.zip",
@@ -517,21 +694,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 310322028,
-        "download_count": 79,
+        "download_count": 102,
         "created_at": "2020-03-06T13:22:44Z",
         "updated_at": "2020-03-06T13:23:34Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.4/Anima-Windows-3.4.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.4/Anima-Windows-3.4.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v3.4",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v3.4",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v3.4",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v3.4",
     "body": "Binary versions are compiled for Fedora 26 (64 bits) and above, Ubuntu 18.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this). If you are using Anima for your research, please take the time to:\r\n\r\n- Cite the relevant papers referenced in the other pages of this documentation wiki\r\n- Add a sentence in your acknowledgments section or in the methods part of your paper referencing the [RRID](https://www.rrids.org) of Anima: RRID:SCR_017017 (should be written like this to ensure it is recognized by search bots)\r\n\r\nAmong new things are the following:\r\n\r\n- Correct memory leak that was affecting all registration tools\r\n- Correct long running Levenberg Marquardt optimization bug in MCM estimation (introduces an all new bounded LM optimizer)\r\n- Switch back to previous mutli-threading scheme as ITK 5 one is not that great\r\n- Add binary versions of DWI simulation from diffusion tensors or multi-compartment models (animaDWISimulatorFromDTI and animaDWISimulationFromMCM)\r\n- Add a majority voting tool (animaMajorityLabelVoting)\r\n- New release of [Anima scripts v2.2](https://github.com/Inria-Visages/Anima-Scripts-Public/releases/tag/v2.2) along with this release\r\n- Other minor bug corrections\r\n\r\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) or send us an [email](mailto:anima-users@inria.fr) for more details on how to use those tools."
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/21413424",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/21413424/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/21413424/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v3.3",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/21413424",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/21413424/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/21413424/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v3.3",
     "id": 21413424,
     "author": {
       "login": "ocommowi",
@@ -563,7 +740,7 @@
     "published_at": "2019-11-13T17:25:41Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/16134725",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/16134725",
         "id": 16134725,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE2MTM0NzI1",
         "name": "Anima-Fedora-3.3.zip",
@@ -591,13 +768,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 559034326,
-        "download_count": 87,
+        "download_count": 92,
         "created_at": "2019-11-13T12:36:27Z",
         "updated_at": "2019-11-13T12:37:21Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.3/Anima-Fedora-3.3.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.3/Anima-Fedora-3.3.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/16134726",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/16134726",
         "id": 16134726,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE2MTM0NzI2",
         "name": "Anima-macOS-3.3.zip",
@@ -625,13 +802,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 522912062,
-        "download_count": 122,
+        "download_count": 126,
         "created_at": "2019-11-13T12:36:28Z",
         "updated_at": "2019-11-13T12:38:13Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.3/Anima-macOS-3.3.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.3/Anima-macOS-3.3.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/16134727",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/16134727",
         "id": 16134727,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE2MTM0NzI3",
         "name": "Anima-Ubuntu-3.3.zip",
@@ -659,13 +836,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 607737948,
-        "download_count": 100,
+        "download_count": 103,
         "created_at": "2019-11-13T12:36:28Z",
         "updated_at": "2019-11-13T12:39:41Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.3/Anima-Ubuntu-3.3.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.3/Anima-Ubuntu-3.3.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/16116475",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/16116475",
         "id": 16116475,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE2MTE2NDc1",
         "name": "Anima-Windows-3.3.zip",
@@ -693,21 +870,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 296461757,
-        "download_count": 125,
+        "download_count": 126,
         "created_at": "2019-11-12T17:42:45Z",
         "updated_at": "2019-11-12T17:43:15Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.3/Anima-Windows-3.3.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.3/Anima-Windows-3.3.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v3.3",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v3.3",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v3.3",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v3.3",
     "body": "Binary versions are compiled for Fedora 26 (64 bits) and above, Ubuntu 18.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this). If you are using Anima for your research, please take the time to:\r\n\r\n- Cite the relevant papers referenced in the other pages of this documentation wiki\r\n- Add a sentence in your acknowledgments section or in the methods part of your paper referencing the [RRID](https://www.rrids.org) of Anima: RRID:SCR_017017 (should be written like this to ensure it is recognized by search bots)\r\n\r\nAmong new things are the following:\r\n\r\n- Switch to ITK 5\r\n- Switch to C++17 standard (now required for some tools)\r\n- Much faster implementation of some relaxometry tools including animaGMMT2RelaxometryEstimation\r\n- DTI tractography closer to the article of Weinstein et al., 1999\r\n- New release of [Anima scripts v2.1](https://github.com/Inria-Visages/Anima-Scripts-Public/releases/tag/v2.1) along with this release\r\n- minor bug corrections\r\n\r\nKnown bugs still identified in this release:\r\n\r\n- a bug in Levenberg Marquardt based MCM estimation is under review #50 \r\n\r\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) or send us an [email](mailto:anima-users@inria.fr) for more details on how to use those tools."
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/16037927",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/16037927/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/16037927/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v3.2",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/16037927",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/16037927/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/16037927/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v3.2",
     "id": 16037927,
     "author": {
       "login": "ocommowi",
@@ -739,7 +916,7 @@
     "published_at": "2019-03-21T10:14:07Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/11591482",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/11591482",
         "id": 11591482,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDExNTkxNDgy",
         "name": "Anima-Fedora-3.2.zip",
@@ -767,13 +944,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 537887926,
-        "download_count": 100,
+        "download_count": 104,
         "created_at": "2019-03-18T10:29:44Z",
         "updated_at": "2019-03-18T10:32:39Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.2/Anima-Fedora-3.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.2/Anima-Fedora-3.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/11591483",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/11591483",
         "id": 11591483,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDExNTkxNDgz",
         "name": "Anima-OSX-3.2.zip",
@@ -801,13 +978,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 399633545,
-        "download_count": 78,
+        "download_count": 82,
         "created_at": "2019-03-18T10:29:44Z",
         "updated_at": "2019-03-18T10:33:32Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.2/Anima-OSX-3.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.2/Anima-OSX-3.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/11591555",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/11591555",
         "id": 11591555,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDExNTkxNTU1",
         "name": "Anima-Ubuntu-3.2.zip",
@@ -835,13 +1012,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 538820923,
-        "download_count": 112,
+        "download_count": 116,
         "created_at": "2019-03-18T10:33:36Z",
         "updated_at": "2019-03-18T10:35:01Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.2/Anima-Ubuntu-3.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.2/Anima-Ubuntu-3.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/11591398",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/11591398",
         "id": 11591398,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDExNTkxMzk4",
         "name": "Anima-Windows-3.2.zip",
@@ -869,21 +1046,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 261983403,
-        "download_count": 147,
+        "download_count": 152,
         "created_at": "2019-03-18T10:23:57Z",
         "updated_at": "2019-03-18T10:35:04Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.2/Anima-Windows-3.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.2/Anima-Windows-3.2.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v3.2",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v3.2",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v3.2",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v3.2",
     "body": "Binary versions are compiled for Fedora 25 (64 bits) and above, Ubuntu 16.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this). If you are using Anima for your research, please take the time to:\r\n\r\n- Cite the relevant papers referenced in the other pages of this documentation wiki\r\n- Add a sentence in your acknowledgments section or in the methods part of your paper referencing the [RRID](https://www.rrids.org) of Anima: RRID:SCR_017017 (should be written like this to ensure it is recognized by search bots)\r\n\r\nAmong new things are the following:\r\n\r\n- Sparse initialization for multi-compartment models estimation\r\n- Addition of Stanisz isotropic compartment model\r\n- Possibility to add priors to MS lesion graph cuts segmentation\r\n- Change transformation default extrapolation in non linear registration\r\n- Addition of validation tools used for the MICCAI MSSEG 2016 challenge\r\n\t- animaDetectedComponents, animaSegPerfAnalyzer\r\n- Addition of some basic tools: \r\n\t- linear transformation to stationary velocity field\r\n\t- output of nearest rigid transform in linear registration\r\n\t- image resolution changer tool\r\n- New release of [Anima scripts v2.0](https://github.com/Inria-Visages/Anima-Scripts-Public/releases) along with this release\r\n- Other minor bug corrections/evolutions\r\n\r\nKnown bugs identified in this release:\r\n\r\n- a bug in Levenberg Marquardt based MCM estimation is under review\r\n\r\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) or send us an [email](mailto:anima-users@inria.fr) for more details on how to use those tools."
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/11512567",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/11512567/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/11512567/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v3.1",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/11512567",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/11512567/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/11512567/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v3.1",
     "id": 11512567,
     "author": {
       "login": "ocommowi",
@@ -915,7 +1092,7 @@
     "published_at": "2018-06-17T08:24:27Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/7560838",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/7560838",
         "id": 7560838,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDc1NjA4Mzg=",
         "name": "Anima-Fedora-3.1.zip",
@@ -943,13 +1120,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 436346371,
-        "download_count": 69,
+        "download_count": 71,
         "created_at": "2018-06-17T08:07:09Z",
         "updated_at": "2018-06-17T08:11:54Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.1/Anima-Fedora-3.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.1/Anima-Fedora-3.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/7560842",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/7560842",
         "id": 7560842,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDc1NjA4NDI=",
         "name": "Anima-OSX-3.1.zip",
@@ -977,13 +1154,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 378892965,
-        "download_count": 119,
+        "download_count": 123,
         "created_at": "2018-06-17T08:07:20Z",
         "updated_at": "2018-06-17T08:22:14Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.1/Anima-OSX-3.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.1/Anima-OSX-3.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/7560841",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/7560841",
         "id": 7560841,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDc1NjA4NDE=",
         "name": "Anima-Ubuntu-3.1.zip",
@@ -1011,13 +1188,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 512543098,
-        "download_count": 107,
+        "download_count": 111,
         "created_at": "2018-06-17T08:07:16Z",
         "updated_at": "2018-06-17T08:17:27Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.1/Anima-Ubuntu-3.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.1/Anima-Ubuntu-3.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/7560698",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/7560698",
         "id": 7560698,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDc1NjA2OTg=",
         "name": "Anima-Windows-3.1.zip",
@@ -1045,21 +1222,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 252211827,
-        "download_count": 116,
+        "download_count": 118,
         "created_at": "2018-06-17T07:31:00Z",
         "updated_at": "2018-06-17T07:33:22Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.1/Anima-Windows-3.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.1/Anima-Windows-3.1.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v3.1",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v3.1",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v3.1",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v3.1",
     "body": "ISMRM 2018 release of Anima\r\n\r\nBinary versions are compiled for Fedora 25 (64 bits) and above, Ubuntu 16.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this).\r\n\r\nAmong new things are the following:\r\n\r\n- New multi-compartment T2 and myelin water fraction estimation tool with fixed Gaussian PDF parameters from relaxometry sequences\r\n- Addition of a new transformation type for linear registration: constrained affine transformation along a direction. Also better default initialization testing, and closest rigid transformation export\r\n- Addition of a NODDI compartment to MCM estimation\r\n- Faster MCM estimation, more optimization algorithms available\r\n- Correct rare errors in DTI and MCM registration algorithms\r\n- Other minor bug corrections/evolutions\r\n\r\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) or send us an [email](mailto:anima-users@inria.fr) for more details on how to use those tools."
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/10298200",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/10298200/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/10298200/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v3.0",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/10298200",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/10298200/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/10298200/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v3.0",
     "id": 10298200,
     "author": {
       "login": "ocommowi",
@@ -1091,7 +1268,7 @@
     "published_at": "2018-03-28T14:23:38Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/6660768",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/6660768",
         "id": 6660768,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDY2NjA3Njg=",
         "name": "Anima-Fedora-3.0.zip",
@@ -1119,13 +1296,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 431397204,
-        "download_count": 73,
+        "download_count": 76,
         "created_at": "2018-03-28T13:25:28Z",
         "updated_at": "2018-03-28T13:33:24Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.0/Anima-Fedora-3.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.0/Anima-Fedora-3.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/6660733",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/6660733",
         "id": 6660733,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDY2NjA3MzM=",
         "name": "Anima-OSX-3.0.zip",
@@ -1153,13 +1330,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 374608844,
-        "download_count": 95,
+        "download_count": 100,
         "created_at": "2018-03-28T13:22:24Z",
         "updated_at": "2018-03-28T13:25:11Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.0/Anima-OSX-3.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.0/Anima-OSX-3.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/6660734",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/6660734",
         "id": 6660734,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDY2NjA3MzQ=",
         "name": "Anima-Ubuntu-3.0.zip",
@@ -1187,13 +1364,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 506687699,
-        "download_count": 87,
+        "download_count": 89,
         "created_at": "2018-03-28T13:22:35Z",
         "updated_at": "2018-03-28T13:30:34Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.0/Anima-Ubuntu-3.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.0/Anima-Ubuntu-3.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/6661429",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/6661429",
         "id": 6661429,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDY2NjE0Mjk=",
         "name": "Anima-Windows-3.0.zip",
@@ -1221,21 +1398,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 247014736,
-        "download_count": 147,
+        "download_count": 153,
         "created_at": "2018-03-28T14:22:45Z",
         "updated_at": "2018-03-28T14:23:08Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v3.0/Anima-Windows-3.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v3.0/Anima-Windows-3.0.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v3.0",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v3.0",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v3.0",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v3.0",
     "body": "ISBI 2018 release of Anima (new relaxometry tools and major bug fixes)\r\n\r\nBinary versions are compiled for Fedora 25 (64 bits) and above, Ubuntu 16.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this).\r\n\r\nAmong new things are the following:\r\n\r\n- New T2 and B1 estimation of mono-component T2 relaxation times from relaxometry sequences\r\n- New multi-compartment T2 and myelin water fraction estimation tools from relaxometry sequences\r\n- Update tractography algorithms (probabilistic tractography does not use DWI images anymore, output compatible with medInria 3.0)\r\n- Add Taquet et al similarity metrics for multi-tensors registration\r\n- Correct border handling errors in DTI and MCM registration algorithms\r\n- Add isosurface extraction tool from binary segmentation\r\n- Correct rare errors in DTI estimation filter\r\n- Update Eddy current experimental tool to handle well movement correction and distortion (the first one being applied to gradients, not the second one)\r\n- Other minor bug corrections/evolutions\r\n\r\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) for more details on how to use those tools."
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/7505340",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/7505340/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/7505340/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v2.2",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/7505340",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/7505340/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/7505340/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v2.2",
     "id": 7505340,
     "author": {
       "login": "ocommowi",
@@ -1267,7 +1444,7 @@
     "published_at": "2017-08-24T15:47:13Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/4661798",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/4661798",
         "id": 4661798,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDQ2NjE3OTg=",
         "name": "Anima-Fedora-2.2.zip",
@@ -1295,13 +1472,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 381088526,
-        "download_count": 81,
+        "download_count": 85,
         "created_at": "2017-08-24T15:43:55Z",
         "updated_at": "2017-08-24T15:45:04Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.2/Anima-Fedora-2.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.2/Anima-Fedora-2.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/4661797",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/4661797",
         "id": 4661797,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDQ2NjE3OTc=",
         "name": "Anima-OSX-2.2.zip",
@@ -1329,13 +1506,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 328263341,
-        "download_count": 126,
+        "download_count": 130,
         "created_at": "2017-08-24T15:43:55Z",
         "updated_at": "2017-08-24T15:44:25Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.2/Anima-OSX-2.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.2/Anima-OSX-2.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/4661799",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/4661799",
         "id": 4661799,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDQ2NjE3OTk=",
         "name": "Anima-Ubuntu-2.2.zip",
@@ -1363,13 +1540,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 447524637,
-        "download_count": 98,
+        "download_count": 103,
         "created_at": "2017-08-24T15:43:55Z",
         "updated_at": "2017-08-24T15:45:50Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.2/Anima-Ubuntu-2.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.2/Anima-Ubuntu-2.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/4661800",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/4661800",
         "id": 4661800,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDQ2NjE4MDA=",
         "name": "Anima-Windows-2.2.zip",
@@ -1397,21 +1574,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 218614176,
-        "download_count": 120,
+        "download_count": 124,
         "created_at": "2017-08-24T15:43:55Z",
         "updated_at": "2017-08-24T15:46:13Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.2/Anima-Windows-2.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.2/Anima-Windows-2.2.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v2.2",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v2.2",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v2.2",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v2.2",
     "body": "MICCAI 2017 release of Anima (bug fixes and some new tools)\r\n\r\nBinary versions compiled for Fedora 25 (64 bits) and above, Ubuntu 16.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work on your OS, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this).\r\n\r\nAmong new things are the following:\r\n\r\n- add multi-compartment model registration\r\n- make multi-compartment model interpolation source code public \r\n- add higher order SVF transformation exponentiation\r\n- add arithmetic tool to perform operations on dense transformations and SVFs\r\n- simplify noise generation tools to only one animaNoiseGenerator\r\n- add Nyul et al intensity normalisation tool\r\n- change DTI estimation to ensure positive definite tensors\r\n- add fibers ROI filtering tool\r\n- add opening and closure filters to morphological operations\r\n- bug corrections in non-local patient to group comparison tools\r\n- Other minor bug corrections\r\n\r\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) for more details on how to use those tools."
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/5778165",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/5778165/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/5778165/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v2.1",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/5778165",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/5778165/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/5778165/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v2.1",
     "id": 5778165,
     "author": {
       "login": "ocommowi",
@@ -1443,7 +1620,7 @@
     "published_at": "2017-03-22T08:14:52Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/3453072",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/3453072",
         "id": 3453072,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDM0NTMwNzI=",
         "name": "Anima-Fedora-2.1.zip",
@@ -1471,13 +1648,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 398906531,
-        "download_count": 96,
+        "download_count": 101,
         "created_at": "2017-03-21T10:08:43Z",
         "updated_at": "2017-03-21T10:09:28Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.1/Anima-Fedora-2.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.1/Anima-Fedora-2.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/3460988",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/3460988",
         "id": 3460988,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDM0NjA5ODg=",
         "name": "Anima-OSX-2.1.zip",
@@ -1505,13 +1682,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 316347566,
-        "download_count": 119,
+        "download_count": 123,
         "created_at": "2017-03-22T08:14:10Z",
         "updated_at": "2017-03-22T08:14:40Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.1/Anima-OSX-2.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.1/Anima-OSX-2.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/3453082",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/3453082",
         "id": 3453082,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDM0NTMwODI=",
         "name": "Anima-Ubuntu-2.1.zip",
@@ -1539,13 +1716,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 390566824,
-        "download_count": 114,
+        "download_count": 118,
         "created_at": "2017-03-21T10:09:36Z",
         "updated_at": "2017-03-21T10:10:11Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.1/Anima-Ubuntu-2.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.1/Anima-Ubuntu-2.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/3453066",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/3453066",
         "id": 3453066,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDM0NTMwNjY=",
         "name": "Anima-Windows-2.1.zip",
@@ -1573,21 +1750,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 212674414,
-        "download_count": 127,
+        "download_count": 130,
         "created_at": "2017-03-21T10:08:15Z",
         "updated_at": "2017-03-21T10:08:35Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.1/Anima-Windows-2.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.1/Anima-Windows-2.1.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v2.1",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v2.1",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v2.1",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v2.1",
     "body": "Bug fix release of Anima\r\n\r\nBinary versions compiled for Fedora 20 (64 bits) and above, Ubuntu 12.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this).\r\n\r\nAmong new things are the following:\r\n- Added displacement field Jacobian tools\r\n- Add BCH of order 2, 3, 4 for SVF composition approximation\r\n- Improved multi-threading and bug corrections for tractography\r\n- New registration-based Eddy current correction tool\r\n- Bug corrections in symmetry tools (symmetry plane and symmetry constrained registration)\r\n- Bug corrections for MCM estimation and averaging\r\n- New transformation application, averaging tools and tractography for MCM (binary version)\r\n- Other minor bug corrections\r\n\r\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) for more details on how to use those tools.\r\n"
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/4334518",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/4334518/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/4334518/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v2.0",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/4334518",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/4334518/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/4334518/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v2.0",
     "id": 4334518,
     "author": {
       "login": "ocommowi",
@@ -1619,7 +1796,7 @@
     "published_at": "2016-10-11T15:59:43Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/2456767",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/2456767",
         "id": 2456767,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDI0NTY3Njc=",
         "name": "Anima-Fedora-2.0.zip",
@@ -1647,13 +1824,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 348142016,
-        "download_count": 127,
+        "download_count": 132,
         "created_at": "2016-10-11T15:53:59Z",
         "updated_at": "2016-10-11T15:54:59Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.0/Anima-Fedora-2.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.0/Anima-Fedora-2.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/2456774",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/2456774",
         "id": 2456774,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDI0NTY3NzQ=",
         "name": "Anima-OSX-2.0.zip",
@@ -1681,13 +1858,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 279979628,
-        "download_count": 126,
+        "download_count": 129,
         "created_at": "2016-10-11T15:55:03Z",
         "updated_at": "2016-10-11T15:59:09Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.0/Anima-OSX-2.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.0/Anima-OSX-2.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/2456772",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/2456772",
         "id": 2456772,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDI0NTY3NzI=",
         "name": "Anima-Ubuntu-2.0.zip",
@@ -1715,13 +1892,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 340992222,
-        "download_count": 124,
+        "download_count": 128,
         "created_at": "2016-10-11T15:55:03Z",
         "updated_at": "2016-10-11T15:57:30Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.0/Anima-Ubuntu-2.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.0/Anima-Ubuntu-2.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/2456773",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/2456773",
         "id": 2456773,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDI0NTY3NzM=",
         "name": "Anima-Windows-2.0.zip",
@@ -1749,21 +1926,21 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 188464197,
-        "download_count": 182,
+        "download_count": 184,
         "created_at": "2016-10-11T15:55:03Z",
         "updated_at": "2016-10-11T15:58:36Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v2.0/Anima-Windows-2.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v2.0/Anima-Windows-2.0.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v2.0",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v2.0",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v2.0",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v2.0",
     "body": "Feature release of Anima\n\nBinary versions are compiled for Fedora 20 (64 bits) and above, Ubuntu 12.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this).\n\nAmong new things are the following:\n- add diffusion multi-compartment models framework and estimation tools\n- more and improved lesion segmentation post-processing tools\n- some additional implementations of ITK filters: N4 bias correction, Otsu thresholding\n- switch to ITK 4.10.1\n- some bug corrections in basic tools\n\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) for more details on how to use those tools.\n"
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/3294851",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/3294851/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/3294851/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v1.2",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/3294851",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/3294851/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/3294851/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v1.2",
     "id": 3294851,
     "author": {
       "login": "ocommowi",
@@ -1795,7 +1972,7 @@
     "published_at": "2016-05-27T07:19:33Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/1751678",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/1751678",
         "id": 1751678,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE3NTE2Nzg=",
         "name": "Anima-Fedora-1.2.zip",
@@ -1823,13 +2000,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 292645752,
-        "download_count": 124,
+        "download_count": 128,
         "created_at": "2016-05-27T06:24:10Z",
         "updated_at": "2016-05-27T06:28:36Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.2/Anima-Fedora-1.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.2/Anima-Fedora-1.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/1751783",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/1751783",
         "id": 1751783,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE3NTE3ODM=",
         "name": "Anima-OSX-1.2.zip",
@@ -1857,13 +2034,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 237302004,
-        "download_count": 116,
+        "download_count": 120,
         "created_at": "2016-05-27T07:01:14Z",
         "updated_at": "2016-05-27T07:03:49Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.2/Anima-OSX-1.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.2/Anima-OSX-1.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/1751594",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/1751594",
         "id": 1751594,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE3NTE1OTQ=",
         "name": "Anima-Ubuntu-1.2.zip",
@@ -1891,13 +2068,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 286979495,
-        "download_count": 136,
+        "download_count": 140,
         "created_at": "2016-05-27T05:59:46Z",
         "updated_at": "2016-05-27T06:11:26Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.2/Anima-Ubuntu-1.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.2/Anima-Ubuntu-1.2.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/1751762",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/1751762",
         "id": 1751762,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDE3NTE3NjI=",
         "name": "Anima-Windows-1.2.zip",
@@ -1925,21 +2102,21 @@
         "content_type": "application/x-zip-compressed",
         "state": "uploaded",
         "size": 160487637,
-        "download_count": 126,
+        "download_count": 128,
         "created_at": "2016-05-27T06:53:14Z",
         "updated_at": "2016-05-27T06:59:40Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.2/Anima-Windows-1.2.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.2/Anima-Windows-1.2.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v1.2",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v1.2",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v1.2",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v1.2",
     "body": "Bug fix release of Anima\n\nBinary versions compiled for Fedora 20 (64 bits) and above, Ubuntu 12.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For more recent versions or if these binaries do not work, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this).\n\nAmong new things are the following:\n- Bug corrections in tensor and symmetric registration\n- Bug correction in dice score computation\n- Implementation of PPD (preservation of principal direction) re-orientation strategy for tensor registration\n- More scalar maps in animaComputeDTIScalarsMaps\n- More robust DTI estimation\n- Improved masked filters (faster, better multi-threaded)\n- Switch to C++11 coding standard and CMake 3.x\n\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) for more details on how to use those tools.\n"
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/2161723",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/2161723/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/2161723/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v1.1",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/2161723",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/2161723/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/2161723/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v1.1",
     "id": 2161723,
     "author": {
       "login": "ocommowi",
@@ -1971,7 +2148,7 @@
     "published_at": "2015-11-20T20:19:20Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/1056387",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/1056387",
         "id": 1056387,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDEwNTYzODc=",
         "name": "Anima-Fedora-1.1.zip",
@@ -1999,13 +2176,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 285281181,
-        "download_count": 129,
+        "download_count": 133,
         "created_at": "2015-11-20T20:10:31Z",
         "updated_at": "2015-11-20T20:15:47Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.1/Anima-Fedora-1.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.1/Anima-Fedora-1.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/1056406",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/1056406",
         "id": 1056406,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDEwNTY0MDY=",
         "name": "Anima-OSX-1.1.zip",
@@ -2033,13 +2210,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 242337931,
-        "download_count": 127,
+        "download_count": 130,
         "created_at": "2015-11-20T20:15:53Z",
         "updated_at": "2015-11-20T20:18:52Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.1/Anima-OSX-1.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.1/Anima-OSX-1.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/1056386",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/1056386",
         "id": 1056386,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDEwNTYzODY=",
         "name": "Anima-Ubuntu-1.1.zip",
@@ -2067,13 +2244,13 @@
         "content_type": "application/zip",
         "state": "uploaded",
         "size": 280348514,
-        "download_count": 145,
+        "download_count": 148,
         "created_at": "2015-11-20T20:10:31Z",
         "updated_at": "2015-11-20T20:15:47Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.1/Anima-Ubuntu-1.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.1/Anima-Ubuntu-1.1.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/1056085",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/1056085",
         "id": 1056085,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDEwNTYwODU=",
         "name": "Anima-Windows-1.1.zip",
@@ -2101,21 +2278,21 @@
         "content_type": "application/x-zip-compressed",
         "state": "uploaded",
         "size": 157643821,
-        "download_count": 176,
+        "download_count": 180,
         "created_at": "2015-11-20T19:03:55Z",
         "updated_at": "2015-11-20T20:08:02Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.1/Anima-Windows-1.1.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.1/Anima-Windows-1.1.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v1.1",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v1.1",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v1.1",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v1.1",
     "body": "Bug fix release of Anima\n\nBinary versions compiled for Fedora 18 (64 bits) and above, Ubuntu 12.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For other versions or if these binaries do not work, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this).\n\nAmong new things are the following:\n- Refactored non-local patch search for all non-local algorithms\n- Crashing bug correction in linear block matching and faster mean squares metric\n- Faster EPG signal simulation for relaxometry\n- Corrections in CMake project\n\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) for more details on how to use those tools.\n"
   },
   {
-    "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/2058473",
-    "assets_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/2058473/assets",
-    "upload_url": "https://uploads.github.com/repos/Inria-Visages/Anima-Public/releases/2058473/assets{?name,label}",
-    "html_url": "https://github.com/Inria-Visages/Anima-Public/releases/tag/v1.0",
+    "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/2058473",
+    "assets_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/2058473/assets",
+    "upload_url": "https://uploads.github.com/repos/Inria-Empenn/Anima-Public/releases/2058473/assets{?name,label}",
+    "html_url": "https://github.com/Inria-Empenn/Anima-Public/releases/tag/v1.0",
     "id": 2058473,
     "author": {
       "login": "ocommowi",
@@ -2147,7 +2324,7 @@
     "published_at": "2015-11-02T19:11:12Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/999239",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/999239",
         "id": 999239,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDk5OTIzOQ==",
         "name": "Anima-Fedora-1.0.zip",
@@ -2178,10 +2355,10 @@
         "download_count": 97,
         "created_at": "2015-11-02T18:00:35Z",
         "updated_at": "2015-11-02T18:01:42Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.0/Anima-Fedora-1.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.0/Anima-Fedora-1.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/999397",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/999397",
         "id": 999397,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDk5OTM5Nw==",
         "name": "Anima-OSX-1.0.zip",
@@ -2212,10 +2389,10 @@
         "download_count": 125,
         "created_at": "2015-11-02T19:10:01Z",
         "updated_at": "2015-11-02T19:11:07Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.0/Anima-OSX-1.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.0/Anima-OSX-1.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/999240",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/999240",
         "id": 999240,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDk5OTI0MA==",
         "name": "Anima-Ubuntu-1.0.zip",
@@ -2246,10 +2423,10 @@
         "download_count": 117,
         "created_at": "2015-11-02T18:00:35Z",
         "updated_at": "2015-11-02T18:03:30Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.0/Anima-Ubuntu-1.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.0/Anima-Ubuntu-1.0.zip"
       },
       {
-        "url": "https://api.github.com/repos/Inria-Visages/Anima-Public/releases/assets/999245",
+        "url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/releases/assets/999245",
         "id": 999245,
         "node_id": "MDEyOlJlbGVhc2VBc3NldDk5OTI0NQ==",
         "name": "Anima-Windows-1.0.zip",
@@ -2280,11 +2457,11 @@
         "download_count": 214,
         "created_at": "2015-11-02T18:04:04Z",
         "updated_at": "2015-11-02T18:04:49Z",
-        "browser_download_url": "https://github.com/Inria-Visages/Anima-Public/releases/download/v1.0/Anima-Windows-1.0.zip"
+        "browser_download_url": "https://github.com/Inria-Empenn/Anima-Public/releases/download/v1.0/Anima-Windows-1.0.zip"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/tarball/v1.0",
-    "zipball_url": "https://api.github.com/repos/Inria-Visages/Anima-Public/zipball/v1.0",
+    "tarball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/tarball/v1.0",
+    "zipball_url": "https://api.github.com/repos/Inria-Empenn/Anima-Public/zipball/v1.0",
     "body": "First binary release of Anima. Binary versions compiled for Fedora 18 (64 bits) and above, Ubuntu 12.04 (64 bits) and above, OSX 10.9 (Mavericks) and above, and Windows 7 (64 bits) and above. For other versions or if these binaries do not work, please build them from source (refer to the [wiki](https://github.com/Inria-Visages/Anima-Public/wiki/Compiling-ANIMA) for this).\n\nPlease refer to the [documentation wiki](https://github.com/Inria-Visages/Anima-Public/wiki) for more details on how to use those tools.\n"
   }
 ]

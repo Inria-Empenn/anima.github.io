@@ -10,6 +10,8 @@ Anima core software tools are also the base for Anima scripts, a set of <a href=
 
 # News
 
+<p align="justify">May 10, 2021: Anima v4.1 and Anima scripts v3.1 (with updated additional data) minor update releases are out ! Have a look at the <a href="{{ site.base-url }}downloads/">downloads page</a> and <a href="http://anima.rtfd.io/">documentation</a> to install them.</p>
+
 <p align="justify">February 4, 2021: Anima v4.0.1 and Anima scripts v3.0.1 bug fix releases are out ! Have a look at the <a href="{{ site.base-url }}downloads/">downloads page</a> and <a href="http://anima.rtfd.io/">documentation</a> to install them.</p>
 
 # Referencing Anima and Anima scripts
