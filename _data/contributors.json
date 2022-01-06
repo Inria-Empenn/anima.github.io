@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/ocommowi/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 878
+    "contributions": 912
   },
   {
     "login": "astamm",
@@ -144,7 +144,7 @@
     "received_events_url": "https://api.github.com/users/arthursw/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1
+    "contributions": 2
   },
   {
     "login": "fragalassi",
