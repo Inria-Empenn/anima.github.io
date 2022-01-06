@@ -24,6 +24,16 @@ We thank the contributors over the years for their valuable corrections and upda
 [![Avatar]({{ contributor.avatar_url }}){: style="width: 64px;"}]({{ contributor.html_url }}) [{{ contributor.login }}]({{ contributor.html_url }})
 {% endfor %}
 
+# Anima scripts contributors
+
+<p align="justify">
+We also thank the contributors over the years for their valuable corrections and updates to the scripts built on Anima. You can yourself join the crowd by getting involved on the Anima Github repositories available from the <a href="{{ site.base-url }}downloads/">downloads page</a>.
+</p>
+
+{% for contributor in site.data.contributors_scripts %}
+[![Avatar]({{ contributor.avatar_url }}){: style="width: 64px;"}]({{ contributor.html_url }}) [{{ contributor.login }}]({{ contributor.html_url }})
+{% endfor %}
+
 # Want to become a contributor?
 
 Anima and anima scripts are on open licenses. There are several ways to contribute to them. You can either:
