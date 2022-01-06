@@ -29,7 +29,7 @@ And we of course have the issues pages on our [Github repository](https://github
 
 Anima is currently distributed under the Affero GPL v3 license.
 
-Copyright (C) 2015 - 2020, Inria
+Copyright (C) 2015 - 2022, Inria
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
