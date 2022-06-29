@@ -18,8 +18,9 @@ We provide for Anima a set of different documentations, with the aim of helping 
 
 # Community help
 
-For more details or questions, we have set up two mailing lists:
+For more details or questions, we have set up two mailing lists and a forum:
 
+* a forum for Anima and Anima scripts is hosted on [our Github]([https://github.com/Inria-Empenn/Anima-Public/issues](https://github.com/Inria-Empenn/Anima-Public/discussions)). It welcomes all discussions from anyone and also announces new releases.
 * a users list at <a href="mailto:anima-users[AT]inria.fr">anima-users@inria.fr</a>: for any user or developer related questions
 * a licensing list at <a href="mailto:anima-licensing[AT]inria.fr">anima-licensing@inria.fr</a>: we know our choice of license can be complicated for companies. But if you are in the case the license is not appropriate to you, please send us an email, we are interested in feedback and discussing a specific license for some user categories.
 
