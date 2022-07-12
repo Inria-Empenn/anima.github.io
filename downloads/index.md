@@ -40,20 +40,20 @@ Anima and Anima scripts also come in several binary packages released from time 
 </ul>
 
 <p align="justify">
-<strong>Latest Anima scripts release</strong>: Anima scripts v3.2 - <a href="https://github.com/Inria-Empenn/Anima-Scripts-Public/releases/tag/v3.2">Release notes</a>
+<strong>Latest Anima scripts release</strong>: Anima scripts v3.3 - <a href="https://github.com/Inria-Empenn/Anima-Scripts-Public/releases/tag/v3.3">Release notes</a>
 </p>
 <ul>
 <li>
-<a href="https://github.com/Inria-Empenn/Anima-Scripts-Public/archive/v3.2.zip">Zip file</a>
+<a href="https://github.com/Inria-Empenn/Anima-Scripts-Public/archive/v3.3.zip">Zip file</a>
 </li>
 </ul>
 
 <p align="justify">
-<strong>Latest Anima scripts data release</strong>: Anima scripts data v3.1 - <a href="https://github.com/Inria-Empenn/Anima-Scripts-Data-Public/releases/tag/v3.1">Release notes</a>
+<strong>Latest Anima scripts data release</strong>: Anima scripts data v3.2 - <a href="https://github.com/Inria-Empenn/Anima-Scripts-Data-Public/releases/tag/v3.2">Release notes</a>
 </p>
 <ul>
 <li>
-<a href="https://github.com/Inria-Empenn/Anima-Scripts-Data-Public/releases/download/v3.1/Anima-Scripts-Data-Public.zip">Zip file</a>
+<a href="https://github.com/Inria-Empenn/Anima-Scripts-Data-Public/releases/download/v3.2/Anima-Scripts-Data-Public.zip">Zip file</a>
 </li>
 </ul>
 

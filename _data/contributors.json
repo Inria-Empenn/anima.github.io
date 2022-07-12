@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/ocommowi/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 912
+    "contributions": 990
   },
   {
     "login": "astamm",
@@ -39,7 +39,7 @@
     "received_events_url": "https://api.github.com/users/astamm/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 97
+    "contributions": 106
   },
   {
     "login": "lcatanes",
@@ -142,6 +142,27 @@
     "repos_url": "https://api.github.com/users/arthursw/repos",
     "events_url": "https://api.github.com/users/arthursw/events{/privacy}",
     "received_events_url": "https://api.github.com/users/arthursw/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 2
+  },
+  {
+    "login": "achataigner",
+    "id": 3016648,
+    "node_id": "MDQ6VXNlcjMwMTY2NDg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3016648?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/achataigner",
+    "html_url": "https://github.com/achataigner",
+    "followers_url": "https://api.github.com/users/achataigner/followers",
+    "following_url": "https://api.github.com/users/achataigner/following{/other_user}",
+    "gists_url": "https://api.github.com/users/achataigner/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/achataigner/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/achataigner/subscriptions",
+    "organizations_url": "https://api.github.com/users/achataigner/orgs",
+    "repos_url": "https://api.github.com/users/achataigner/repos",
+    "events_url": "https://api.github.com/users/achataigner/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/achataigner/received_events",
     "type": "User",
     "site_admin": false,
     "contributions": 2
